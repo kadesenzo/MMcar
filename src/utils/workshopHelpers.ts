@@ -177,6 +177,10 @@ export const DEFAULT_FISCAL_CONFIG: FiscalConfig = {
   cnpj: '42.819.504/0001-88',
   ie: '598.120.440.118',
   im: '884120-9',
+  address: 'Rua Joaquim Marques Alves, 765 - Registro/SP',
+  phone: '(13) 99689-2958',
+  email: 'contato@mmcarautocenter.com.br',
+  cityState: 'Registro/SP',
   taxRegime: 'SIMPLES_NACIONAL',
   environment: 'HOMOLOGACAO',
   providerName: 'Focus NFe / SEFAZ Integrado',
@@ -189,6 +193,28 @@ export const DEFAULT_FISCAL_CONFIG: FiscalConfig = {
   defaultIcmsRate: 18,
   updatedAt: new Date().toISOString()
 };
+
+export function loadMMCarFiscalConfig(tenant = 'rafael'): FiscalConfig {
+  const stored = readWorkshopData<Partial<FiscalConfig>>(tenant, 'fiscal_config', {});
+  const merged: FiscalConfig = {
+    ...DEFAULT_FISCAL_CONFIG,
+    ...stored
+  };
+
+  // Ensure legacy Kaen placeholders never leak into MM Car invoices
+  if (!merged.tradeName || /kaen/i.test(merged.tradeName)) {
+    merged.tradeName = DEFAULT_FISCAL_CONFIG.tradeName;
+  }
+  if (!merged.companyName || /kaen/i.test(merged.companyName)) {
+    merged.companyName = DEFAULT_FISCAL_CONFIG.companyName;
+  }
+  if (!merged.address) merged.address = DEFAULT_FISCAL_CONFIG.address;
+  if (!merged.phone) merged.phone = DEFAULT_FISCAL_CONFIG.phone;
+  if (!merged.email) merged.email = DEFAULT_FISCAL_CONFIG.email;
+  if (!merged.cityState) merged.cityState = DEFAULT_FISCAL_CONFIG.cityState;
+
+  return merged;
+}
 
 // ============================================================
 // AUDIT LOG, TIMELINE & NOTIFICATION HELPERS

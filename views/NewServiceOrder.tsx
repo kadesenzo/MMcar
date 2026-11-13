@@ -722,7 +722,7 @@ const NewServiceOrder: React.FC<{ session?: UserSession; syncData?: (key: string
           <div className="w-full flex flex-col items-center gap-10 animate-in fade-in duration-500">
             <div className="invoice-preview-wrapper">
               <div className="invoice-container-scaled">
-                <div ref={previewRef}><Invoice os={finalOs} /></div>
+                <div ref={previewRef}><Invoice os={finalOs} tenant={tenant} /></div>
               </div>
             </div>
             <div className="w-full max-w-[500px] flex flex-col gap-3 px-4 pb-16">

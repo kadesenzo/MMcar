@@ -52,23 +52,23 @@ export const WhatsAppHub: React.FC<WhatsAppHubProps> = ({ session }) => {
     let text = '';
     switch (templateType) {
       case 'AGENDAMENTO':
-        text = `Olá, *${client}*! Tudo bem? 👋\n\nAqui é da *Auto Mecânica KAEN*.\nConfirmamos o agendamento de atendimento do seu *${vehicle}* em nossa oficina.\n\n📍 Endereço: Auto Mecânica KAEN - Registro/SP\nNossa equipe já está pronta para receber seu veículo!`;
+        text = `Olá, *${client}*! Tudo bem? 👋\n\nAqui é da *MM Car Auto Center*.\nConfirmamos o agendamento de atendimento do seu *${vehicle}* em nossa oficina.\n\n📍 Endereço: Rua Joaquim Marques Alves, 765 - Registro/SP\nNossa equipe já está pronta para receber seu veículo!`;
         break;
 
       case 'ORCAMENTO':
-        text = `Olá, *${client}*! 👋\n\nA equipe técnica da *Auto Mecânica KAEN* finalizou o diagnóstico do seu *${vehicle}* (OS ${osNum}).\n\nTotal orçado: *${total}* (com garantia de 90 dias em peças e mão de obra).\n\nPara visualizar o laudo técnico completo e autorizar o serviço, basta nos responder com *AUTORIZADO* por aqui!`;
+        text = `Olá, *${client}*! 👋\n\nA equipe técnica da *MM Car Auto Center* finalizou o diagnóstico do seu *${vehicle}* (OS ${osNum}).\n\nTotal orçado: *${total}* (com garantia de 90 dias em peças e mão de obra).\n\nPara visualizar o laudo técnico completo e autorizar o serviço, basta nos responder com *AUTORIZADO* por aqui!`;
         break;
 
       case 'CARRO_PRONTO':
-        text = `🏁 *SEU VEÍCULO ESTÁ PRONTO!* 🚗💨\n\nOlá, *${client}*! Os serviços realizados no seu *${vehicle}* foram concluídos com sucesso pela equipe da *Auto Mecânica KAEN*.\n\nTodos os testes de pista e inspeção de saída foram aprovados. Você já pode retirar seu carro quando desejar!\n\nAgradecemos a confiança!`;
+        text = `🏁 *SEU VEÍCULO ESTÁ PRONTO!* 🚗💨\n\nOlá, *${client}*! Os serviços realizados no seu *${vehicle}* foram concluídos com sucesso pela equipe da *MM Car Auto Center*.\n\nTodos os testes de pista e inspeção de saída foram aprovados. Você já pode retirar seu carro quando desejar!\n\nAgradecemos a confiança!`;
         break;
 
       case 'AGRADECIMENTO':
-        text = `Olá, *${client}*! Tudo bem? Passando para agradecer pela confiança na equipe da *Auto Mecânica KAEN*.\n\nEsperamos que a entrega do seu *${vehicle}* tenha superado suas expectativas! Qualquer dúvida, estamos sempre à sua total disposição.`;
+        text = `Olá, *${client}*! Tudo bem? Passando para agradecer pela confiança na equipe da *MM Car Auto Center*.\n\nEsperamos que a entrega do seu *${vehicle}* tenha superado suas expectativas! Qualquer dúvida, estamos sempre à sua total disposição.`;
         break;
 
       case 'REVISAO':
-        text = `🚨 *LEMBRETE PREVENTIVO KAEN* 🚗\n\nOlá, *${client}*! Passando para lembrar que já se aproxima o período de revisão preventiva de óleo, filtros e pastilhas do seu *${vehicle}*.\n\nPrevenir é sempre mais seguro e econômico do que remediar. Gostaria de agendar um horário nesta semana?`;
+        text = `🚨 *LEMBRETE PREVENTIVO MM CAR* 🚗\n\nOlá, *${client}*! Passando para lembrar que já se aproxima o período de revisão preventiva de óleo, filtros e pastilhas do seu *${vehicle}*.\n\nPrevenir é sempre mais seguro e econômico do que remediar. Gostaria de agendar um horário nesta semana?`;
         break;
     }
 
@@ -105,7 +105,7 @@ export const WhatsAppHub: React.FC<WhatsAppHubProps> = ({ session }) => {
             <span>Central Oficial de Mensagens Operacionais</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white mt-1 italic">
-            WhatsApp Hub da KAEN
+            WhatsApp Hub da MM Car
           </h1>
           <p className="text-xs text-zinc-400 mt-1">
             Comunicação humanizada e ágil: confirmação de agendamento, envio de orçamento, aviso de pronto e pós-venda.

@@ -37,17 +37,17 @@ export const AfterSales: React.FC<AfterSalesProps> = ({ session, syncData }) => 
   };
 
   const handleDay1Thanks = (os: ServiceOrder) => {
-    const text = `Olá, *${os.clientName}*! Tudo bem? 👋\n\nAqui é da *Auto Mecânica KAEN*.\nPassando para agradecer pela confiança em nossa equipe e confirmar se a entrega do seu *${os.vehicleModel}* correu tudo 100% bem ontem!\n\nQualquer dúvida sobre os serviços ou peças instaladas, nossa equipe técnica está à sua total disposição.\n\n_Auto Mecânica Kaen • Excelência e Performance_`;
+    const text = `Olá, *${os.clientName}*! Tudo bem? 👋\n\nAqui é da *MM Car Auto Center*.\nPassando para agradecer pela confiança em nossa equipe e confirmar se a entrega do seu *${os.vehicleModel}* correu tudo 100% bem ontem!\n\nQualquer dúvida sobre os serviços ou peças instaladas, nossa equipe técnica está à sua total disposição.\n\n_MM Car Auto Center • Excelência e Performance_`;
     sendWhatsAppMessage(os.clientPhone || '', text);
   };
 
   const handleDay30FollowUp = (os: ServiceOrder) => {
-    const text = `Olá, *${os.clientName}*! Tudo bem? 👋\n\nAqui é da equipe técnica da *Auto Mecânica KAEN*.\nJá se passaram cerca de 30 dias desde o serviço realizado no seu *${os.vehicleModel}* (OS #${os.osNumber}).\n\nComo está o comportamento do carro? Freios, ruídos e funcionamento geral estão 100% macios e precisos?\n\nEstamos sempre à disposição para garantir que seu veículo continue em estado impecável!`;
+    const text = `Olá, *${os.clientName}*! Tudo bem? 👋\n\nAqui é da equipe técnica da *MM Car Auto Center*.\nJá se passaram cerca de 30 dias desde o serviço realizado no seu *${os.vehicleModel}* (OS #${os.osNumber}).\n\nComo está o comportamento do carro? Freios, ruídos e funcionamento geral estão 100% macios e precisos?\n\nEstamos sempre à disposição para garantir que seu veículo continue em estado impecável!`;
     sendWhatsAppMessage(os.clientPhone || '', text);
   };
 
   const handleMaintenanceReminder = (os: ServiceOrder) => {
-    const text = `🚨 *LEMBRETE PREVENTIVO KAEN* 🚗\n\nOlá, *${os.clientName}*!\nIdentificamos em nosso sistema que já se aproximam 6 meses (ou cerca de 10.000 KM) desde a última revisão do seu *${os.vehicleModel}* na Auto Mecânica KAEN.\n\nPara garantir sua segurança e preservar a durabilidade do motor e dos freios, sugerimos agendar uma revisão preventiva preventiva dos fluidos e pastilhas.\n\nGostaria de reservar um horário preferencial nesta semana?`;
+    const text = `🚨 *LEMBRETE PREVENTIVO MM CAR* 🚗\n\nOlá, *${os.clientName}*!\nIdentificamos em nosso sistema que já se aproximam 6 meses (ou cerca de 10.000 KM) desde a última revisão do seu *${os.vehicleModel}* na MM Car Auto Center.\n\nPara garantir sua segurança e preservar a durabilidade do motor e dos freios, sugerimos agendar uma revisão preventiva dos fluidos e pastilhas.\n\nGostaria de reservar um horário preferencial nesta semana?`;
     sendWhatsAppMessage(os.clientPhone || '', text);
   };
 
@@ -74,7 +74,7 @@ export const AfterSales: React.FC<AfterSalesProps> = ({ session, syncData }) => 
             Pós-Venda & Lembretes de Revisão
           </h1>
           <p className="text-xs text-zinc-400 mt-1">
-            Transforme clientes de uma única visita em clientes recorrentes e fiéis da KAEN através de acompanhamento inteligente.
+            Transforme clientes de uma única visita em clientes recorrentes e fiéis da MM Car Auto Center através de acompanhamento inteligente.
           </p>
         </div>
 

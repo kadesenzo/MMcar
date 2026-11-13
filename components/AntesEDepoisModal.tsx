@@ -6,6 +6,8 @@ import {
 } from 'lucide-react';
 import { ServiceOrder, ProofPhoto, UserSession } from '../types';
 import html2canvas from 'html2canvas';
+import { MMCarLogo } from './MMCarLogo';
+import { loadMMCarFiscalConfig } from '../src/utils/workshopHelpers';
 
 interface AntesEDepoisModalProps {
   isOpen: boolean;
@@ -135,6 +137,8 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
     await syncData('orders', updatedOrders);
   };
 
+  const fiscal = loadMMCarFiscalConfig(session?.username || 'rafael');
+
   const downloadDossierImage = async () => {
     if (!reportDossierRef.current) return;
     setIsDownloading(true);
@@ -146,7 +150,7 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
         useCORS: true
       });
       const link = document.createElement('a');
-      link.download = `KAEN_LAUDO_ANTES_DEPOIS_${os.osNumber}.png`;
+      link.download = `MMCAR_LAUDO_ANTES_DEPOIS_${os.osNumber}.png`;
       link.href = canvas.toDataURL('image/png', 1.0);
       link.click();
     } catch (err) {
@@ -160,13 +164,13 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
   const handleShareWhatsApp = () => {
     const phoneClean = (os.clientPhone || '').replace(/\D/g, '');
     const text = encodeURIComponent(
-      `🏁 *AUTO MECÂNICA KAEN - LAUDO DE VISTORIA TÉCNICA*\n\n` +
+      `🏁 *${(fiscal.tradeName || 'MM CAR AUTO CENTER').toUpperCase()} - LAUDO DE VISTORIA TÉCNICA*\n\n` +
       `Olá *${os.clientName}*! Registramos o acompanhamento visual do seu veículo *${os.vehicleModel}* (Placa *${os.vehiclePlate}*).\n\n` +
       `📋 *OS:* #${os.osNumber}\n` +
       `🔧 *Serviço:* ${os.problem}\n` +
       `📸 *Fotos de Entrada (Antes):* ${beforePhotos.length} registradas na recepção.\n` +
       `✨ *Fotos de Saída (Depois):* ${afterPhotos.length} registradas na conclusão.\n\n` +
-      `Seu veículo passou por controle rigoroso de qualidade. Agradecemos a preferência!`
+      `Seu veículo passou por controle rigoroso de qualidade na ${fiscal.tradeName}. Agradecemos a preferência!`
     );
     const url = phoneClean ? `https://wa.me/55${phoneClean}?text=${text}` : `https://wa.me/?text=${text}`;
     window.open(url, '_blank');
@@ -239,7 +243,7 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
           </div>
 
           <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest hidden sm:inline">
-            Auto Mecânica Kaen • Registro/SP
+            {fiscal.tradeName} • {fiscal.cityState || 'Registro/SP'}
           </span>
         </div>
 
@@ -255,12 +259,13 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
                 {/* Dossier Header */}
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-white/10 pb-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-2xl bg-[#FF2D55] flex items-center justify-center text-white shadow-lg shadow-[#FF2D55]/30">
-                      <Wrench size={24} />
-                    </div>
+                    <MMCarLogo variant="icon" className="w-12 h-12" theme="dark" />
                     <div>
-                      <h1 className="text-xl font-black uppercase italic tracking-tight">AUTO MECÂNICA KAEN</h1>
-                      <p className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">
+                      <h1 className="text-xl font-black uppercase italic tracking-tight">{fiscal.tradeName}</h1>
+                      <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">
+                        CNPJ {fiscal.cnpj} • {fiscal.phone || '(13) 99689-2958'}
+                      </p>
+                      <p className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest">
                         Laudo Técnico & Vistoria Comparativa de Pátio
                       </p>
                     </div>
@@ -402,8 +407,8 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
                     <p className="text-white font-bold uppercase">{os.problem}</p>
                   </div>
                   <div className="sm:text-right">
-                    <span className="text-[8px] font-bold text-zinc-500 uppercase block">Garantia Kaen:</span>
-                    <p className="text-emerald-400 font-bold">90 Dias Mão de Obra e Peças</p>
+                    <span className="text-[8px] font-bold text-zinc-500 uppercase block">Garantia {fiscal.tradeName}:</span>
+                    <p className="text-emerald-400 font-bold">{os.warrantyDays || 90} Dias Mão de Obra e Peças</p>
                   </div>
                 </div>
               </div>

@@ -864,7 +864,7 @@ const ServiceOrders: React.FC<{ role?: string; session?: UserSession; syncData?:
             <div className="invoice-preview-wrapper">
               <div className="invoice-container-scaled">
                 <div ref={invoiceRef}>
-                  <Invoice os={selectedOrder} />
+                  <Invoice os={selectedOrder} tenant={tenant} />
                 </div>
               </div>
             </div>
@@ -887,6 +887,15 @@ const ServiceOrders: React.FC<{ role?: string; session?: UserSession; syncData?:
                 className="bg-zinc-900 py-5 rounded-2xl font-black uppercase text-xs tracking-widest flex items-center justify-center gap-3 hover:bg-zinc-800 border border-white/10 text-white cursor-pointer"
               >
                 <Printer size={20} /> Imprimir em A4
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedOrder(null);
+                  navigate('/fiscal');
+                }}
+                className="bg-zinc-950 py-3.5 rounded-2xl font-black uppercase text-[10px] tracking-widest flex items-center justify-center gap-2 hover:bg-zinc-900 border border-white/10 text-zinc-300 cursor-pointer"
+              >
+                <FileText size={15} /> Dados MM Car / Emissão Fiscal
               </button>
             </div>
           </div>

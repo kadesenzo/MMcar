@@ -62,22 +62,22 @@ export const AiAssistant: React.FC<AiAssistantProps> = ({ session }) => {
     setTimeout(() => setCopiedText(null), 2000);
   };
 
-  // Pre-configured templates based on the KAEN Blueprint
+  // Pre-configured templates based on MM Car Auto Center
   const buildTemplateMessage = (type: string, clientName: string, plate: string, value: number = 0) => {
     switch (type) {
       case 'welcome':
-        return `🏎️ *KAEN AUTO MECÂNICA*
+        return `🏎️ *MM CAR AUTO CENTER*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
-Seja muito bem-vindo(a) à *KAEN Auto Mecânica*.
+Seja muito bem-vindo(a) à *MM Car Auto Center*.
 
 Seu cadastro foi realizado com sucesso em nosso sistema profissional. Aqui, você acompanha todo o processo do seu veículo com total transparência (fotos, checklist e laudo técnico).
 
-📍 WhatsApp Oficial de Atendimento
-🔧 _KAEN — Além dos Limites_`;
+📍 WhatsApp Oficial: (13) 99689-2958
+🔧 _MM Car Auto Center • Excelência Automotiva_`;
 
       case 'entry':
-        return `📋 *KAEN AUTO MECÂNICA — ENTRADA CONFIRMADA*
+        return `📋 *MM CAR AUTO CENTER — ENTRADA CONFIRMADA*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 Confirmamos o recebimento do seu veículo:
@@ -88,10 +88,10 @@ Confirmamos o recebimento do seu veículo:
 
 Nossa equipe técnica já está realizando a varredura com Scanner e inspeção minuciosa. Em breve enviaremos seu laudo completo com orçamento.
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'budget':
-        return `💰 *KAEN AUTO MECÂNICA — LAUDO & ORÇAMENTO*
+        return `💰 *MM CAR AUTO CENTER — LAUDO & ORÇAMENTO*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 Finalizamos o diagnóstico técnico do seu veículo *${plate || ''}*.
@@ -108,10 +108,10 @@ Por gentileza, responda esta mensagem para validar:
 [ ❌ *NÃO APROVAR* ]
 
 Dúvidas? Estamos à disposição.
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'approved':
-        return `⚡ *KAEN AUTO MECÂNICA — SERVIÇO EM ANDAMENTO*
+        return `⚡ *MM CAR AUTO CENTER — SERVIÇO EM ANDAMENTO*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 Seu orçamento foi *APROVADO* com sucesso!
@@ -122,10 +122,10 @@ Seu orçamento foi *APROVADO* com sucesso!
 
 Você receberá um novo aviso assim que o checklist de saída e teste de rodagem forem concluídos!
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'ready':
-        return `✅ *KAEN AUTO MECÂNICA — VEÍCULO PRONTO!*
+        return `✅ *MM CAR AUTO CENTER — VEÍCULO PRONTO!*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 Temos ótimas notícias: o seu veículo *${plate || ''}* está *100% PRONTO* para retirada!
@@ -136,13 +136,14 @@ Temos ótimas notícias: o seu veículo *${plate || ''}* está *100% PRONTO* par
 ✓ Interior e exterior higienizados
 ✓ Fotos finais de comprovação arquivadas
 
-📍 Venha retirar seu carro na KAEN!
+📍 Venha retirar seu carro na MM Car Auto Center!
+Rua Joaquim Marques Alves, 765 - Registro/SP
 Horário de Atendimento: Seg a Sex até 18h | Sáb até 12h.
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'day1':
-        return `🤝 *KAEN AUTO MECÂNICA — PÓS-VENDA (1 DIA)*
+        return `🤝 *MM CAR AUTO CENTER — PÓS-VENDA (1 DIA)*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*! Tudo bem?
 Passando para saber como foi o retorno com o *${plate || 'seu veículo'}* após a manutenção de ontem.
@@ -150,20 +151,20 @@ Passando para saber como foi o retorno com o *${plate || 'seu veículo'}* após 
 O carro está respondendo 100% como você esperava?
 Qualquer dúvida ou ajuste, estamos à sua inteira disposição!
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'day7':
-        return `🔍 *KAEN AUTO MECÂNICA — REVISÃO 7 DIAS*
+        return `🔍 *MM CAR AUTO CENTER — REVISÃO 7 DIAS*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 Já faz uma semana que realizamos a manutenção do seu *${plate || 'veículo'}*.
 
 Gostaríamos de confirmar se o funcionamento continua perfeito e suave. Sua segurança e satisfação são a nossa prioridade máxima.
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'day30':
-        return `🛡️ *KAEN AUTO MECÂNICA — LEMBRETE PREVENTIVO 30 DIAS*
+        return `🛡️ *MM CAR AUTO CENTER — LEMBRETE PREVENTIVO 30 DIAS*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 Completamos 30 dias desde o seu último serviço conosco.
@@ -172,10 +173,10 @@ Lembramos que manter a calibragem dos pneus, nível de água do arrefecimento e 
 
 Precisando de uma checagem rápida de rotina, basta nos avisar por aqui!
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       case 'review6m':
-        return `📅 *KAEN AUTO MECÂNICA — REVISÃO PERIÓDICA (6 MESES)*
+        return `📅 *MM CAR AUTO CENTER — REVISÃO PERIÓDICA (6 MESES)*
 ━━━━━━━━━━━━━━━━━━━━
 Olá, *${clientName}*!
 De acordo com nosso histórico técnico, está na hora da sua *Revisão Preventiva Semestral* do veículo *${plate || ''}*.
@@ -187,7 +188,7 @@ Evite quebras inesperadas e gastos elevados:
 
 Deseja que reservemos um horário prioritário na nossa agenda para esta semana?
 
-🔧 _KAEN Auto Mecânica_`;
+🔧 _MM Car Auto Center_`;
 
       default:
         return '';
@@ -236,11 +237,11 @@ Deseja que reservemos um horário prioritário na nossa agenda para esta semana?
         setGeneratedMessage(data.message);
       } else {
         // Fallback to built-in template
-        const fallback = buildTemplateMessage(crmMessageType, matchedClient ? matchedClient.name : 'Cliente', 'VEÍCULO KAEN', 650);
+        const fallback = buildTemplateMessage(crmMessageType, matchedClient ? matchedClient.name : 'Cliente', 'VEÍCULO MM CAR', 650);
         setGeneratedMessage(fallback);
       }
     } catch (err) {
-      const fallback = buildTemplateMessage(crmMessageType, matchedClient ? matchedClient.name : 'Cliente', 'VEÍCULO KAEN', 650);
+      const fallback = buildTemplateMessage(crmMessageType, matchedClient ? matchedClient.name : 'Cliente', 'VEÍCULO MM CAR', 650);
       setGeneratedMessage(fallback);
     } finally {
       setLoading(false);
@@ -249,10 +250,10 @@ Deseja que reservemos um horário prioritário na nossa agenda para esta semana?
 
   const buildFallbackReel = () => ({
     hook: `⚠️ "O cliente quase perdeu o motor por causa desse barulho que parecia bobo!"`,
-    problem: `Chegou na KAEN esse ${reelVehicle} com sintoma grave: ${reelTopic}. O dono achou que era só sujeira, mas ao desmontar olha o que encontramos...`,
+    problem: `Chegou na MM Car Auto Center esse ${reelVehicle} com sintoma grave: ${reelTopic}. O dono achou que era só sujeira, mas ao desmontar olha o que encontramos...`,
     diagnostic: `Scanner técnico acusou falha de pressão e ao retirar a peça no elevador, comprovamos o desgaste crítico que poderia travar tudo.`,
     solution: `Substituímos pela peça original OEM nova, sangramos o sistema e fizemos o teste de rodagem com scanner em tempo real. Veja a diferença do antes e depois!`,
-    cta: `Seu carro está fazendo algum barulho estranho? Não espere quebrar. Toque no link da bio e agende seu diagnóstico na KAEN Auto Mecânica.`
+    cta: `Seu carro está fazendo algum barulho estranho? Não espere quebrar. Toque no link da bio e agende seu diagnóstico na MM Car Auto Center.`
   });
 
   const handleGenerateReel = async () => {

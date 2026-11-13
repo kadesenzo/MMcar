@@ -100,7 +100,7 @@ export const Reviews: React.FC<ReviewsProps> = ({ session, syncData }) => {
 
   const handleSendRequestWhatsApp = (client: { name: string; phone?: string; vehicle?: string }) => {
     const cleanPhone = (client.phone || '').replace(/\D/g, '');
-    const text = `Olá, *${client.name}*! 👋\n\nAqui é da *Auto Mecânica KAEN*.\nEsperamos que seu *${client.vehicle || 'veículo'}* esteja com desempenho impecável após os serviços realizados!\n\nSua opinião é fundamental para nossa equipe. Poderia nos avaliar com 5 estrelas no Google? Leva menos de 30 segundos e nos ajuda muito:\n⭐⭐⭐⭐⭐ https://g.page/r/kaen-auto/review\n\nMuito obrigado pela confiança!`;
+    const text = `Olá, *${client.name}*! 👋\n\nAqui é da *MM Car Auto Center*.\nEsperamos que seu *${client.vehicle || 'veículo'}* esteja com desempenho impecável após os serviços realizados!\n\nSua opinião é fundamental para nossa equipe. Poderia nos avaliar com 5 estrelas no Google? Leva menos de 30 segundos e nos ajuda muito:\n⭐⭐⭐⭐⭐ https://g.page/r/mmcar-auto-center/review\n\nMuito obrigado pela confiança!`;
     const url = cleanPhone.length >= 10 ? `https://wa.me/55${cleanPhone}?text=${encodeURIComponent(text)}` : `https://wa.me/?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   };

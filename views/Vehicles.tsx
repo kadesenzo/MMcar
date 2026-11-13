@@ -120,7 +120,7 @@ const Vehicles: React.FC<{ session?: UserSession; syncData?: (key: string, data:
                            <Wrench size={18} />
                         </div>
                         <div>
-                           <p className="text-[8px] font-black uppercase text-zinc-800 italic">SERVIÇOS KAEN</p>
+                           <p className="text-[8px] font-black uppercase text-zinc-800 italic">SERVIÇOS MM CAR</p>
                            <p className="font-black text-white text-[11px] uppercase">{serviceCount} PASSAGENS <span className="text-zinc-700">NA OFICINA</span></p>
                         </div>
                       </div>

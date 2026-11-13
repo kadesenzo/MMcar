@@ -1,33 +1,53 @@
-
-import React from 'react';
-import { ServiceOrder, PaymentStatus } from '../types';
-import { Wrench } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ServiceOrder, PaymentStatus, FiscalConfig } from '../types';
+import { MMCarLogo } from './MMCarLogo';
+import { loadMMCarFiscalConfig } from '../src/utils/workshopHelpers';
 
 interface InvoiceProps {
   os: ServiceOrder;
+  tenant?: string;
 }
 
-const Invoice: React.FC<InvoiceProps> = ({ os }) => {
+const Invoice: React.FC<InvoiceProps> = ({ os, tenant = 'rafael' }) => {
+  const [fiscal, setFiscal] = useState<FiscalConfig>(() => loadMMCarFiscalConfig(tenant));
+
+  useEffect(() => {
+    const refresh = () => setFiscal(loadMMCarFiscalConfig(tenant));
+    refresh();
+    window.addEventListener('kaen_storage_updated', refresh);
+    return () => window.removeEventListener('kaen_storage_updated', refresh);
+  }, [tenant]);
+
   const totalItems = os.items.length + (os.laborValue > 0 ? 1 : 0);
-  
+
   let densityClass = '';
   if (totalItems > 18) densityClass = 'micro-mode';
   else if (totalItems > 10) densityClass = 'compact-mode';
 
+  const warrantyDays = os.warrantyDays || 90;
+  const tradeUpper = (fiscal.tradeName || 'MM CAR AUTO CENTER').toUpperCase();
+
   return (
     <div className={`kaen-invoice-render ${densityClass}`}>
-      <div className="inv-watermark">KAEN MECÂNICA</div>
-      
+      <div className="inv-watermark">{tradeUpper}</div>
+
       {/* Header */}
       <div className="inv-header">
         <div className="inv-logo-area">
           <div className="inv-logo-box">
-            <Wrench size={36} />
+            <MMCarLogo variant="icon" className="w-full h-full" theme="dark" />
           </div>
           <div className="inv-company-info">
-            <h1>Auto Mecânica Kaen</h1>
-            <p>Rua Joaquim Marques Alves, 765 - Registro/SP</p>
-            <p>Celular / WhatsApp: (13) 99689-2958</p>
+            <h1>{fiscal.tradeName}</h1>
+            <p>
+              {fiscal.companyName} • CNPJ: {fiscal.cnpj}
+              {fiscal.ie ? ` • IE: ${fiscal.ie}` : ''}
+            </p>
+            <p>{fiscal.address || 'Rua Joaquim Marques Alves, 765 - Registro/SP'}</p>
+            <p>
+              WhatsApp / Tel: {fiscal.phone || '(13) 99689-2958'}
+              {fiscal.email ? ` • ${fiscal.email}` : ''}
+            </p>
           </div>
         </div>
         <div className="inv-os-info">
@@ -61,8 +81,26 @@ const Invoice: React.FC<InvoiceProps> = ({ os }) => {
         </div>
         <div className="inv-info-group">
           <label>Garantia</label>
-          <span>90 Dias (Mão de Obra)</span>
+          <span>{warrantyDays} Dias (Peças e Mão de Obra)</span>
         </div>
+        {os.mechanicResponsible && (
+          <div className="inv-info-group">
+            <label>Responsável Técnico</label>
+            <span>{os.mechanicResponsible}</span>
+          </div>
+        )}
+        {os.boxNumber && (
+          <div className="inv-info-group">
+            <label>Box / Elevador</label>
+            <span>{os.boxNumber}</span>
+          </div>
+        )}
+        {os.problem && (
+          <div className="inv-info-group" style={{ gridColumn: os.mechanicResponsible || os.boxNumber ? 'span 1' : 'span 3' }}>
+            <label>Diagnóstico / Solicitação</label>
+            <span style={{ fontSize: '12px' }}>{os.problem}</span>
+          </div>
+        )}
       </div>
 
       {/* Items Table */}
@@ -87,10 +125,18 @@ const Invoice: React.FC<InvoiceProps> = ({ os }) => {
             ))}
             {os.laborValue > 0 && (
               <tr>
-                <td className="col-desc">SMR - Serviço de Manutenção Relatada</td>
+                <td className="col-desc">Mão de Obra Técnica Especializada — {fiscal.tradeName}</td>
                 <td className="col-qtd">1</td>
                 <td className="col-unit">R$ {os.laborValue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</td>
                 <td className="col-total">R$ {os.laborValue.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</td>
+              </tr>
+            )}
+            {os.discount > 0 && (
+              <tr>
+                <td className="col-desc" style={{ color: '#059669' }}>Desconto Comercial Aplicado</td>
+                <td className="col-qtd">1</td>
+                <td className="col-unit" style={{ color: '#059669' }}>- R$ {os.discount.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</td>
+                <td className="col-total" style={{ color: '#059669' }}>- R$ {os.discount.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</td>
               </tr>
             )}
           </tbody>
@@ -129,6 +175,7 @@ const Invoice: React.FC<InvoiceProps> = ({ os }) => {
         <div className="flex flex-col gap-8">
           <div className={`inv-status-box inline-block border ${os.paymentStatus === PaymentStatus.PAGO ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-amber-50 text-amber-700 border-amber-200'}`}>
             Financeiro: {os.paymentStatus === PaymentStatus.PAGO ? 'Documento Quitado' : 'Pagamento Pendente'}
+            {os.paymentMethod ? ` (${os.paymentMethod})` : ''}
           </div>
           <div className="inv-signature">
             Declaro estar de acordo com os serviços prestados
@@ -140,8 +187,10 @@ const Invoice: React.FC<InvoiceProps> = ({ os }) => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-0 w-full text-center opacity-30">
-        <p className="text-[9px] font-black uppercase tracking-[0.6em]">Auto Mecânica Kaen • Excelência em Performance • Registro/SP</p>
+      <div className="absolute bottom-8 left-0 w-full text-center opacity-40 px-8">
+        <p className="text-[8.5px] font-black uppercase tracking-[0.35em]">
+          {fiscal.tradeName} • CNPJ {fiscal.cnpj} • {fiscal.cityState || 'Registro/SP'} • {fiscal.phone || '(13) 99689-2958'}
+        </p>
       </div>
     </div>
   );

@@ -30,6 +30,7 @@ import WhatsAppHub from './views/WhatsAppHub';
 import Gallery from './views/Gallery';
 import PatioBoard from './views/PatioBoard';
 import QualityControl from './views/QualityControl';
+import Fiscal from './views/Fiscal';
 import Sidebar from './components/Sidebar';
 import Header, { WorkspaceMode } from './components/Header';
 import { SyncStatus, UserSession, UserRole } from './types';
@@ -579,7 +580,7 @@ const App: React.FC = () => {
         <Route path="/orders/new" element={<PrivateLayout {...layoutProps}><NewServiceOrder /></PrivateLayout>} />
         <Route path="/new-order" element={<PrivateLayout {...layoutProps}><NewServiceOrder /></PrivateLayout>} />
         <Route path="/billing" element={<PrivateLayout {...layoutProps}><Billing /></PrivateLayout>} />
-        <Route path="/fiscal" element={<PrivateLayout {...layoutProps}><Billing /></PrivateLayout>} />
+        <Route path="/fiscal" element={<PrivateLayout {...layoutProps}><Fiscal /></PrivateLayout>} />
         <Route path="/financial" element={<PrivateLayout {...layoutProps}><Financial /></PrivateLayout>} />
         <Route path="/inventory" element={<PrivateLayout {...layoutProps}><Inventory /></PrivateLayout>} />
         <Route path="/clients" element={<PrivateLayout {...layoutProps}><Clients role={session?.role || 'Dono'} /></PrivateLayout>} />

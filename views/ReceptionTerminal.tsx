@@ -517,7 +517,7 @@ const ReceptionTerminal: React.FC<ReceptionTerminalProps> = ({ session, syncData
 
             <div className="invoice-preview-wrapper">
               <div className="invoice-container-scaled">
-                <Invoice os={selectedOrder} />
+                <Invoice os={selectedOrder} tenant={session?.username || 'rafael'} />
               </div>
             </div>
 

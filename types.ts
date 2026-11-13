@@ -183,6 +183,10 @@ export interface FiscalConfig {
   cnpj: string;
   ie: string;
   im: string;
+  address?: string;
+  phone?: string;
+  email?: string;
+  cityState?: string;
   taxRegime: 'SIMPLES_NACIONAL' | 'LUCRO_PRESUMIDO' | 'LUCRO_REAL';
   environment: 'HOMOLOGACAO' | 'PRODUCAO';
   providerName: string;
