@@ -22,14 +22,12 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
   session,
   syncData
 }) => {
-  if (!isOpen || !os) return null;
-
   const [activeTab, setActiveTab] = useState<'COMPARATIVO' | 'NOVA_FOTO'>('COMPARATIVO');
   const [proofPhotos, setProofPhotos] = useState<ProofPhoto[]>(() => {
-    if (os.proofPhotos && os.proofPhotos.length > 0) return os.proofPhotos;
-    if (os.checklist?.proofPhotos && os.checklist.proofPhotos.length > 0) return os.checklist.proofPhotos;
+    if (os?.proofPhotos && os.proofPhotos.length > 0) return os.proofPhotos;
+    if (os?.checklist?.proofPhotos && os.checklist.proofPhotos.length > 0) return os.checklist.proofPhotos;
     // If only basic checklist photos exist
-    if (os.checklist?.photos && os.checklist.photos.length > 0) {
+    if (os?.checklist?.photos && os.checklist.photos.length > 0) {
       return os.checklist.photos.map((p, idx) => ({
         id: `ph-legacy-${idx}`,
         type: 'BEFORE' as const,
@@ -51,6 +49,8 @@ export const AntesEDepoisModal: React.FC<AntesEDepoisModalProps> = ({
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const reportDossierRef = useRef<HTMLDivElement>(null);
+
+  if (!isOpen || !os) return null;
 
   const beforePhotos = proofPhotos.filter(p => p.type === 'BEFORE' || p.type === 'ENTRY' || p.type === 'DAMAGE');
   const afterPhotos = proofPhotos.filter(p => p.type === 'AFTER');

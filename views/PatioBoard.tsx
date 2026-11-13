@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   Kanban, Wrench, Car, Clock, AlertTriangle, CheckCircle2,
-  UserPlus, ArrowRight, RefreshCw, Plus, ShieldAlert, Search
+  UserPlus, ArrowRight, ArrowLeft, RefreshCw, Plus, ShieldAlert, Search
 } from 'lucide-react';
 import {
   ServiceOrder, OSStatus, UserSession, WorkshopBox, Employee
@@ -73,6 +73,7 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
   };
 
   const handleMoveStage = async (order: ServiceOrder, nextStatus: OSStatus) => {
+    const now = new Date().toISOString();
     const timelineEvent = createOSTimelineEvent(
       'MUDANÇA DE ETAPA NO PÁTIO',
       `Veículo movido para "${nextStatus}"`,
@@ -80,16 +81,19 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
       session?.role,
       { field: 'status', previousValue: order.status, newValue: nextStatus }
     );
-    const updated = orders.map((o) =>
-      o.id === order.id
-        ? {
-            ...o,
-            status: nextStatus,
-            updatedAt: new Date().toISOString(),
-            timeline: [timelineEvent, ...(o.timeline || [])]
-          }
-        : o
-    );
+    const updated = orders.map((o) => {
+      if (o.id !== order.id) return o;
+      const nextOrder: ServiceOrder = {
+        ...o,
+        status: nextStatus,
+        updatedAt: now,
+        timeline: [timelineEvent, ...(o.timeline || [])]
+      };
+      if (nextStatus === OSStatus.ENTREGUE) {
+        nextOrder.deliveredAt = now;
+      }
+      return nextOrder;
+    });
     await persistOrdersAndBoxes(updated);
     appendAuditLog(tenant, session?.realUsername || 'Operador', 'MOVEU PÁTIO', `OS #${order.osNumber}`, `${order.status} -> ${nextStatus}`);
 
@@ -118,6 +122,7 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
 
   const handleSaveAssignment = async () => {
     if (!assignModalOs) return;
+    const now = new Date().toISOString();
     const primaryMech = selectedMechanics[0] || '';
     const timelineEvent = createOSTimelineEvent(
       'DISTRIBUIÇÃO DE BOX / MECÂNICO',
@@ -125,18 +130,47 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
       session?.realUsername || 'Diretoria',
       session?.role
     );
-    const updated = orders.map((o) =>
-      o.id === assignModalOs.id
-        ? {
-            ...o,
-            boxNumber: selectedBoxCode || undefined,
-            mechanicResponsible: primaryMech || undefined,
-            assignedMechanics: selectedMechanics,
-            updatedAt: new Date().toISOString(),
-            timeline: [timelineEvent, ...(o.timeline || [])]
-          }
-        : o
-    );
+    const updated = orders.map((o) => {
+      if (o.id === assignModalOs.id) {
+        const nextOrder: ServiceOrder = {
+          ...o,
+          assignedMechanics: selectedMechanics,
+          updatedAt: now,
+          timeline: [timelineEvent, ...(o.timeline || [])]
+        };
+        if (selectedBoxCode) {
+          nextOrder.boxNumber = selectedBoxCode;
+        } else {
+          delete nextOrder.boxNumber;
+        }
+        if (primaryMech) {
+          nextOrder.mechanicResponsible = primaryMech;
+        } else {
+          delete nextOrder.mechanicResponsible;
+        }
+        return nextOrder;
+      }
+
+      // Free the selected box if another active OS was occupying it
+      if (selectedBoxCode && o.boxNumber === selectedBoxCode && isActiveWorkshopStatus(o.status)) {
+        const freedOrder: ServiceOrder = {
+          ...o,
+          updatedAt: now,
+          timeline: [
+            createOSTimelineEvent(
+              'BOX REALOCADO',
+              `${selectedBoxCode} liberado para OS #${assignModalOs.osNumber} (${assignModalOs.vehiclePlate})`,
+              session?.realUsername || 'Diretoria',
+              session?.role
+            ),
+            ...(o.timeline || [])
+          ]
+        };
+        delete freedOrder.boxNumber;
+        return freedOrder;
+      }
+      return o;
+    });
     await persistOrdersAndBoxes(updated);
     appendAuditLog(
       tenant,
@@ -173,11 +207,11 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
 
   const stalledOrders = useMemo(
     () =>
-      orders
+      filteredActiveOrders
         .filter((o) => isActiveWorkshopStatus(o.status))
         .map((o) => ({ order: o, hours: getVehicleStalledHours(o) }))
         .sort((a, b) => b.hours - a.hours),
-    [orders]
+    [filteredActiveOrders]
   );
 
   const mechanicNames = useMemo(() => {
@@ -266,6 +300,7 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 text-left">
           {KANBAN_COLUMNS.map((col, colIdx) => {
             const colOrders = filteredActiveOrders.filter((o) => mapColumnMatch(col.id, o.status));
+            const prevCol = KANBAN_COLUMNS[colIdx - 1];
             const nextCol = KANBAN_COLUMNS[colIdx + 1];
             return (
               <div key={col.id} className="bg-zinc-950/90 border border-white/10 rounded-3xl p-4 flex flex-col gap-3 min-h-[280px]">
@@ -344,19 +379,35 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
                             </span>
                           </div>
 
-                          <div className="flex items-center gap-2 pt-1">
+                          <div className="flex items-center gap-1.5 pt-1">
+                            {prevCol && (
+                              <button
+                                onClick={() => handleMoveStage(ord, prevCol.id)}
+                                title={`Voltar para ${prevCol.label}`}
+                                className="py-2 px-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[9px] font-black uppercase text-zinc-300 flex items-center justify-center cursor-pointer"
+                              >
+                                <ArrowLeft size={12} />
+                              </button>
+                            )}
                             <button
                               onClick={() => openAssignmentModal(ord)}
                               className="flex-1 py-2 px-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[9px] font-black uppercase text-zinc-200 flex items-center justify-center gap-1 cursor-pointer"
                             >
-                              <UserPlus size={12} /> Box / Mecânico
+                              <UserPlus size={12} /> Box / Mec.
                             </button>
-                            {nextCol && (
+                            {nextCol ? (
                               <button
                                 onClick={() => handleMoveStage(ord, nextCol.id)}
                                 className="flex-1 py-2 px-2.5 rounded-xl bg-[#FF2D55] hover:bg-[#ff1744] text-[9px] font-black uppercase text-white flex items-center justify-center gap-1 cursor-pointer"
                               >
                                 <span>Avançar</span> <ArrowRight size={12} />
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => handleMoveStage(ord, OSStatus.ENTREGUE)}
+                                className="flex-1 py-2 px-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-[9px] font-black uppercase text-black flex items-center justify-center gap-1 cursor-pointer"
+                              >
+                                <CheckCircle2 size={12} /> <span>Entregar</span>
                               </button>
                             )}
                           </div>
@@ -421,7 +472,17 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
                   )}
                 </div>
 
-                {!isOccupied && (
+                {isOccupied ? (
+                  <button
+                    onClick={() => {
+                      const ord = orders.find((o) => o.id === box.osId || o.boxNumber === box.code);
+                      if (ord) openAssignmentModal(ord);
+                    }}
+                    className="w-full py-2.5 rounded-xl bg-[#FF2D55]/15 hover:bg-[#FF2D55] border border-[#FF2D55]/30 text-[9px] font-black uppercase tracking-wider text-[#FF2D55] hover:text-white transition-colors cursor-pointer"
+                  >
+                    Realocar / Liberar Box
+                  </button>
+                ) : (
                   <button
                     onClick={() => toggleBoxMaintenance(box)}
                     className="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[9px] font-black uppercase tracking-wider text-zinc-300 cursor-pointer"
@@ -526,11 +587,21 @@ const PatioBoard: React.FC<PatioBoardProps> = ({ session, syncData }) => {
                 className="w-full bg-black border border-white/10 rounded-xl px-4 py-3 text-xs font-bold text-white outline-none"
               >
                 <option value="">-- Pátio Geral (Sem Box Fixo) --</option>
-                {boxes.map((b) => (
-                  <option key={b.id} value={b.code}>
-                    {b.code} — {b.name} ({b.status})
-                  </option>
-                ))}
+                {boxes.map((b) => {
+                  const isMaint = b.status === 'MANUTENCAO';
+                  const occupiedByOther = b.status === 'OCUPADO' && b.osId !== assignModalOs.id;
+                  return (
+                    <option key={b.id} value={b.code} disabled={isMaint}>
+                      {b.code} — {b.name} (
+                      {isMaint
+                        ? 'EM MANUTENÇÃO'
+                        : occupiedByOther
+                        ? `OCUPADO: ${b.vehiclePlate}`
+                        : b.status}
+                      )
+                    </option>
+                  );
+                })}
               </select>
             </div>
 

@@ -102,23 +102,42 @@ export function handleFirestoreError(error: unknown, operationType: OperationTyp
   throw new Error(JSON.stringify(errInfo));
 }
 
+function stripUndefinedForFirestore(value: any): any {
+  if (value === null || typeof value !== 'object') {
+    return value;
+  }
+  if (Array.isArray(value)) {
+    return value
+      .filter((item) => typeof item !== 'undefined')
+      .map((item) => stripUndefinedForFirestore(item));
+  }
+  const clean: Record<string, any> = {};
+  for (const [k, v] of Object.entries(value)) {
+    if (typeof v !== 'undefined') {
+      clean[k] = stripUndefinedForFirestore(v);
+    }
+  }
+  return clean;
+}
+
 /**
  * Save specific workshop dataset to Firestore
  * Writes both to main shared document and collection document for 100% cloud durability
  */
 export async function saveWorkshopFieldToCloud(key: string, value: any): Promise<void> {
   if (typeof value === 'undefined') return;
+  const sanitizedValue = stripUndefinedForFirestore(value);
   const pathForWrite = `workshops/${WORKSHOP_DOC_ID}`;
   try {
     const docRef = doc(db, 'workshops', WORKSHOP_DOC_ID);
-    await setDoc(docRef, { [key]: value, lastUpdatedAt: new Date().toISOString() }, { merge: true });
+    await setDoc(docRef, { [key]: sanitizedValue, lastUpdatedAt: new Date().toISOString() }, { merge: true });
 
     // Also persist to collection-level document to guard against 1MB single-document limits
     const cleanKey = key.replace(/^kaenpro_[^_]+_/, '').replace(/[^a-zA-Z0-9_\-]/g, '_');
     if (cleanKey && cleanKey !== key) {
       try {
         const colRef = doc(db, 'workshop_collections', cleanKey);
-        await setDoc(colRef, { data: value, key: cleanKey, updatedAt: new Date().toISOString() }, { merge: true });
+        await setDoc(colRef, { data: sanitizedValue, key: cleanKey, updatedAt: new Date().toISOString() }, { merge: true });
       } catch (colErr) {
         console.warn("Secondary collection write warning:", colErr);
       }

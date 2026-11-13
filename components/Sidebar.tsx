@@ -14,6 +14,7 @@ interface SidebarProps {
   role: UserRole | string;
   isOpen: boolean;
   onClose: () => void;
+  onNavigate?: () => void;
 }
 
 type SectorFilter = 'ALL' | 'ADMIN' | 'RECEPTION' | 'MECHANIC' | 'STOCK';
@@ -25,7 +26,7 @@ interface MenuItemDef {
   sectors: SectorFilter[];
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ role, isOpen, onClose }) => {
+const Sidebar: React.FC<SidebarProps> = ({ role, isOpen, onClose, onNavigate }) => {
   const canAccess = (sectors: SectorFilter[]) => {
     if (sectors.includes('ALL')) return true;
     if (isAdminRole(role)) return true;
@@ -131,7 +132,10 @@ const Sidebar: React.FC<SidebarProps> = ({ role, isOpen, onClose }) => {
                     <NavLink
                       key={item.path}
                       to={item.path}
-                      onClick={onClose}
+                      onClick={() => {
+                        onNavigate?.();
+                        onClose();
+                      }}
                       className={({ isActive }) => `
                         flex items-center justify-between px-5 py-3.5 rounded-[1.75rem] transition-all duration-300 group relative
                         ${isActive
@@ -164,7 +168,10 @@ const Sidebar: React.FC<SidebarProps> = ({ role, isOpen, onClose }) => {
           <div className="p-6 border-t border-white/5 bg-zinc-950/30">
             <NavLink
               to="/settings"
-              onClick={onClose}
+              onClick={() => {
+                onNavigate?.();
+                onClose();
+              }}
               className={({ isActive }) => `
                 flex items-center gap-3.5 cursor-pointer transition-colors group
                 ${isActive ? 'text-[#FF2D55]' : 'text-zinc-500 hover:text-white'}

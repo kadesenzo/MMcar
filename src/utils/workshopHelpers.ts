@@ -136,11 +136,17 @@ export function loadOrInitBoxes(tenant: string, orders: ServiceOrder[] = []): Wo
     OSStatus.PRONTO
   ]);
 
+  const normalizeBoxRef = (val?: string) => (val || '').trim().toUpperCase().replace(/\s+/g, '');
+
   return base.map((box) => {
     if (box.status === 'MANUTENCAO') return box;
-    const assignedOs = orders.find(
-      (o) => (o.boxNumber === box.code || o.boxNumber === box.id) && activeStatuses.has(o.status)
-    );
+    const normCode = normalizeBoxRef(box.code);
+    const normId = normalizeBoxRef(box.id);
+    const assignedOs = orders.find((o) => {
+      if (!activeStatuses.has(o.status)) return false;
+      const normOrderBox = normalizeBoxRef(o.boxNumber);
+      return normOrderBox !== '' && (normOrderBox === normCode || normOrderBox === normId);
+    });
     if (assignedOs) {
       return {
         ...box,
@@ -154,15 +160,10 @@ export function loadOrInitBoxes(tenant: string, orders: ServiceOrder[] = []): Wo
         updatedAt: assignedOs.updatedAt || box.updatedAt
       };
     }
+    const { osId: _oId, osNumber: _oNum, vehiclePlate: _vP, vehicleModel: _vM, mechanicName: _mN, occupiedSince: _oS, ...cleanBox } = box;
     return {
-      ...box,
-      status: 'LIVRE',
-      osId: undefined,
-      osNumber: undefined,
-      vehiclePlate: undefined,
-      vehicleModel: undefined,
-      mechanicName: undefined,
-      occupiedSince: undefined
+      ...cleanBox,
+      status: 'LIVRE'
     };
   });
 }

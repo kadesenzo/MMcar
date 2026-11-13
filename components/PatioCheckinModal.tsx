@@ -6,6 +6,13 @@ import {
 } from 'lucide-react';
 import { Client, Vehicle, Part, ServiceOrder, OSStatus, PaymentStatus, ProofPhoto, UserSession } from '../types';
 import { lookupVehicleByPlate } from '../src/utils/plateLookup';
+import {
+  readWorkshopData,
+  writeWorkshopData,
+  createDefaultPatioCategories,
+  createOSTimelineEvent,
+  appendAuditLog
+} from '../src/utils/workshopHelpers';
 
 interface PatioCheckinModalProps {
   isOpen: boolean;
@@ -28,38 +35,23 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
   syncData,
   onSuccess
 }) => {
-  if (!isOpen) return null;
+  const tenant = session?.username || 'rafael';
 
   // Fallback storage loader if not directly passed in props
   const clients: Client[] = useMemo<Client[]>(() => {
     if (propClients && propClients.length > 0) return propClients;
-    if (session) {
-      try {
-        return JSON.parse(localStorage.getItem(`kaenpro_${session.username}_clients`) || '[]');
-      } catch (e) { return []; }
-    }
-    return [];
-  }, [propClients, session]);
+    return readWorkshopData<Client[]>(tenant, 'clients', []);
+  }, [propClients, tenant]);
 
   const vehicles: Vehicle[] = useMemo<Vehicle[]>(() => {
     if (propVehicles && propVehicles.length > 0) return propVehicles;
-    if (session) {
-      try {
-        return JSON.parse(localStorage.getItem(`kaenpro_${session.username}_vehicles`) || '[]');
-      } catch (e) { return []; }
-    }
-    return [];
-  }, [propVehicles, session]);
+    return readWorkshopData<Vehicle[]>(tenant, 'vehicles', []);
+  }, [propVehicles, tenant]);
 
   const parts: Part[] = useMemo<Part[]>(() => {
     if (propParts && propParts.length > 0) return propParts;
-    if (session) {
-      try {
-        return JSON.parse(localStorage.getItem(`kaenpro_${session.username}_parts`) || '[]');
-      } catch (e) { return []; }
-    }
-    return [];
-  }, [propParts, session]);
+    return readWorkshopData<Part[]>(tenant, 'parts', []);
+  }, [propParts, tenant]);
 
   // Flow steps: 1 = PLACA/VEICULO, 2 = CLIENTE, 3 = SERVIÇO, 4 = CHECKLIST_FOTOS, 5 = PRODUTOS, 6 = SUCESSO
   const [currentStep, setCurrentStep] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
@@ -127,8 +119,19 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
   const [isSaving, setIsSaving] = useState(false);
   const [createdOs, setCreatedOs] = useState<ServiceOrder | null>(null);
 
+  const [stepError, setStepError] = useState<string | null>(null);
+
   const fileInputRef = useRef<HTMLInputElement>(null);
   const checklistPhotoInputRef = useRef<HTMLInputElement>(null);
+
+  if (!isOpen) return null;
+
+  const persistField = async (key: string, data: any) => {
+    writeWorkshopData(tenant, key, data);
+    if (syncData) {
+      await syncData(key, data);
+    }
+  };
 
   // Handle Plate Search / Auto-fill
   const handlePlateChange = (val: string) => {
@@ -218,7 +221,7 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
 
   // Save quick client
   const handleAddQuickClient = async () => {
-    if (!newClientName || !newClientPhone || !session || !syncData) return;
+    if (!newClientName || !newClientPhone) return;
     const newC: Client = {
       id: Math.random().toString(36).substr(2, 9),
       name: newClientName.toUpperCase(),
@@ -228,7 +231,7 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
       createdAt: new Date().toISOString()
     };
     const updatedClients = [...clients, newC];
-    await syncData('clients', updatedClients);
+    await persistField('clients', updatedClients);
     setSelectedClientId(newC.id);
     setShowNewClientForm(false);
     setNewClientName('');
@@ -249,7 +252,6 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
 
   // Final OS Submission to Cloud
   const handleFinalizePatioOS = async () => {
-    if (!session || !syncData) return;
     setIsSaving(true);
 
     try {
@@ -265,37 +267,39 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
           createdAt: new Date().toISOString()
         };
         const updatedClients = [...clients, client];
-        await syncData('clients', updatedClients);
+        await persistField('clients', updatedClients);
       }
 
       // Find or create vehicle
-      const formattedPlate = plateInput.length >= 7 
-        ? `${plateInput.slice(0, 3)}-${plateInput.slice(3, 7)}` 
-        : plateInput;
+      const cleanPlate = plateInput.replace(/[^A-Z0-9]/g, '').toUpperCase();
+      const formattedPlate = cleanPlate.length >= 7
+        ? `${cleanPlate.slice(0, 3)}-${cleanPlate.slice(3, 7)}`
+        : cleanPlate || 'SEM-PLACA';
 
       const parsedKm = parseInt(String(vehicleKm).replace(/\D/g, ''), 10);
       const hasValidKm = String(vehicleKm).trim() !== '' && !isNaN(parsedKm) && parsedKm >= 0;
+      const safeModel = vehicleModel.trim() || 'VEÍCULO EM ATENDIMENTO';
 
-      let vehicle = vehicles.find(v => v.plate.replace(/[^A-Z0-9]/g, '').toUpperCase() === plateInput.replace(/[^A-Z0-9]/g, '').toUpperCase());
+      let vehicle = vehicles.find(v => v.plate.replace(/[^A-Z0-9]/g, '').toUpperCase() === cleanPlate);
       if (!vehicle) {
         vehicle = {
           id: Math.random().toString(36).substr(2, 9),
           clientId: client.id,
           plate: formattedPlate,
-          model: vehicleModel,
-          brand: vehicleBrand,
-          year: vehicleYear,
-          color: vehicleColor,
+          model: safeModel,
+          brand: vehicleBrand || '---',
+          year: vehicleYear || '---',
+          color: vehicleColor || '---',
           fuel: vehicleFuel,
           km: hasValidKm ? parsedKm : 84000
         };
         const updatedVehicles = [...vehicles, vehicle];
-        await syncData('vehicles', updatedVehicles);
+        await persistField('vehicles', updatedVehicles);
       } else if (hasValidKm && parsedKm > 0 && parsedKm !== vehicle.km && (parsedKm >= (vehicle.km || 0) || !vehicle.km)) {
         const updatedVehicles = vehicles.map(v =>
           v.id === vehicle!.id ? { ...v, km: parsedKm } : v
         );
-        await syncData('vehicles', updatedVehicles);
+        await persistField('vehicles', updatedVehicles);
       }
 
       const finalKmStr = hasValidKm ? parsedKm.toString() : (vehicle.km !== undefined && vehicle.km !== null ? vehicle.km.toString() : '0');
@@ -306,8 +310,20 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
         description: sp.part.name.toUpperCase(),
         quantity: sp.quantity,
         unitPrice: sp.part.salePrice,
+        costPrice: sp.part.costPrice,
+        partId: sp.part.id,
         type: 'PART' as const
       }));
+
+      // Deduct parts stock from inventory
+      if (selectedParts.length > 0 && parts.length > 0) {
+        const updatedParts = parts.map(p => {
+          const used = selectedParts.find(sp => sp.part.id === p.id);
+          if (!used) return p;
+          return { ...p, stock: Math.max(0, p.stock - used.quantity) };
+        });
+        await persistField('parts', updatedParts);
+      }
 
       const laborVal = parseFloat(laborEstimate) || 0;
       const totalItemsVal = osItems.reduce((acc, curr) => acc + (curr.quantity * curr.unitPrice), 0);
@@ -354,29 +370,63 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
         });
       }
 
+      const categories = createDefaultPatioCategories();
+      categories.vidros_farois = {
+        ...categories.vidros_farois,
+        status: checklistResponses.lightsWorking ? 'OK' : 'ATENCAO',
+        notes: checklistResponses.lightsNote || ''
+      };
+      categories.pneus_rodas = {
+        ...categories.pneus_rodas,
+        status: checklistResponses.tiresOk ? 'OK' : 'ATENCAO',
+        notes: checklistResponses.tiresNote || ''
+      };
+      categories.combustivel = {
+        ...categories.combustivel,
+        status: 'OK',
+        notes: `Marcador na chegada: ${checklistResponses.fuelLevel}`
+      };
+      categories.observacoes_adicionais = {
+        ...categories.observacoes_adicionais,
+        status: checklistResponses.suspensionNoise ? 'ATENCAO' : 'OK',
+        notes: checklistResponses.suspensionNote || ''
+      };
+
       const osNumber = `${Math.floor(100000 + Math.random() * 899999)}`;
+      const operatorName = session?.realUsername || session?.username || 'Recepção';
       const newOs: ServiceOrder = {
-        id: Math.random().toString(36).substr(2, 9),
+        id: `os-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
         osNumber,
         clientId: client.id,
         clientName: client.name,
         clientPhone: client.phone,
         vehicleId: vehicle.id,
         vehiclePlate: formattedPlate,
-        vehicleModel: vehicleModel,
+        vehicleModel: safeModel,
         vehicleKm: finalKmStr,
+        receptionistName: operatorName,
         problem: serviceDescription ? serviceDescription.toUpperCase() : 'MANUTENÇÃO DE PÁTIO',
         items: osItems,
         laborValue: laborVal,
         discount: 0,
         totalValue,
-        status: OSStatus.EM_SERVICO,
+        status: OSStatus.AGUARDANDO_DIAGNOSTICO,
         paymentStatus: PaymentStatus.PENDENTE,
         proofPhotos,
         photos: proofPhotos.map(p => ({ label: p.label, url: p.url })),
+        timeline: [
+          createOSTimelineEvent(
+            'CHECKIN_PATIO',
+            `Check-in de Pátio realizado (${formattedPlate} • KM ${finalKmStr})`,
+            operatorName,
+            session?.role
+          )
+        ],
         checklist: {
           fuelLevel: checklistResponses.fuelLevel,
+          kmEntry: finalKmStr,
           damages: [],
+          categories,
           items: {
             'Faróis e Lanternas': checklistResponses.lightsWorking,
             'Ruídos de Suspensão': checklistResponses.suspensionNoise,
@@ -390,16 +440,17 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
         updatedAt: timestamp
       };
 
-      const currentOrders = JSON.parse(localStorage.getItem(`kaenpro_${session.username}_orders`) || '[]');
+      const currentOrders = readWorkshopData<ServiceOrder[]>(tenant, 'orders', []);
       const updatedOrders = [newOs, ...currentOrders];
-      await syncData('orders', updatedOrders);
+      await persistField('orders', updatedOrders);
+      appendAuditLog(tenant, operatorName, 'CHECKIN_PATIO', `OS #${osNumber}`, `${formattedPlate} • R$ ${totalValue.toFixed(2)}`);
 
       setCreatedOs(newOs);
       setCurrentStep(6);
       if (onSuccess) onSuccess(newOs);
     } catch (e) {
       console.error(e);
-      alert("Erro ao gravar O.S. de Pátio.");
+      setStepError("Erro ao gravar O.S. de Pátio. Verifique os dados e tente novamente.");
     } finally {
       setIsSaving(false);
     }
@@ -616,9 +667,22 @@ export const PatioCheckinModal: React.FC<PatioCheckinModalProps> = ({
                 </div>
               )}
 
+              {stepError && (
+                <div className="p-3 rounded-xl bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-bold text-center">
+                  {stepError}
+                </div>
+              )}
+
               <button
-                onClick={() => setCurrentStep(2)}
-                className="w-full bg-[#FF2D55] hover:bg-[#ff1744] py-4 rounded-2xl font-black uppercase text-xs tracking-widest text-white flex items-center justify-center gap-2 shadow-lg shadow-[#FF2D55]/30 active:scale-95 transition-all"
+                onClick={() => {
+                  if (plateInput.trim().length < 4) {
+                    setStepError('Informe a placa do veículo (mínimo 4 caracteres) para continuar.');
+                    return;
+                  }
+                  setStepError(null);
+                  setCurrentStep(2);
+                }}
+                className="w-full bg-[#FF2D55] hover:bg-[#ff1744] py-4 rounded-2xl font-black uppercase text-xs tracking-widest text-white flex items-center justify-center gap-2 shadow-lg shadow-[#FF2D55]/30 active:scale-95 transition-all cursor-pointer"
               >
                 <span>Avançar para Cliente</span>
                 <ArrowRight size={16} />

@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import LandingPage from './views/LandingPage';
 import LoginPage from './views/LoginPage';
 import Dashboard from './views/Dashboard';
@@ -28,6 +28,8 @@ import Reviews from './views/Reviews';
 import AfterSales from './views/AfterSales';
 import WhatsAppHub from './views/WhatsAppHub';
 import Gallery from './views/Gallery';
+import PatioBoard from './views/PatioBoard';
+import QualityControl from './views/QualityControl';
 import Sidebar from './components/Sidebar';
 import Header, { WorkspaceMode } from './components/Header';
 import { SyncStatus, UserSession, UserRole } from './types';
@@ -90,6 +92,17 @@ const PrivateLayout: React.FC<PrivateLayoutProps> = ({
   syncData
 }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const location = useLocation();
+  const prevPathnameRef = useRef(location.pathname);
+
+  useEffect(() => {
+    if (prevPathnameRef.current !== location.pathname) {
+      prevPathnameRef.current = location.pathname;
+      if (workspaceMode !== 'PRINCIPAL') {
+        onWorkspaceModeChange('PRINCIPAL');
+      }
+    }
+  }, [location.pathname, workspaceMode, onWorkspaceModeChange]);
 
   if (!session) return <Navigate to="/login" replace />;
 
@@ -117,6 +130,7 @@ const PrivateLayout: React.FC<PrivateLayoutProps> = ({
         role={session.role}
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
+        onNavigate={() => onWorkspaceModeChange('PRINCIPAL')}
       />
 
       <div className="flex-1 flex flex-col min-w-0 relative">
@@ -558,10 +572,14 @@ const App: React.FC = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={session ? <Navigate to="/dashboard" replace /> : <LoginPage onLogin={handleLogin} />} />
         <Route path="/dashboard" element={<PrivateLayout {...layoutProps}><Dashboard /></PrivateLayout>} />
+        <Route path="/patio" element={<PrivateLayout {...layoutProps}><PatioBoard /></PrivateLayout>} />
+        <Route path="/quality" element={<PrivateLayout {...layoutProps}><QualityControl /></PrivateLayout>} />
         <Route path="/calendar" element={<PrivateLayout {...layoutProps}><Calendar /></PrivateLayout>} />
         <Route path="/orders" element={<PrivateLayout {...layoutProps}><ServiceOrders role={session?.role} /></PrivateLayout>} />
         <Route path="/orders/new" element={<PrivateLayout {...layoutProps}><NewServiceOrder /></PrivateLayout>} />
+        <Route path="/new-order" element={<PrivateLayout {...layoutProps}><NewServiceOrder /></PrivateLayout>} />
         <Route path="/billing" element={<PrivateLayout {...layoutProps}><Billing /></PrivateLayout>} />
+        <Route path="/fiscal" element={<PrivateLayout {...layoutProps}><Billing /></PrivateLayout>} />
         <Route path="/financial" element={<PrivateLayout {...layoutProps}><Financial /></PrivateLayout>} />
         <Route path="/inventory" element={<PrivateLayout {...layoutProps}><Inventory /></PrivateLayout>} />
         <Route path="/clients" element={<PrivateLayout {...layoutProps}><Clients role={session?.role || 'Dono'} /></PrivateLayout>} />
