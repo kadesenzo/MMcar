@@ -1,0 +1,11 @@
+{
+  "name": "Remix Remix: KAEN - BEYOND LIMITS",
+  "description": "Sistema de gestão automotiva de elite. Precisão bionética e performance absoluta.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

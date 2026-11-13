@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#E2E8F0" />
+      <stop offset="65%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF385C" />
+      <stop offset="45%" stop-color="#E60026" />
+      <stop offset="100%" stop-color="#9E0017" />
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+  </defs>
+  <rect width="160" height="160" rx="36" fill="#0C0D10" />
+  <rect width="154" height="154" x="3" y="3" rx="33" fill="none" stroke="#E60026" stroke-width="1.5" stroke-opacity="0.4" />
+  <g filter="url(#shadow)">
+    <path d="M 82.2 30.0 L 88.1 18.5 L 98.6 20.9 L 99.1 33.8 L 106.9 37.8 L 117.7 30.8 L 125.7 38.1 L 119.7 49.6 L 124.4 56.9 L 137.3 56.3 L 140.5 66.6 L 129.6 73.5 L 130.0 82.2 L 141.5 88.1 L 139.1 98.6 L 126.2 99.1 L 122.2 106.9 L 129.2 117.7 L 121.9 125.7 L 110.4 119.7 L 103.1 124.4 L 103.7 137.3 L 93.4 140.5 L 86.5 129.6 L 77.8 130.0 L 71.9 141.5 L 61.4 139.1 L 60.9 126.2 L 53.1 122.2 L 42.3 129.2 L 34.3 121.9 L 40.3 110.4 L 35.6 103.1 L 22.7 103.7 L 19.5 93.4 L 30.4 86.5 L 30.0 77.8 L 18.5 71.9 L 20.9 61.4 L 33.8 60.9 L 37.8 53.1 L 30.8 42.3 L 38.1 34.3 L 49.6 40.3 L 56.9 35.6 L 56.3 22.7 L 66.6 19.5 L 73.5 30.4 Z M 106.0 80.0 L 105.6 75.5 L 104.4 71.1 L 102.5 67.0 L 99.9 63.3 L 96.7 60.1 L 93.0 57.5 L 88.9 55.6 L 84.5 54.4 L 80.0 54.0 L 75.5 54.4 L 71.1 55.6 L 67.0 57.5 L 63.3 60.1 L 60.1 63.3 L 57.5 67.0 L 55.6 71.1 L 54.4 75.5 L 54.0 80.0 L 54.4 84.5 L 55.6 88.9 L 57.5 93.0 L 60.1 96.7 L 63.3 99.9 L 67.0 102.5 L 71.1 104.4 L 75.5 105.6 L 80.0 106.0 L 84.5 105.6 L 88.9 104.4 L 93.0 102.5 L 96.7 99.9 L 99.9 96.7 L 102.5 93.0 L 104.4 88.9 L 105.6 84.5 L 106.0 80.0 Z" fill="url(#gearGrad)" stroke="#1E293B" stroke-width="1.5" stroke-linejoin="round" />
+    <circle cx="80" cy="80" r="25" fill="#0A0B0E" stroke="#475569" stroke-width="2" />
+    <circle cx="80" cy="80" r="14" fill="url(#gearGrad)" opacity="0.6" />
+    <path d="M 68 28 C 104 18, 134 22, 152 30 C 128 35, 102 38, 92 40 Z" fill="url(#redGrad)" />
+    <path d="M 68 28 L 44 132 L 68 132 L 92 28 Z" fill="url(#redGrad)" stroke="#7F0015" stroke-width="1" />
+    <path d="M 80 74 L 132 38 L 148 48 L 94 92 Z" fill="url(#redGrad)" stroke="#7F0015" stroke-width="1" />
+    <path d="M 92 84 L 144 132 L 118 132 L 74 96 Z" fill="url(#redGrad)" stroke="#7F0015" stroke-width="1" />
+    <path d="M 69 31 L 47 129 L 53 129 L 76 31 Z" fill="#FFA3B3" opacity="0.5" />
+    <path d="M 84 75 L 130 43 L 136 47 L 92 88 Z" fill="#FFA3B3" opacity="0.35" />
+  </g>
+</svg>

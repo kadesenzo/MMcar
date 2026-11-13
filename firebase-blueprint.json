@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "WorkshopDatabase": {
+      "title": "WorkshopDatabase",
+      "description": "Shared synchronization document storing workshop state maps keyed by tenant and entity name.",
+      "type": "object",
+      "properties": {
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp of the latest sync write."
+        }
+      }
+    },
+    "WorkshopCollection": {
+      "title": "WorkshopCollection",
+      "description": "Per-collection dataset mirror used to avoid 1MB single-document limits.",
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$",
+          "description": "Normalized collection key (e.g., orders, clients, vehicles, parts)."
+        },
+        "data": {
+          "type": "array",
+          "description": "Serialized array or object payload for the workshop collection."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "maxLength": 64,
+          "description": "ISO timestamp of the latest update."
+        }
+      },
+      "required": ["key", "data", "updatedAt"]
+    },
+    "ConnectionTest": {
+      "title": "ConnectionTest",
+      "description": "Connectivity probe document.",
+      "type": "object",
+      "properties": {
+        "ok": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/workshops/{workshopId}": {
+      "schema": { "$ref": "#/entities/WorkshopDatabase" },
+      "description": "Shared workshop state document (kaen_shared_database)."
+    },
+    "/workshop_collections/{collectionId}": {
+      "schema": { "$ref": "#/entities/WorkshopCollection" },
+      "description": "Collection-level workshop datasets synced across terminals."
+    },
+    "/test/{docId}": {
+      "schema": { "$ref": "#/entities/ConnectionTest" },
+      "description": "Server connectivity check document."
+    }
+  }
+}

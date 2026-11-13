@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>MM Car Auto Center — Sistema de Gestão Empresarial</title>
+    <meta name="description" content="Sistema completo de gestão automotiva multi-setor para a MM Car Auto Center: Diretoria, Recepção e Pátio, Mecânicos, Estoque e Financeiro/Fiscal.">
+    <meta property="og:title" content="MM Car Auto Center — Sistema de Gestão Empresarial">
+    <meta property="og:description" content="Sistema completo de gestão automotiva multi-setor para a MM Car Auto Center.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@700;800;900&family=Kanit:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-red: #FF2D55;
+            --brand-coral: #FF4D2D;
+            --bg-main: #000000;
+            --ios-radius: 3rem;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: #ffffff;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        #root { width: 100%; min-height: 100vh; display: flex; flex-direction: column; }
+        .rounded-ios { border-radius: var(--ios-radius); }
+        
+        .glass-card {
+            background: rgba(15, 15, 17, 0.72);
+            backdrop-filter: blur(40px) saturate(180%);
+            -webkit-backdrop-filter: blur(40px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-pill {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(25px) saturate(160%);
+            -webkit-backdrop-filter: blur(25px) saturate(160%);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .glass-nav {
+            background: rgba(12, 12, 14, 0.55);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- DOCUMENTO PROFISSIONAL A4 MM CAR AUTO CENTER --- */
+        .kaen-invoice-render {
+            width: 794px;
+            min-height: 1123px; /* Standard A4 size at 96 DPI */
+            background: #ffffff;
+            color: #000000;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            position: relative;
+            box-sizing: border-box;
+            border: 1px solid #eee;
+        }
+
+        .inv-watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 120px;
+            font-weight: 900;
+            color: rgba(0,0,0,0.03);
+            text-transform: uppercase;
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 0;
+        }
+
+        .inv-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #000;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .inv-logo-area {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .inv-logo-box {
+            width: 70px;
+            height: 70px;
+            background: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+        }
+
+        .inv-company-info h1 {
+            font-size: 28px;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+        }
+
+        .inv-company-info p {
+            font-size: 11px;
+            color: #555;
+            margin: 2px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .inv-os-info {
+            text-align: right;
+        }
+
+        .inv-os-info h2 {
+            font-size: 11px;
+            font-weight: 900;
+            color: #FF2D55;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+
+        .inv-os-info .os-number {
+            font-size: 42px;
+            font-weight: 900;
+            margin: -5px 0;
+            line-height: 1;
+            letter-spacing: -0.05em;
+        }
+
+        .inv-os-info .os-date {
+            font-size: 12px;
+            font-weight: 800;
+            color: #000;
+            margin-top: 5px;
+        }
+
+        .inv-client-card {
+            background: #fbfbfb;
+            border: 1px solid #eee;
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .inv-info-group label {
+            display: block;
+            font-size: 10px;
+            font-weight: 900;
+            color: #bbb;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            letter-spacing: 0.1em;
+        }
+
+        .inv-info-group span {
+            display: block;
+            font-size: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .inv-table-container {
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .invoice-table th {
+            text-align: left;
+            font-size: 11px;
+            font-weight: 900;
+            color: #fff;
+            background: #000;
+            text-transform: uppercase;
+            padding: 15px 20px;
+            letter-spacing: 0.1em;
+        }
+
+        .invoice-table th:first-child { border-radius: 12px 0 0 0; }
+        .invoice-table th:last-child { border-radius: 0 12px 0 0; text-align: right; }
+
+        .invoice-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+            font-weight: 700;
+            word-break: break-word;
+            vertical-align: middle;
+        }
+
+        .invoice-table .col-desc { width: 55%; }
+        .invoice-table .col-qtd { width: 10%; text-align: center; color: #888; }
+        .invoice-table .col-unit { width: 15%; text-align: right; color: #888; }
+        .invoice-table .col-total { width: 20%; text-align: right; font-weight: 900; }
+
+        /* Modos de densidade - Melhora significativa no manuseio de muitos itens */
+        .compact-mode td { padding: 10px 20px !important; font-size: 12px !important; }
+        .compact-mode th { padding: 10px 20px !important; font-size: 10px !important; }
+        
+        .micro-mode td { padding: 6px 15px !important; font-size: 10px !important; }
+        .micro-mode th { padding: 8px 15px !important; font-size: 9px !important; }
+
+        .inv-footer {
+            margin-top: 40px;
+            border-top: 3px solid #000;
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+        }
+
+        .inv-status-box {
+            font-size: 11px;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 12px 25px;
+            border-radius: 14px;
+            letter-spacing: 0.1em;
+        }
+
+        .inv-total-box {
+            text-align: right;
+            background: #000;
+            color: #fff;
+            padding: 14px 24px;
+            border-radius: 12px;
+            min-width: 200px;
+        }
+
+        .inv-total-box label {
+            display: block;
+            font-size: 10px;
+            font-weight: 800;
+            color: rgba(255,255,255,0.45);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            letter-spacing: 0.15em;
+        }
+
+        .inv-total-box .total-value {
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .inv-signature {
+            margin-top: 60px;
+            width: 280px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 9px;
+            font-weight: 900;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+
+        .invoice-preview-wrapper { width: 100%; display: flex; justify-content: center; padding: 40px 0; }
+        .invoice-container-scaled { 
+            width: 794px; transform-origin: top center; 
+            flex-shrink: 0; border-radius: 0; overflow: hidden; 
+            box-shadow: 0 60px 120px rgba(0,0,0,0.6);
+            background: #fff;
+        }
+
+        @media (max-width: 850px) { .invoice-container-scaled { transform: scale(0.48); margin-bottom: -650px; } }
+        @media (max-width: 450px) { .invoice-container-scaled { transform: scale(0.35); margin-bottom: -850px; } }
+
+        #render-target-hidden { position: absolute; left: -9999px; top: 0; width: 794px; min-height: 1123px; background: white; pointer-events: none; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        
+        .glow-red { box-shadow: 0 0 20px rgba(255, 45, 85, 0.4); }
+
+        @media print {
+            body * { visibility: hidden; }
+            .invoice-preview-wrapper, .invoice-preview-wrapper * { visibility: visible; }
+            .invoice-preview-wrapper { position: fixed; left: 0; top: 0; padding: 0; }
+            .invoice-container-scaled { transform: none !important; box-shadow: none; border: none; margin: 0 !important; }
+            .kaen-invoice-render { border: none; padding: 40px; }
+            @page { size: A4; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="render-target-hidden"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

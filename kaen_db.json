@@ -1,0 +1,5356 @@
+{
+  "kaenpro_rafael_admin_accesses": [
+    {
+      "id": "acc-1794257884814",
+      "username": "Janete Silva",
+      "role": "Recepção",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.143",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:58:04.784Z"
+    },
+    {
+      "id": "acc-1794257839738",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.153",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:57:19.685Z"
+    },
+    {
+      "id": "acc-1794257790091",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.74",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:56:30.050Z"
+    },
+    {
+      "id": "acc-1794257777480",
+      "username": "Janete Silva",
+      "role": "Recepção",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.86",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:56:17.459Z"
+    },
+    {
+      "id": "acc-1794257731993",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.17",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:55:31.946Z"
+    },
+    {
+      "id": "acc-1794257718670",
+      "username": "Janete Silva",
+      "role": "Recepção",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.125",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:55:18.649Z"
+    },
+    {
+      "id": "acc-1794257672974",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.157",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:54:32.947Z"
+    },
+    {
+      "id": "acc-1794257591041",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.52",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:53:10.999Z"
+    },
+    {
+      "id": "acc-1794257579844",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.156",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:52:59.774Z"
+    },
+    {
+      "id": "acc-1794257516274",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.40",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:51:56.239Z"
+    },
+    {
+      "id": "acc-1794257447914",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.10",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:50:47.888Z"
+    },
+    {
+      "id": "acc-1794257384470",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.144",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:49:44.444Z"
+    },
+    {
+      "id": "acc-1794257371092",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.102",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:49:31.063Z"
+    },
+    {
+      "id": "acc-1794257324902",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.193",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:48:44.868Z"
+    },
+    {
+      "id": "acc-1794257279792",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.92",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:47:59.764Z"
+    },
+    {
+      "id": "acc-1794257240065",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.25",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:47:19.996Z"
+    },
+    {
+      "id": "acc-1794257156367",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.14",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:45:56.344Z"
+    },
+    {
+      "id": "acc-1794257077871",
+      "username": "Administrador Master",
+      "role": "Dono",
+      "device": "Computador Desktop (Linux)",
+      "ip": "192.168.1.42",
+      "location": "Kaen Oficina - Pátio Principal",
+      "timestamp": "2026-11-09T20:44:37.850Z"
+    }
+  ],
+  "kaenpro_rafael_admin_logs": [
+    {
+      "id": "log-1794257884814",
+      "user": "Janete Silva",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Recepção)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:58:04.784Z"
+    },
+    {
+      "id": "log-1794257839738",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:57:19.685Z"
+    },
+    {
+      "id": "log-1794257790091",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:56:30.050Z"
+    },
+    {
+      "id": "log-1794257777480",
+      "user": "Janete Silva",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Recepção)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:56:17.459Z"
+    },
+    {
+      "id": "log-1794257731993",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:55:31.946Z"
+    },
+    {
+      "id": "log-1794257718670",
+      "user": "Janete Silva",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Recepção)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:55:18.649Z"
+    },
+    {
+      "id": "log-1794257672974",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:54:32.947Z"
+    },
+    {
+      "id": "log-1794257591041",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:53:10.999Z"
+    },
+    {
+      "id": "log-1794257579844",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:52:59.774Z"
+    },
+    {
+      "id": "log-1794257516274",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:51:56.239Z"
+    },
+    {
+      "id": "log-1794257447914",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:50:47.888Z"
+    },
+    {
+      "id": "log-1794257384470",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:49:44.444Z"
+    },
+    {
+      "id": "log-1794257371092",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:49:31.063Z"
+    },
+    {
+      "id": "log-1794257324902",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:48:44.868Z"
+    },
+    {
+      "id": "log-1794257279792",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:47:59.764Z"
+    },
+    {
+      "id": "log-1794257240065",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:47:19.996Z"
+    },
+    {
+      "id": "log-1794257156367",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:45:56.344Z"
+    },
+    {
+      "id": "log-1794257077871",
+      "user": "Administrador Master",
+      "device": "Computador Desktop (Linux)",
+      "action": "LOGIN COM SENHA [APARELHO SALVO] (Dono)",
+      "module": "Sessão de Sistema",
+      "timestamp": "2026-11-09T20:44:37.850Z"
+    }
+  ],
+  "kaenpro_rafael_admin_users": [
+    {
+      "id": "usr-1",
+      "name": "Administrador Master",
+      "username": "rafael",
+      "role": "Dono",
+      "status": "ATIVO",
+      "lastLogin": "2026-11-09T20:57:19.685Z",
+      "deviceRegistered": "Computador Desktop (Linux) [Confiável]",
+      "password": "enzo1234",
+      "securityQuestion": "Qual o nome de sua oficina principal?",
+      "securityAnswer": "KAEN"
+    },
+    {
+      "id": "usr-2",
+      "name": "Eduardo Maciel",
+      "username": "eduardo",
+      "role": "Funcionário",
+      "status": "ATIVO",
+      "lastLogin": "Nunca logou",
+      "deviceRegistered": "Tablet Oficina (iPad Pro)",
+      "password": "mec1234",
+      "securityQuestion": "Qual sua profissão?",
+      "securityAnswer": "MECANICO"
+    },
+    {
+      "id": "usr-3",
+      "name": "Janete Silva",
+      "username": "janete",
+      "role": "Recepção",
+      "status": "ATIVO",
+      "lastLogin": "2026-11-09T20:58:04.784Z",
+      "deviceRegistered": "Computador Desktop (Linux) [Confiável]",
+      "password": "rec1234",
+      "securityQuestion": "Em qual cidade fica a matriz?",
+      "securityAnswer": "SAO PAULO"
+    },
+    {
+      "id": "usr-4",
+      "name": "Thiago Rover",
+      "username": "thiago",
+      "role": "Funcionário",
+      "status": "ATIVO",
+      "lastLogin": "Nunca logou",
+      "deviceRegistered": "Smartphone (Android)",
+      "password": "mec1234",
+      "securityQuestion": "Qual a marca do scanner principal?",
+      "securityAnswer": "LAUNCH"
+    }
+  ],
+  "kaenpro_rafael_clients": [
+    {
+      "document": "---",
+      "observations": "CADASTRADO VIA NOTA",
+      "name": "MAYCON",
+      "phone": "13998032592",
+      "id": "2pe8t4ead",
+      "createdAt": "2026-09-06T18:37:07.530Z"
+    },
+    {
+      "createdAt": "2026-09-12T21:54:41.705Z",
+      "id": "6mph25bw5",
+      "phone": "119000000000",
+      "document": "---",
+      "name": "THELES",
+      "observations": "CADASTRADO VIA NOTA"
+    },
+    {
+      "createdAt": "2026-09-15T20:30:27.064Z",
+      "observations": "",
+      "name": "ANDRÉ",
+      "document": "---",
+      "id": "k0r0bwixo",
+      "phone": "13997749638"
+    },
+    {
+      "createdAt": "2026-09-16T20:37:27.890Z",
+      "phone": "13974167370",
+      "document": "---",
+      "name": "LISMAR",
+      "id": "fr71jp0ry",
+      "observations": ""
+    },
+    {
+      "phone": "13997402832",
+      "observations": "CADASTRADO VIA NOTA",
+      "createdAt": "2026-09-19T02:23:23.684Z",
+      "id": "0taoa8w4s",
+      "name": "JOEL",
+      "document": "---"
+    },
+    {
+      "createdAt": "2026-09-19T16:10:27.160Z",
+      "phone": "1399999999",
+      "id": "b54nq2t1n",
+      "name": "LARISSA/LAERCIO",
+      "observations": "CADASTRADO VIA NOTA",
+      "document": "---"
+    },
+    {
+      "createdAt": "2026-09-19T16:12:55.805Z",
+      "phone": "1399999999",
+      "observations": "",
+      "name": "LARISSA/LAERCIO",
+      "document": "---",
+      "id": "2o3838g7q"
+    },
+    {
+      "createdAt": "2026-09-19T19:57:11.591Z",
+      "observations": "CADASTRADO VIA NOTA",
+      "document": "---",
+      "id": "qf8ne7gu0",
+      "phone": "13997309794",
+      "name": "DAVI FLORENCIO"
+    },
+    {
+      "observations": "",
+      "createdAt": "2026-09-19T20:00:07.926Z",
+      "name": "DAVI FLORENCIO",
+      "id": "ipvqt6c0z",
+      "phone": "13999999999",
+      "document": "---"
+    },
+    {
+      "observations": "CADASTRADO VIA NOTA",
+      "phone": "13999999999",
+      "document": "---",
+      "id": "jub3iwlsa",
+      "name": "MIZAEL",
+      "createdAt": "2026-09-22T20:09:26.776Z"
+    },
+    {
+      "document": "---",
+      "createdAt": "2026-09-23T00:44:12.865Z",
+      "observations": "",
+      "id": "xxmfw66u7",
+      "phone": "13996309545",
+      "name": "GERSON  VEREADOR"
+    },
+    {
+      "observations": "",
+      "phone": "13996423764",
+      "createdAt": "2026-09-23T14:39:53.029Z",
+      "id": "9tz61cfkz",
+      "name": "CEZAR SABESP",
+      "document": "---"
+    },
+    {
+      "observations": "",
+      "name": "JUNIOR/CATERINE",
+      "id": "qs3qvogns",
+      "createdAt": "2026-09-23T17:49:47.361Z",
+      "document": "---",
+      "phone": "13998074416"
+    },
+    {
+      "name": "ORLANDO",
+      "document": "---",
+      "createdAt": "2026-09-25T19:13:07.358Z",
+      "id": "g4n4fmx0w",
+      "phone": "13996139550",
+      "observations": "CADASTRADO VIA NOTA"
+    },
+    {
+      "createdAt": "2026-09-26T11:36:06.754Z",
+      "phone": "13999999999",
+      "name": "EDSON",
+      "id": "bis6f3axx",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "observations": "",
+      "phone": "13996192105",
+      "name": "LEONARDO",
+      "createdAt": "2026-09-26T14:30:24.486Z",
+      "id": "4au0wdhio",
+      "document": "---"
+    },
+    {
+      "id": "qafyzo1d5",
+      "document": "---",
+      "observations": "",
+      "phone": "13999999999",
+      "name": "JOAO",
+      "createdAt": "2026-09-27T18:44:37.396Z"
+    },
+    {
+      "observations": "",
+      "phone": "13996184262",
+      "createdAt": "2026-09-28T14:43:26.251Z",
+      "id": "6518io0x7",
+      "document": "---",
+      "name": "ANTIUK"
+    },
+    {
+      "phone": "13997158206",
+      "id": "nvshupzjc",
+      "document": "---",
+      "createdAt": "2026-10-02T17:11:16.727Z",
+      "name": "LADINHO VEICULOS",
+      "observations": ""
+    },
+    {
+      "phone": "13997073234",
+      "observations": "",
+      "document": "---",
+      "id": "wmig15rda",
+      "createdAt": "2026-10-03T11:51:29.655Z",
+      "name": "RODRIGO/KARINA"
+    },
+    {
+      "observations": "CADASTRADO VIA NOTA",
+      "name": "ELIAS",
+      "id": "xql90a0c4",
+      "createdAt": "2026-10-03T14:58:26.529Z",
+      "document": "---",
+      "phone": "13997310563"
+    },
+    {
+      "document": "---",
+      "createdAt": "2026-10-05T22:14:06.825Z",
+      "name": "LEANDRO RAMOS",
+      "phone": "18981095187",
+      "id": "lpsialh3s",
+      "observations": ""
+    },
+    {
+      "id": "860dyt46h",
+      "name": "AMIL",
+      "phone": "13997689356",
+      "createdAt": "2026-10-08T11:39:37.791Z",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "name": "DEISE",
+      "id": "83eqq3i1i",
+      "createdAt": "2026-10-08T13:21:24.138Z",
+      "phone": "997646751",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "document": "---",
+      "name": "FLAVIO",
+      "phone": "31999140384",
+      "observations": "",
+      "createdAt": "2026-10-09T22:03:12.167Z",
+      "id": "2t9h0c10a"
+    },
+    {
+      "phone": "13996402987",
+      "createdAt": "2026-10-10T11:26:58.039Z",
+      "id": "hqckef8lm",
+      "name": "JESUS  /MARILZA",
+      "observations": "",
+      "document": "---"
+    },
+    {
+      "id": "pn4cvjyy4",
+      "document": "---",
+      "createdAt": "2026-10-12T20:07:46.893Z",
+      "observations": "CADASTRADO VIA NOTA",
+      "phone": "+55 13 99766-1849",
+      "name": "DOUTOR EDSON"
+    },
+    {
+      "document": "---",
+      "observations": "",
+      "createdAt": "2026-10-13T18:54:56.493Z",
+      "phone": "13997158206",
+      "id": "4axoczhjv",
+      "name": "LADINHO"
+    },
+    {
+      "phone": "13997851480",
+      "id": "up4tstm0u",
+      "document": "---",
+      "name": "NEI",
+      "observations": "",
+      "createdAt": "2026-10-14T00:37:32.446Z"
+    },
+    {
+      "id": "2tlrq98qx",
+      "name": "MAURICI",
+      "createdAt": "2026-10-14T19:06:32.454Z",
+      "phone": "997967712",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "name": "GILBERTO ONIX",
+      "id": "ayc3ljurt",
+      "observations": "",
+      "createdAt": "2026-10-14T20:00:44.314Z",
+      "document": "---",
+      "phone": "13997928659"
+    },
+    {
+      "phone": "13998074416",
+      "name": "JUNIOR /CATERINE",
+      "id": "qt8x0iwu8",
+      "createdAt": "2026-10-15T14:50:33.377Z",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "createdAt": "2026-10-15T19:29:50.937Z",
+      "phone": "13996112430",
+      "observations": "",
+      "document": "---",
+      "name": "PATRIK",
+      "id": "2pblp7jbc"
+    },
+    {
+      "observations": "",
+      "name": "GERSON VEREADOR",
+      "phone": "13996309545",
+      "document": "---",
+      "id": "tiiqr5yhz",
+      "createdAt": "2026-10-16T12:39:31.658Z"
+    },
+    {
+      "name": "RODRIGO",
+      "document": "---",
+      "id": "u9uhgdf5d",
+      "createdAt": "2026-10-16T20:05:43.443Z",
+      "observations": "",
+      "phone": "13996601859"
+    },
+    {
+      "document": "---",
+      "name": "ROBERTO PROFESSOR TENNIS",
+      "observations": "",
+      "createdAt": "2026-10-17T15:07:36.331Z",
+      "id": "5z49k5pma",
+      "phone": "13997281425"
+    },
+    {
+      "createdAt": "2026-10-17T21:22:32.816Z",
+      "phone": "13997960975",
+      "id": "9es7n9zr2",
+      "document": "---",
+      "observations": "",
+      "name": "FELIPE KAEN"
+    },
+    {
+      "id": "ckxl6zonr",
+      "name": "ERIK",
+      "document": "---",
+      "observations": "",
+      "phone": "13997191437",
+      "createdAt": "2026-10-17T21:46:08.981Z"
+    },
+    {
+      "document": "---",
+      "phone": "4192370119",
+      "createdAt": "2026-10-20T19:08:23.530Z",
+      "name": "ROBERIO",
+      "observations": "",
+      "id": "yeu7znhvd"
+    },
+    {
+      "createdAt": "2026-10-22T19:45:01.793Z",
+      "name": "ALANA ACUPUNTURA",
+      "phone": "13999999999",
+      "id": "3rhdqkb6e",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "name": "ANDRÉ",
+      "id": "w2hlubkbn",
+      "createdAt": "2026-10-22T20:03:19.370Z",
+      "phone": "13997263016",
+      "document": "---",
+      "observations": ""
+    },
+    {
+      "name": "OSIEL",
+      "observations": "",
+      "id": "11kz64iu3",
+      "phone": "13997975429",
+      "createdAt": "2026-10-22T22:53:27.724Z",
+      "document": "---"
+    },
+    {
+      "name": "OSIEL",
+      "id": "z7wuzmks6",
+      "createdAt": "2026-10-23T12:51:23.238Z",
+      "observations": "",
+      "document": "---",
+      "phone": "13997975429"
+    },
+    {
+      "observations": "",
+      "name": "MARÇAL",
+      "createdAt": "2026-10-23T12:57:13.403Z",
+      "phone": "13996176365",
+      "document": "---",
+      "id": "vubgm0ikc"
+    },
+    {
+      "id": "4h2sj7h4a",
+      "createdAt": "2026-10-23T14:10:59.916Z",
+      "phone": "13996883490",
+      "observations": "",
+      "document": "---",
+      "name": "VANDER LOPES"
+    },
+    {
+      "createdAt": "2026-10-23T17:57:51.833Z",
+      "phone": "13998078039",
+      "name": "SANDRO NIHON",
+      "observations": "",
+      "id": "ehap9aeph",
+      "document": "---"
+    },
+    {
+      "phone": "13997927566",
+      "observations": "",
+      "document": "---",
+      "id": "e7kj594fo",
+      "createdAt": "2026-10-23T18:16:15.171Z",
+      "name": "JOÃO /FLAVIA"
+    },
+    {
+      "document": "---",
+      "phone": "13996912373",
+      "name": "RODRIGO LUZ",
+      "id": "vawz5kgmn",
+      "createdAt": "2026-10-24T21:06:10.639Z",
+      "observations": ""
+    },
+    {
+      "observations": "",
+      "id": "jsu2y1k0q",
+      "name": "HELIO DE JESUS ALVES",
+      "phone": "13997083650",
+      "createdAt": "2026-10-26T20:10:14.841Z",
+      "document": "---"
+    },
+    {
+      "document": "---",
+      "phone": "13996558209",
+      "name": "SANDRO NUNES DE OLIVEIRA",
+      "observations": "",
+      "createdAt": "2026-10-26T20:48:56.721Z",
+      "id": "m8053qopf"
+    },
+    {
+      "document": "---",
+      "phone": "13996248062",
+      "observations": "",
+      "createdAt": "2026-10-27T20:17:24.492Z",
+      "name": "CLAUDIO PERNAMBUCO",
+      "id": "n8p35dkne"
+    },
+    {
+      "document": "---",
+      "createdAt": "2026-10-28T13:08:56.245Z",
+      "name": "REGINALDO CAMARA",
+      "observations": "",
+      "id": "8du8ioj2f",
+      "phone": "13997788433"
+    },
+    {
+      "document": "---",
+      "createdAt": "2026-10-29T21:11:03.690Z",
+      "phone": "13982297151",
+      "observations": "",
+      "id": "75i8cz4jc",
+      "name": "SALATIAO"
+    },
+    {
+      "observations": "",
+      "document": "---",
+      "phone": "13997236591",
+      "id": "n2vd1vxu8",
+      "createdAt": "2026-10-30T16:53:28.030Z",
+      "name": "BRUNO / BRADESCO"
+    },
+    {
+      "id": "3k6h8pd07",
+      "name": "CLAUDIO DE SOUSA RAMOS",
+      "createdAt": "2026-10-30T19:57:20.372Z",
+      "phone": "13981481809",
+      "observations": "",
+      "document": "---"
+    },
+    {
+      "phone": "13996402987",
+      "createdAt": "2026-10-30T20:49:28.675Z",
+      "id": "iol0od4de",
+      "observations": "",
+      "name": "JESUS /MARILZA",
+      "document": "---"
+    },
+    {
+      "name": "ANTÔNIO BRÁS",
+      "observations": "",
+      "document": "---",
+      "createdAt": "2026-11-04T12:44:23.478Z",
+      "id": "a1qfa9tpr",
+      "phone": "13997919064"
+    },
+    {
+      "document": "---",
+      "createdAt": "2026-11-05T11:52:50.785Z",
+      "id": "w5cmimtbn",
+      "phone": "13997577664",
+      "observations": "",
+      "name": "REINALDO /STRADA"
+    },
+    {
+      "document": "---",
+      "createdAt": "2026-11-05T12:42:18.864Z",
+      "id": "do1pboohb",
+      "phone": "13996088838",
+      "name": "GABRIELA /LUIZ",
+      "observations": ""
+    },
+    {
+      "createdAt": "2026-11-05T21:44:48.135Z",
+      "name": "ANTONY",
+      "observations": "",
+      "id": "04fwhts0l",
+      "phone": "13981014839",
+      "document": "---"
+    },
+    {
+      "observations": "",
+      "id": "jy6t9s9h7",
+      "createdAt": "2026-11-06T17:15:44.505Z",
+      "phone": "11998979373",
+      "document": "---",
+      "name": "WELLINGTON/ERICA"
+    },
+    {
+      "phone": "11998979373",
+      "createdAt": "2026-11-06T17:18:28.311Z",
+      "document": "---",
+      "observations": "",
+      "id": "x6iv340jp",
+      "name": "WELINGTON/ERICA"
+    },
+    {
+      "document": "---",
+      "name": "DALVINA",
+      "phone": "13996704614",
+      "observations": "",
+      "createdAt": "2026-11-07T16:32:47.425Z",
+      "id": "lhy4u3ryv"
+    },
+    {
+      "createdAt": "2026-11-08T20:41:54.045Z",
+      "name": "CLIENTE BALCÃO",
+      "document": "---",
+      "phone": "(13) 99689-2958",
+      "observations": "CADASTRADO PELA NOTA FISCAL",
+      "id": "4aytv634q"
+    }
+  ],
+  "kaenpro_rafael_trusted_device": {
+    "deviceId": "dev_2s0eulu_mw9qshmt",
+    "username": "rafael",
+    "activeUser": "janete",
+    "realUsername": "Janete Silva",
+    "role": "Recepção",
+    "deviceName": "Computador Desktop (Linux)",
+    "savedAt": "2026-11-09T20:58:04.784Z"
+  },
+  "kaenpro_rafael_vehicles": [
+    {
+      "plate": "FFW6E03",
+      "km": 205,
+      "brand": "---",
+      "model": "SAVEIRO 1.6 16 V",
+      "clientId": "2pe8t4ead",
+      "year": "---",
+      "id": "oc3pfy85q"
+    },
+    {
+      "plate": "ALF7344",
+      "km": 112,
+      "clientId": "6mph25bw5",
+      "brand": "---",
+      "model": "CRUZE",
+      "year": "---",
+      "id": "jz57vc17e"
+    },
+    {
+      "brand": "Hiunday",
+      "id": "zfshmj6u3",
+      "plate": "ERG0G96",
+      "clientId": "k0r0bwixo",
+      "year": "2014",
+      "model": "HB20 1.6 16v",
+      "km": 147.952
+    },
+    {
+      "clientId": "fr71jp0ry",
+      "km": 233.688,
+      "brand": "Renaut",
+      "year": "2002",
+      "plate": "LVO7H40",
+      "id": "frr0cttwc",
+      "model": "Clio 1.0 8valv."
+    },
+    {
+      "clientId": "0taoa8w4s",
+      "km": 0,
+      "year": "---",
+      "model": "MERIVA 1.8 2007",
+      "id": "81584qxbq",
+      "brand": "---",
+      "plate": "DSER44"
+    },
+    {
+      "model": "novo palio",
+      "km": 104.2,
+      "plate": "FYR0G88",
+      "clientId": "2o3838g7q",
+      "year": "2015",
+      "id": "i9898u53e",
+      "brand": "fiat"
+    },
+    {
+      "plate": "QUD4D78",
+      "brand": "fiat",
+      "id": "1zan1m9zi",
+      "model": "steada",
+      "year": "2020",
+      "clientId": "ipvqt6c0z",
+      "km": 158.584
+    },
+    {
+      "plate": "ETH4G96",
+      "km": 219.652,
+      "brand": "fiat",
+      "clientId": "xxmfw66u7",
+      "id": "cf8blvaz9",
+      "model": "uno fire",
+      "year": "2012"
+    },
+    {
+      "year": "2013",
+      "km": 216.086,
+      "model": "prisma",
+      "clientId": "9tz61cfkz",
+      "brand": "Chevrolet",
+      "plate": "FFR2B64",
+      "id": "7wz4vtr4i"
+    },
+    {
+      "km": 107.592,
+      "model": "toro",
+      "clientId": "qs3qvogns",
+      "plate": "FYB3E48",
+      "id": "p1wm1mew5",
+      "year": "2022",
+      "brand": "fiat"
+    },
+    {
+      "model": "classic",
+      "km": 112.663,
+      "clientId": "bis6f3axx",
+      "id": "vi9n39577",
+      "year": "2008",
+      "plate": "DUR3D02",
+      "brand": "gm"
+    },
+    {
+      "id": "5hfzo2tw9",
+      "year": "2015",
+      "model": "new fiesta",
+      "clientId": "4au0wdhio",
+      "km": 72.219,
+      "brand": "ford",
+      "plate": "FLP1670"
+    },
+    {
+      "km": 0,
+      "brand": "",
+      "year": "",
+      "plate": "9999999",
+      "id": "wy8ekyrgo",
+      "model": "vw",
+      "clientId": "qafyzo1d5"
+    },
+    {
+      "model": "fox",
+      "km": 146.603,
+      "plate": "EKY0F96",
+      "year": "2010",
+      "clientId": "6518io0x7",
+      "brand": "vw",
+      "id": "srvu0kode"
+    },
+    {
+      "brand": "ford",
+      "year": "2022",
+      "id": "u9prcy3ub",
+      "plate": "EEL4B90",
+      "clientId": "nvshupzjc",
+      "km": 95000,
+      "model": "ecosport"
+    },
+    {
+      "id": "xmxobqh53",
+      "model": "NEW ECOSPORT",
+      "year": "---",
+      "brand": "---",
+      "clientId": "nvshupzjc",
+      "km": 90000,
+      "plate": "EEL4B90 "
+    },
+    {
+      "id": "nniu8hgay",
+      "year": "2006",
+      "clientId": "wmig15rda",
+      "model": "stilo",
+      "brand": "fiat",
+      "km": 290.068,
+      "plate": "DNQ5071"
+    },
+    {
+      "year": "---",
+      "km": 159,
+      "model": "GRAND SIENA",
+      "clientId": "xql90a0c4",
+      "brand": "---",
+      "id": "8y83jy3ix",
+      "plate": "FR01I59"
+    },
+    {
+      "year": "2015",
+      "km": 169.633,
+      "model": "ka+",
+      "brand": "ford",
+      "clientId": "lpsialh3s",
+      "id": "5tvk7de9m",
+      "plate": "FW03B24"
+    },
+    {
+      "model": "prisma",
+      "clientId": "860dyt46h",
+      "km": 106.737,
+      "plate": "FQC6399",
+      "year": "2015",
+      "brand": "gm",
+      "id": "3jkv0yf1d"
+    },
+    {
+      "year": "2008",
+      "clientId": "83eqq3i1i",
+      "model": "logan",
+      "km": 211.409,
+      "brand": "renaut",
+      "plate": "EAK4D01",
+      "id": "p7bxelxdl"
+    },
+    {
+      "plate": "DMW9B60",
+      "clientId": "2t9h0c10a",
+      "km": 249.136,
+      "brand": "gm",
+      "model": "corsao",
+      "year": "2004",
+      "id": "glga6031p"
+    },
+    {
+      "clientId": "hqckef8lm",
+      "id": "h93dnz5cs",
+      "year": "2016",
+      "model": "up",
+      "brand": "vw",
+      "km": 157.268,
+      "plate": "FWG1A84"
+    },
+    {
+      "id": "ci2ztixuc",
+      "model": "AUDI A3 2005",
+      "clientId": "pn4cvjyy4",
+      "plate": "DKW3899",
+      "km": 217029,
+      "year": "---",
+      "brand": "---"
+    },
+    {
+      "year": "2015",
+      "model": "strada",
+      "km": 266.504,
+      "clientId": "4axoczhjv",
+      "brand": "fiat",
+      "plate": "FUC4F25",
+      "id": "e326h6a8z"
+    },
+    {
+      "km": 266,
+      "brand": "---",
+      "year": "---",
+      "plate": "FUC4F25",
+      "id": "4pi998pif",
+      "clientId": "nvshupzjc",
+      "model": "SRRADA"
+    },
+    {
+      "plate": "ETT1689",
+      "id": "0ay56kqjj",
+      "clientId": "up4tstm0u",
+      "brand": "pegeout",
+      "model": "207",
+      "year": "2012",
+      "km": 66.768
+    },
+    {
+      "plate": "DXS9E23",
+      "brand": "fiat",
+      "km": 246.26,
+      "model": "siena",
+      "clientId": "2tlrq98qx",
+      "year": "2008",
+      "id": "uphyoa97x"
+    },
+    {
+      "km": 193.746,
+      "brand": "gm",
+      "year": "2913",
+      "plate": "FLJ2A30",
+      "id": "mihz8f979",
+      "model": "onix",
+      "clientId": "ayc3ljurt"
+    },
+    {
+      "km": 108.862,
+      "model": "toro",
+      "id": "6f8s58nj0",
+      "plate": "FYB3E48",
+      "year": "2021",
+      "brand": "fiat",
+      "clientId": "qt8x0iwu8"
+    },
+    {
+      "km": 160.044,
+      "year": "2015",
+      "model": "fit",
+      "id": "8z0v74bpg",
+      "brand": "",
+      "plate": "FSC5557",
+      "clientId": "up4tstm0u"
+    },
+    {
+      "id": "7pwuvxvxo",
+      "brand": "",
+      "plate": "BAQ0E16",
+      "year": "2017",
+      "km": 225.929,
+      "clientId": "2pblp7jbc",
+      "model": "etios"
+    },
+    {
+      "model": "zafira",
+      "km": 298.787,
+      "clientId": "tiiqr5yhz",
+      "id": "64mvbx2qp",
+      "plate": "DMD9H47",
+      "year": "2007",
+      "brand": "gm"
+    },
+    {
+      "model": "zafira",
+      "km": 298.787,
+      "clientId": "xxmfw66u7",
+      "year": "2007",
+      "plate": "DMD9H47",
+      "brand": "gm",
+      "id": "t45hhex3p"
+    },
+    {
+      "plate": "MBP9008",
+      "brand": "gm",
+      "km": 150,
+      "model": "corsa",
+      "clientId": "u9uhgdf5d",
+      "year": "2001",
+      "id": "h491k9bvc"
+    },
+    {
+      "clientId": "5z49k5pma",
+      "id": "i0eeh2ro9",
+      "model": "hrv",
+      "year": "2016",
+      "brand": "honda",
+      "km": 101.409,
+      "plate": "ORE8A83"
+    },
+    {
+      "model": "palio",
+      "id": "u5wfm6ht5",
+      "clientId": "9es7n9zr2",
+      "plate": "EEE7731",
+      "year": "2007",
+      "km": 100,
+      "brand": "fiat"
+    },
+    {
+      "model": "prisma",
+      "km": 222.7,
+      "plate": "AXK1H03",
+      "year": "2012",
+      "brand": "gm",
+      "id": "lcavd5i5z",
+      "clientId": "ckxl6zonr"
+    },
+    {
+      "plate": "FDJ7H21",
+      "id": "yiq8zeeup",
+      "clientId": "yeu7znhvd",
+      "brand": "fiat",
+      "model": "strada",
+      "year": "2012",
+      "km": 485.31
+    },
+    {
+      "brand": "vw",
+      "year": "2017",
+      "id": "ioqquezss",
+      "plate": "GCK7088",
+      "km": 226.368,
+      "model": "fox",
+      "clientId": "3rhdqkb6e"
+    },
+    {
+      "brand": "gm",
+      "year": "2009",
+      "plate": "DZZ6108",
+      "clientId": "w2hlubkbn",
+      "id": "p4u1dcb4k",
+      "model": "corsa",
+      "km": 276.695
+    },
+    {
+      "id": "srdv1kuog",
+      "plate": "ETT1265",
+      "clientId": "11kz64iu3",
+      "brand": "gm",
+      "km": 85,
+      "model": "meriva",
+      "year": "2011"
+    },
+    {
+      "clientId": "z7wuzmks6",
+      "year": "2011",
+      "id": "ktxthldtw",
+      "model": "meriva",
+      "brand": "gm",
+      "plate": "ETT1265",
+      "km": 93
+    },
+    {
+      "km": 134.121,
+      "model": "duster",
+      "clientId": "vubgm0ikc",
+      "id": "kt7iuu009",
+      "plate": "GJX3G00",
+      "year": "2016",
+      "brand": "renaut"
+    },
+    {
+      "id": "rhgdokkhv",
+      "model": "corsao",
+      "km": 182.869,
+      "clientId": "4h2sj7h4a",
+      "plate": "EDN2111",
+      "brand": "gm",
+      "year": "2008"
+    },
+    {
+      "id": "0b1zsjv3f",
+      "model": "spin",
+      "clientId": "ehap9aeph",
+      "km": 85,
+      "plate": "FFF2222",
+      "brand": "gm",
+      "year": "2021"
+    },
+    {
+      "model": "gol g4",
+      "km": 193.004,
+      "plate": "EXI5D66",
+      "year": "2012",
+      "id": "t6s87xvup",
+      "clientId": "e7kj594fo",
+      "brand": "vw"
+    },
+    {
+      "id": "ol2p3r4wu",
+      "model": "new fiesta",
+      "km": 193.417,
+      "plate": "EYX6002",
+      "clientId": "vawz5kgmn",
+      "year": "2012",
+      "brand": "ford"
+    },
+    {
+      "km": 135.947,
+      "plate": "PZZ1C62",
+      "clientId": "jsu2y1k0q",
+      "brand": "vw",
+      "id": "dqxk8d7g5",
+      "model": "saveiro",
+      "year": "2017"
+    },
+    {
+      "year": "2006",
+      "brand": "gm",
+      "km": 258.446,
+      "plate": "DSD1308",
+      "id": "tmanwf5en",
+      "model": "celta",
+      "clientId": "m8053qopf"
+    },
+    {
+      "id": "1jcp8v7de",
+      "plate": "FTK3490",
+      "brand": "Citroen",
+      "model": "c3",
+      "km": 211.607,
+      "clientId": "n8p35dkne",
+      "year": "2016"
+    },
+    {
+      "km": 11.578,
+      "year": "2019",
+      "model": "onix",
+      "brand": "gm",
+      "id": "aolowjqnc",
+      "clientId": "8du8ioj2f",
+      "plate": "FOS3D45"
+    },
+    {
+      "plate": "GCK7088",
+      "id": "uipqvfqs9",
+      "brand": "---",
+      "model": "FOX ",
+      "year": "---",
+      "clientId": "3rhdqkb6e",
+      "km": 226
+    },
+    {
+      "model": "virtus",
+      "km": 161.595,
+      "year": "2022",
+      "plate": "GCR8G72",
+      "brand": "vw",
+      "id": "tiepzkus6",
+      "clientId": "4h2sj7h4a"
+    },
+    {
+      "model": "gol g2",
+      "id": "mzzygd0zv",
+      "plate": "COI8327",
+      "year": "97",
+      "brand": "vw",
+      "km": 352.645,
+      "clientId": "75i8cz4jc"
+    },
+    {
+      "brand": "gm",
+      "id": "q68cbqk7y",
+      "year": "2023",
+      "plate": "GJL5F78",
+      "clientId": "n2vd1vxu8",
+      "km": 86.019,
+      "model": "Onix turbo"
+    },
+    {
+      "id": "8inqghz8s",
+      "clientId": "3k6h8pd07",
+      "model": "up tsi",
+      "year": "2019",
+      "brand": "vw",
+      "plate": "BZK4B57",
+      "km": 114.636
+    },
+    {
+      "clientId": "iol0od4de",
+      "model": "up",
+      "id": "7x1tlsqx4",
+      "year": "2015",
+      "brand": "vw",
+      "km": 157.918,
+      "plate": "FWG1A84"
+    },
+    {
+      "model": "corolla",
+      "clientId": "a1qfa9tpr",
+      "km": 247.834,
+      "plate": "DXW6G88",
+      "year": "2009",
+      "brand": "",
+      "id": "paj9hzep7"
+    },
+    {
+      "brand": "fiat",
+      "clientId": "w5cmimtbn",
+      "year": "2014",
+      "km": 145.334,
+      "plate": "EZW7H26",
+      "id": "ejfqi1qmd",
+      "model": "sttada"
+    },
+    {
+      "km": 231.17,
+      "plate": "FJB6E98",
+      "brand": "vw",
+      "id": "3c4oq4khj",
+      "model": "up",
+      "year": "2015",
+      "clientId": "do1pboohb"
+    },
+    {
+      "clientId": "04fwhts0l",
+      "km": 172.325,
+      "plate": "AUA4D12",
+      "brand": "vw",
+      "id": "4e480fu0g",
+      "year": "2011",
+      "model": "jetta"
+    },
+    {
+      "plate": "FDS9J88",
+      "id": "nmqkpnrbm",
+      "brand": "hiunday",
+      "model": "santa fé",
+      "year": "2011",
+      "km": 159.644,
+      "clientId": "jy6t9s9h7"
+    },
+    {
+      "id": "tsnnuvfh5",
+      "model": "Santa fé",
+      "year": "2011",
+      "clientId": "x6iv340jp",
+      "brand": "hiunday",
+      "km": 159.644,
+      "plate": "FDS9J88"
+    },
+    {
+      "model": "GOL G5",
+      "id": "2piu7zkxh",
+      "plate": "HYV7H55",
+      "clientId": "lhy4u3ryv",
+      "brand": "vw",
+      "km": 159.516,
+      "year": 2010
+    },
+    {
+      "model": "ATENDIMENTO BALCÃO / AVULSO",
+      "id": "k06kdhwkt",
+      "clientId": "cli_balcao_09",
+      "plate": "SEM VEÍCULO",
+      "km": 0,
+      "year": "---",
+      "brand": "ATENDIMENTO"
+    }
+  ],
+  "kaenpro_rafael_orders": [
+    {
+      "status": "Orçamento enviado",
+      "clientId": "2pe8t4ead",
+      "vehiclePlate": "FFW6E03",
+      "laborValue": 350,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "totalValue": 1105,
+      "clientPhone": "13998032592",
+      "vehicleModel": "SAVEIRO 1.6 16 V",
+      "clientName": "MAYCON",
+      "createdAt": "2026-09-06T18:42:15.548Z",
+      "osNumber": "549066",
+      "updatedAt": "2026-09-06T19:23:41.988Z",
+      "discount": 0,
+      "vehicleKm": "107390",
+      "items": [
+        {
+          "unitPrice": 620,
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "BOMBA DE AGUA",
+          "id": "qbs97ogcg"
+        },
+        {
+          "id": "2t88wmksa",
+          "quantity": 2,
+          "type": "SERVICE",
+          "description": "ADITIVO",
+          "unitPrice": 45
+        },
+        {
+          "id": "txjhdr0ek",
+          "unitPrice": 10,
+          "type": "SERVICE",
+          "quantity": 2,
+          "description": "ÁGUA DESMINERALIZADA"
+        },
+        {
+          "unitPrice": 5,
+          "id": "5hn6ejo74",
+          "quantity": 5,
+          "description": "ABRAÇADEIRAS ",
+          "type": "SERVICE"
+        }
+      ],
+      "vehicleId": "oc3pfy85q",
+      "paymentStatus": "Pago",
+      "id": "wrmegcibf"
+    },
+    {
+      "clientPhone": "13997749638",
+      "updatedAt": "2026-09-19T02:34:54.975Z",
+      "id": "80b7fx0hj",
+      "vehicleKm": "147.952",
+      "vehicleId": "zfshmj6u3",
+      "clientId": "k0r0bwixo",
+      "totalValue": 673,
+      "items": [
+        {
+          "id": "puqkd4onp",
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 280,
+          "quantity": 1,
+          "id": "hceci7n37",
+          "description": "JUNTA HOMOCINÉTICA LADO DIREITO"
+        },
+        {
+          "type": "SERVICE",
+          "id": "bl9kq13c0",
+          "unitPrice": 52,
+          "quantity": 4,
+          "description": "ÓLEO 5 W 30"
+        },
+        {
+          "id": "xb6r5xid5",
+          "unitPrice": 35,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "FILTRO DE OLEO"
+        }
+      ],
+      "status": "Finalizado",
+      "vehiclePlate": "ERG0G96",
+      "paymentStatus": "Pago",
+      "laborValue": 150,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "discount": 0,
+      "clientName": "André ",
+      "createdAt": "2026-09-15T20:36:37.112Z",
+      "osNumber": "860017",
+      "vehicleModel": "HB20 1.6 16v"
+    },
+    {
+      "osNumber": "104837",
+      "vehicleId": "frr0cttwc",
+      "vehiclePlate": "LVO7H40",
+      "discount": 0,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleKm": "233.688",
+      "updatedAt": "2026-09-19T02:34:59.672Z",
+      "vehicleModel": "Clio 1.0 8valv.",
+      "clientName": "Lismar",
+      "clientPhone": "13974167370",
+      "clientId": "fr71jp0ry",
+      "createdAt": "2026-09-16T20:49:04.921Z",
+      "id": "8p054s7lp",
+      "laborValue": 700,
+      "status": "Finalizado",
+      "paymentStatus": "Pago",
+      "totalValue": 1430,
+      "items": [
+        {
+          "quantity": 1,
+          "description": "BOMBA DE COMBUSTÍVEL ",
+          "id": "0le3dy8k7",
+          "unitPrice": 180,
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 30,
+          "id": "6kmf5j7kw",
+          "description": "PRE FILTRO DA BOMBA DE COMBUSTÍVEL ",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "description": "SENSOR DE TEMPERATURA ",
+          "id": "qnkdcqpjf",
+          "type": "SERVICE",
+          "unitPrice": 70,
+          "quantity": 1
+        },
+        {
+          "description": "CONECTOR DO SENSOR DE TEMPERATURA ",
+          "id": "xjql89liy",
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "quantity": 1
+        },
+        {
+          "unitPrice": 125,
+          "description": "CORREIA DENTADA",
+          "id": "5u79w3fvi",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 155,
+          "id": "rq5c0yheo",
+          "description": "TENSOR DA CORREIA DENTADA ",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 100,
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "b81hxvlpc",
+          "description": "SERVIÇO DE TORNO"
+        },
+        {
+          "type": "SERVICE",
+          "id": "5148obgq0",
+          "unitPrice": 25,
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "quantity": 1
+        },
+        {
+          "id": "vx1z212tk",
+          "description": "GUARNIÇÃO DA BOMBA DE COMBUSTÍVEL ",
+          "quantity": 1,
+          "unitPrice": 20,
+          "type": "SERVICE"
+        }
+      ]
+    },
+    {
+      "id": "ew5medelv",
+      "status": "Finalizado",
+      "clientName": "JOEL",
+      "vehicleModel": "MERIVA 1.8 2007",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "items": [
+        {
+          "id": "en9jyvp1u",
+          "type": "SERVICE",
+          "quantity": 4,
+          "description": "ÓLEO 15W40",
+          "unitPrice": 38
+        },
+        {
+          "description": "FILTRO DE OLEO",
+          "unitPrice": 30,
+          "quantity": 1,
+          "id": "nek6ua615",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 25,
+          "quantity": 1,
+          "description": "FILTRO DE COMBUSTIVEL",
+          "type": "SERVICE",
+          "id": "na37qp040"
+        },
+        {
+          "id": "fhudo8cl1",
+          "unitPrice": 40,
+          "type": "SERVICE",
+          "description": "FILTRO DE AR DO MOTOR",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 70,
+          "quantity": 1,
+          "description": "INTERRUPTOR DA LUZ DE OLEO",
+          "id": "8jyf7m2u5",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 380,
+          "id": "147idk8ac",
+          "type": "SERVICE",
+          "quantity": 2,
+          "description": "AMORTECEDOR DIANTEIRO"
+        },
+        {
+          "description": "KIT COXIM COIFA E BATENTE DO AMORTECEDOR DIANTEIRO",
+          "unitPrice": 140,
+          "id": "couwb314h",
+          "quantity": 2,
+          "type": "SERVICE"
+        },
+        {
+          "description": "BIELETA",
+          "id": "yzk8qdxza",
+          "quantity": 2,
+          "type": "SERVICE",
+          "unitPrice": 70
+        },
+        {
+          "id": "thgpmr76a",
+          "unitPrice": 130,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "JOGO DE PASTILHA DE FREIO "
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 80,
+          "id": "bxhydscbr",
+          "description": "ALINHAMENTO DE DIRECAO",
+          "type": "SERVICE"
+        }
+      ],
+      "totalValue": 2157,
+      "createdAt": "2026-09-19T02:33:11.010Z",
+      "clientId": "0taoa8w4s",
+      "laborValue": 450,
+      "vehiclePlate": "DSER44",
+      "paymentStatus": "Pago",
+      "clientPhone": "13997402832",
+      "updatedAt": "2026-09-19T02:35:02.723Z",
+      "vehicleId": "81584qxbq",
+      "discount": 0,
+      "osNumber": "584484",
+      "vehicleKm": "0"
+    },
+    {
+      "id": "0xqo92ouu",
+      "vehiclePlate": "QUD4D78",
+      "paymentStatus": "Pendente",
+      "discount": 0,
+      "vehicleModel": "steada",
+      "osNumber": "263739",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "createdAt": "2026-09-19T21:04:52.705Z",
+      "laborValue": 250,
+      "clientPhone": "13999999999",
+      "updatedAt": "2026-09-19T21:04:52.705Z",
+      "totalValue": 969,
+      "items": [
+        {
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "id": "ukj5m4d1a",
+          "type": "SERVICE",
+          "unitPrice": 45,
+          "quantity": 2
+        },
+        {
+          "description": "RADIADOR ",
+          "type": "SERVICE",
+          "id": "yvezsjc6f",
+          "unitPrice": 390,
+          "quantity": 1
+        },
+        {
+          "quantity": 3,
+          "unitPrice": 48,
+          "description": "ÓLEO 5W30",
+          "id": "jvv5f6pv0",
+          "type": "SERVICE"
+        },
+        {
+          "description": "FILTRO DE OLEO",
+          "unitPrice": 30,
+          "type": "SERVICE",
+          "id": "83nzzo9fx",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 25,
+          "quantity": 1,
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "type": "SERVICE",
+          "id": "oyji4a09k"
+        },
+        {
+          "unitPrice": 40,
+          "id": "pd31zolmw",
+          "description": "FILTRO DE AR DO MOTOR",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "lmgg0vnjr",
+          "description": "",
+          "type": "SERVICE"
+        }
+      ],
+      "status": "Finalizado",
+      "clientName": "Davi florencio ",
+      "vehicleKm": "158.584",
+      "vehicleId": "1zan1m9zi",
+      "clientId": "ipvqt6c0z"
+    },
+    {
+      "clientId": "xxmfw66u7",
+      "updatedAt": "2026-09-23T01:20:18.335Z",
+      "vehicleId": "cf8blvaz9",
+      "items": [
+        {
+          "quantity": 1,
+          "unitPrice": 497,
+          "description": "KIT DE EMBREAGEM ",
+          "id": "3u5jo6def",
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "id": "j5j4xi0bv",
+          "quantity": 2,
+          "unitPrice": 45,
+          "description": "ÓLEO DE CÂMBIO "
+        },
+        {
+          "type": "SERVICE",
+          "id": "fbyj7w3ew",
+          "quantity": 2,
+          "description": "ABRAÇADEIRA DE COIFA LADO CÂMBIO ",
+          "unitPrice": 10
+        },
+        {
+          "id": "y05vtbtu4",
+          "description": "COIFA DE HOMOCINÉTICA LADO ESQUERDO ",
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 55
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "id": "ie6bmau20",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "id": "6jhgm5fqa",
+          "description": ""
+        },
+        {
+          "id": "5ll706yon",
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0
+        }
+      ],
+      "vehicleKm": "219.652",
+      "vehicleModel": "uno fire",
+      "osNumber": "178064",
+      "clientName": "Gerson  vereador",
+      "discount": 0,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 700,
+      "clientPhone": "13996309545",
+      "vehiclePlate": "ETH4G96",
+      "paymentStatus": "Pendente",
+      "createdAt": "2026-09-23T01:20:18.335Z",
+      "status": "Finalizado",
+      "id": "5tzgvr0yh",
+      "totalValue": 1362
+    },
+    {
+      "clientName": "junior/caterine",
+      "discount": 0,
+      "updatedAt": "2026-09-23T18:00:16.265Z",
+      "vehiclePlate": "FYB3E48",
+      "osNumber": "394754",
+      "id": "tztww9fnc",
+      "items": [
+        {
+          "unitPrice": 586,
+          "description": "JOGO DE DISCO DE FREIO DIANTEIRO ",
+          "id": "5v0p3bqng",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "id": "5fgz3euqp",
+          "type": "SERVICE",
+          "unitPrice": 268,
+          "description": "JOGO DE PASTILHA DE FREIO"
+        }
+      ],
+      "vehicleId": "p1wm1mew5",
+      "vehicleModel": "toro",
+      "laborValue": 180,
+      "paymentStatus": "Pendente",
+      "totalValue": 1034,
+      "vehicleKm": "107.592",
+      "clientPhone": "13998074416",
+      "clientId": "qs3qvogns",
+      "status": "Finalizado",
+      "createdAt": "2026-09-23T18:00:16.265Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN"
+    },
+    {
+      "clientName": "edson",
+      "vehicleModel": "classic",
+      "createdAt": "2026-09-26T11:38:27.545Z",
+      "totalValue": 470,
+      "osNumber": "641144",
+      "clientPhone": "13999999999",
+      "discount": 0,
+      "vehiclePlate": "DUR3D02",
+      "laborValue": 180,
+      "status": "Finalizado",
+      "vehicleKm": "112.663",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleId": "vi9n39577",
+      "clientId": "bis6f3axx",
+      "id": "ricif6kdp",
+      "paymentStatus": "Pendente",
+      "items": [
+        {
+          "id": "d1hwjwwkm",
+          "type": "SERVICE",
+          "unitPrice": 290,
+          "description": "SENSOR DE OXIGÊNIO PRÉ CATALISADOR ",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "2026-09-26T11:38:27.545Z"
+    },
+    {
+      "status": "Finalizado",
+      "createdAt": "2026-09-26T15:07:22.187Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "discount": 0,
+      "osNumber": "569126",
+      "vehicleKm": "72.219",
+      "paymentStatus": "Pendente",
+      "clientName": "leonardo",
+      "vehicleId": "5hfzo2tw9",
+      "vehiclePlate": "FLP1670",
+      "id": "sz6c6qerj",
+      "totalValue": 795,
+      "items": [
+        {
+          "description": "2 SELOS DE CABECOTE",
+          "unitPrice": 25,
+          "id": "2t5must3y",
+          "type": "SERVICE",
+          "quantity": 2
+        },
+        {
+          "id": "ezt6y22rw",
+          "description": "JOGODE VELAS",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 165
+        },
+        {
+          "type": "SERVICE",
+          "id": "bwglovdj0",
+          "unitPrice": 45,
+          "quantity": 2,
+          "description": "ADITIVO DE ARREFECIMENTO "
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 140,
+          "description": "JUNTA DA TAMPA DE VALVULAS",
+          "id": "ly2bfmwhu"
+        }
+      ],
+      "clientPhone": "13996192105",
+      "clientId": "4au0wdhio",
+      "updatedAt": "2026-09-26T15:07:22.187Z",
+      "vehicleModel": "new fiesta",
+      "laborValue": 350
+    },
+    {
+      "updatedAt": "2026-09-28T14:46:00.991Z",
+      "clientId": "6518io0x7",
+      "clientName": "antiuk",
+      "vehicleModel": "fox",
+      "status": "Finalizado",
+      "id": "4jy3i328v",
+      "totalValue": 385,
+      "vehicleId": "srvu0kode",
+      "vehicleKm": "146.603",
+      "vehiclePlate": "EKY0F96",
+      "laborValue": 50,
+      "items": [
+        {
+          "description": "JOGO DE VELAS ",
+          "quantity": 1,
+          "id": "dqiae0orv",
+          "type": "SERVICE",
+          "unitPrice": 130
+        },
+        {
+          "id": "5s48eermi",
+          "quantity": 1,
+          "unitPrice": 170,
+          "description": "JOGO DE CABO DE VELAS",
+          "type": "SERVICE"
+        },
+        {
+          "id": "cfa8w988e",
+          "unitPrice": 35,
+          "description": "L. DE ÓLEO 20W50",
+          "quantity": 1,
+          "type": "SERVICE"
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "osNumber": "797941",
+      "paymentStatus": "Pendente",
+      "clientPhone": "13996184262",
+      "discount": 0,
+      "createdAt": "2026-09-28T14:46:00.991Z"
+    },
+    {
+      "vehicleKm": "95000",
+      "clientPhone": "13997158206",
+      "items": [
+        {
+          "id": "oo08w918b",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 140,
+          "description": "JUNTA DE CABEÇOTE "
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 280,
+          "description": "CAVALETE DA VÁLVULA TERMOSTATICA ",
+          "type": "SERVICE",
+          "id": "x55idzh5x"
+        },
+        {
+          "quantity": 1,
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "unitPrice": 45,
+          "type": "SERVICE",
+          "id": "i7mfgzcr6"
+        },
+        {
+          "type": "SERVICE",
+          "id": "xui9iv07e",
+          "unitPrice": 5,
+          "quantity": 6,
+          "description": "ABRAÇADEIRA "
+        },
+        {
+          "id": "pc65ti7y0",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 75,
+          "id": "qx09l3bu9",
+          "quantity": 1,
+          "description": "CORREIA DE ACESSÓRIOS "
+        },
+        {
+          "quantity": 4,
+          "id": "g4keozkxr",
+          "type": "SERVICE",
+          "description": "ÓLEO SINTÉTICO 5W20 ",
+          "unitPrice": 52
+        },
+        {
+          "description": "FILTRO DE ÓLEO ",
+          "unitPrice": 35,
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "tix1wyi3b"
+        },
+        {
+          "type": "SERVICE",
+          "id": "okaie85me",
+          "unitPrice": 70,
+          "quantity": 1,
+          "description": "PARAFUSO DA POLIA DO VIRABREQUIM "
+        },
+        {
+          "unitPrice": 60,
+          "quantity": 1,
+          "id": "j2goz0ou0",
+          "type": "SERVICE",
+          "description": "COMBUSTÍVEL PARA TESTE DE RODAGEM "
+        },
+        {
+          "quantity": 1,
+          "description": "MONTAGEM DE RADIADOR ",
+          "id": "ua5jryq3o",
+          "unitPrice": 250,
+          "type": "SERVICE"
+        }
+      ],
+      "vehicleId": "u9prcy3ub",
+      "status": "Finalizado",
+      "vehicleModel": "ecosport",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "updatedAt": "2026-10-02T21:51:18.645Z",
+      "vehiclePlate": "EEL4B90",
+      "clientId": "nvshupzjc",
+      "totalValue": 3693,
+      "createdAt": "2026-10-02T21:51:18.645Z",
+      "id": "nw86s2ofk",
+      "laborValue": 2500,
+      "discount": 0,
+      "paymentStatus": "Pendente",
+      "clientName": "ladinho veiculos",
+      "osNumber": "333111"
+    },
+    {
+      "updatedAt": "2026-10-03T12:00:41.850Z",
+      "clientId": "wmig15rda",
+      "clientPhone": "13997073234",
+      "clientName": "Rodrigo/karina",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "totalValue": 1842,
+      "id": "wtt7negsr",
+      "vehicleId": "nniu8hgay",
+      "items": [
+        {
+          "unitPrice": 80,
+          "id": "3n38dbgvf",
+          "description": "CORREIA DENTADA ",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "id": "cmpjl7fym",
+          "unitPrice": 145,
+          "quantity": 1,
+          "description": "TENSOR DA CORREIA DENTADA "
+        },
+        {
+          "quantity": 4,
+          "type": "SERVICE",
+          "unitPrice": 38,
+          "description": "ÓLEO SEMI SINTÉTICO ",
+          "id": "8jsqxetsc"
+        },
+        {
+          "unitPrice": 30,
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "8o794qy4y",
+          "description": "FILTRO DE ÓLEO "
+        },
+        {
+          "id": "yad0m3upr",
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 25
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 45,
+          "id": "sfoci6waa",
+          "quantity": 1,
+          "description": "JUNTA DA TAMPA DE VALVULÁS "
+        },
+        {
+          "id": "efjqix68y",
+          "description": "INTERRUPTOR DA LUZ DE OLEO ",
+          "quantity": 1,
+          "unitPrice": 80,
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "id": "ozblmzonb",
+          "description": "JOGO DE PASTILHA DE FREIO DIANTEIRA",
+          "quantity": 1,
+          "unitPrice": 97
+        },
+        {
+          "unitPrice": 90,
+          "description": "BRAÇO AXIAL LADO DIREITO ",
+          "id": "vv5vc8wkj",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "description": "COLA PARA VEDAÇÃO DO CÁRTER ",
+          "unitPrice": 53,
+          "id": "cas3scqn8",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "y9o9dbx88",
+          "unitPrice": 45,
+          "description": "ADITIVO DE ARREFECIMENTO "
+        },
+        {
+          "description": "JOGO DE PINO DE PINÇA DE FREIO ",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "id": "sq02wyeft",
+          "quantity": 2
+        },
+        {
+          "description": "COXIM INFERIOR DO CAMBIO",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "id": "dfas2qkd8",
+          "quantity": 1
+        },
+        {
+          "description": "",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "wa5rup06n"
+        }
+      ],
+      "laborValue": 1000,
+      "vehicleKm": "290.068",
+      "osNumber": "127452",
+      "discount": 0,
+      "vehiclePlate": "DNQ5071",
+      "status": "Finalizado",
+      "createdAt": "2026-10-03T12:00:41.850Z",
+      "vehicleModel": "stilo",
+      "paymentStatus": "Pendente"
+    },
+    {
+      "clientName": "ELIAS",
+      "updatedAt": "2026-10-03T15:02:20.819Z",
+      "vehicleModel": "GRAND SIENA",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "items": [
+        {
+          "description": "ÓLEO DE TRANSMISSÃO ",
+          "unitPrice": 45,
+          "quantity": 2,
+          "type": "SERVICE",
+          "id": "5uzkr07hl"
+        },
+        {
+          "quantity": 1,
+          "id": "8gl9y5axb",
+          "type": "SERVICE",
+          "description": "FLUIDO DOT4 PARA SANGRIA DE EMBREAGEM ",
+          "unitPrice": 35
+        },
+        {
+          "description": "KIT DE EMBREAGEM COM ATUADOR",
+          "quantity": 1,
+          "id": "uya2uym7w",
+          "unitPrice": 0,
+          "type": "SERVICE"
+        },
+        {
+          "id": "dnb3mj47b",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "description": "CILINDRO MESTRE DE EMBREAGEM ",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 0,
+          "id": "jr5zkzl80",
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": ""
+        },
+        {
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "06jw63mda",
+          "type": "SERVICE",
+          "description": ""
+        }
+      ],
+      "laborValue": 800,
+      "osNumber": "286562",
+      "vehicleKm": "159",
+      "id": "80h5rz8oc",
+      "status": "Finalizado",
+      "discount": 0,
+      "totalValue": 925,
+      "vehicleId": "8y83jy3ix",
+      "vehiclePlate": "FR01I59",
+      "paymentStatus": "Pendente",
+      "clientId": "xql90a0c4",
+      "createdAt": "2026-10-03T15:02:20.819Z",
+      "clientPhone": "13997310563"
+    },
+    {
+      "createdAt": "2026-10-05T22:17:38.121Z",
+      "id": "vcdwb3bih",
+      "clientId": "lpsialh3s",
+      "clientPhone": "18981095187",
+      "status": "Finalizado",
+      "discount": 0,
+      "vehicleId": "5tvk7de9m",
+      "items": [
+        {
+          "unitPrice": 985,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "KIT DE EMBREAGEM ",
+          "id": "6onedifkk"
+        },
+        {
+          "type": "SERVICE",
+          "description": "BUCHA DO CABO SELETOR DE MARCHAS",
+          "quantity": 1,
+          "id": "4kc6h1p36",
+          "unitPrice": 30
+        },
+        {
+          "description": "RETENTOR DA HASTE DO TRAMBULADOR ",
+          "type": "SERVICE",
+          "id": "l2f9rchv8",
+          "quantity": 1,
+          "unitPrice": 75
+        },
+        {
+          "unitPrice": 45,
+          "quantity": 1,
+          "id": "zt5fe7h9d",
+          "description": "ÓLEO DE TRANSMISSÃO ",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 52,
+          "description": "ÓLEO 5W30",
+          "id": "nnu59woq9",
+          "quantity": 5,
+          "type": "SERVICE"
+        },
+        {
+          "id": "ovz8cv6dh",
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "FILTRO DE OLEO",
+          "unitPrice": 35
+        },
+        {
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "unitPrice": 25,
+          "quantity": 1,
+          "id": "si6o3sihn",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 45,
+          "id": "352j4dhsc",
+          "description": "FILTRO DE AR DO MOTOR",
+          "type": "SERVICE",
+          "quantity": 1
+        }
+      ],
+      "vehiclePlate": "FW03B24",
+      "osNumber": "463661",
+      "vehicleKm": "169.633",
+      "clientName": "Leandro ramos",
+      "updatedAt": "2026-10-05T22:17:38.121Z",
+      "totalValue": 2250,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 750,
+      "vehicleModel": "ka+",
+      "paymentStatus": "Pendente"
+    },
+    {
+      "updatedAt": "2026-10-07T23:02:08.938Z",
+      "items": [
+        {
+          "id": "t7zpeqdhp",
+          "type": "SERVICE",
+          "description": "DE",
+          "quantity": 1,
+          "unitPrice": 5
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": "",
+          "id": "cq5dz07ju"
+        },
+        {
+          "id": "9vzgr3t0t",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": ""
+        }
+      ],
+      "discount": 0,
+      "vehicleKm": "107390",
+      "osNumber": "181771",
+      "status": "Finalizado",
+      "vehicleId": "oc3pfy85q",
+      "clientName": "MAYCON",
+      "vehiclePlate": "FFW6E03",
+      "clientPhone": "13998032592",
+      "laborValue": 0,
+      "id": "swwhi731q",
+      "vehicleModel": "SAVEIRO 1.6 16 V",
+      "totalValue": 5,
+      "createdAt": "2026-10-07T23:02:08.938Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "paymentStatus": "Pendente",
+      "clientId": "2pe8t4ead"
+    },
+    {
+      "updatedAt": "2026-10-08T11:50:45.914Z",
+      "clientName": "amil",
+      "clientId": "860dyt46h",
+      "items": [
+        {
+          "id": "gzegtbneh",
+          "description": "CORREIA DENTADA ",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 85
+        },
+        {
+          "id": "mzjvuvlsz",
+          "unitPrice": 145,
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "TENSOR DA CORREIA DENTADA "
+        },
+        {
+          "description": "",
+          "type": "SERVICE",
+          "id": "kz6532114",
+          "unitPrice": 0,
+          "quantity": 1
+        },
+        {
+          "unitPrice": 30,
+          "id": "y4gt81zxb",
+          "description": "FLAUTA DE PASSAGEM DE ÁGUA ",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 53,
+          "description": "CAVALETE DE ÁGUA ",
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "imswjk49y"
+        },
+        {
+          "type": "SERVICE",
+          "description": "CAVALETE DO COLETOR DE ADMISSÃO ",
+          "id": "vyy1g17jk",
+          "quantity": 1,
+          "unitPrice": 48
+        },
+        {
+          "description": "ABRAÇADEIRA ",
+          "unitPrice": 5,
+          "quantity": 5,
+          "id": "i5hjxsfnl",
+          "type": "SERVICE"
+        },
+        {
+          "description": "BOMBA DE ÁGUA ",
+          "id": "o726q9dp4",
+          "type": "SERVICE",
+          "unitPrice": 140,
+          "quantity": 1
+        },
+        {
+          "id": "qkhre08xd",
+          "type": "SERVICE",
+          "description": " VÁLVULA TERMOSTATICA ",
+          "unitPrice": 100,
+          "quantity": 1
+        },
+        {
+          "id": "p3f5bl6xh",
+          "type": "SERVICE",
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "quantity": 2,
+          "unitPrice": 90
+        },
+        {
+          "quantity": 1,
+          "id": "3g6t930re",
+          "type": "SERVICE",
+          "unitPrice": 125,
+          "description": "ANGUEIRA DO AR QUENTE "
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "CORREIA DE ACESSÓRIOS ",
+          "id": "d68n0xgj0",
+          "unitPrice": 65
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 60,
+          "id": "otougr1bn",
+          "description": "JUNTA DA TAMPA DE VALVULÁS ",
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "",
+          "unitPrice": 0,
+          "id": "dgefg6bxw"
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 900,
+      "vehicleId": "3jkv0yf1d",
+      "totalValue": 1956,
+      "paymentStatus": "Pendente",
+      "id": "6zasfhpju",
+      "status": "Finalizado",
+      "vehicleKm": "106.737",
+      "osNumber": "105883",
+      "vehiclePlate": "FQC6399",
+      "discount": 0,
+      "clientPhone": "13997689356",
+      "vehicleModel": "prisma",
+      "createdAt": "2026-10-08T11:50:45.914Z"
+    },
+    {
+      "vehicleId": "p7bxelxdl",
+      "laborValue": 700,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "osNumber": "289805",
+      "vehiclePlate": "EAK4D01",
+      "vehicleKm": "211.409",
+      "totalValue": 1455,
+      "discount": 0,
+      "clientName": "deise",
+      "updatedAt": "2026-10-08T13:24:47.536Z",
+      "vehicleModel": "logan",
+      "items": [
+        {
+          "id": "ugtj6gx2y",
+          "description": "KIT DE EMBREAGEM ",
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 600
+        },
+        {
+          "quantity": 1,
+          "id": "zhvjdcij0",
+          "type": "SERVICE",
+          "description": "COIFA INTERNA LADO DIREITO",
+          "unitPrice": 45
+        },
+        {
+          "description": "ÓLEO DE TRANSMISSÃO ",
+          "unitPrice": 50,
+          "id": "eba6pwfz5",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "description": "ROLAMENTO DE SEMI EIXO LADO DIREITO ",
+          "id": "q6gzamel8",
+          "unitPrice": 60,
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 0,
+          "description": "",
+          "quantity": 1,
+          "id": "a8hhsou9r",
+          "type": "SERVICE"
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "7bz0p74gz",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 0,
+          "description": "",
+          "quantity": 1,
+          "id": "s9ry1vcvn",
+          "type": "SERVICE"
+        },
+        {
+          "description": "",
+          "id": "1v7cipioy",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE"
+        }
+      ],
+      "clientId": "83eqq3i1i",
+      "status": "Finalizado",
+      "createdAt": "2026-10-08T13:24:47.536Z",
+      "id": "n9l0zq9ja",
+      "paymentStatus": "Pendente",
+      "clientPhone": "997646751"
+    },
+    {
+      "totalValue": 6326,
+      "osNumber": "213820",
+      "id": "2wabdw0t1",
+      "clientPhone": "13998032592",
+      "updatedAt": "2026-10-09T16:34:17.281Z",
+      "laborValue": 6260,
+      "discount": 0,
+      "items": [
+        {
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "cpgm06k88",
+          "description": "",
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "id": "xu9gx2wx2",
+          "description": "",
+          "quantity": 1
+        },
+        {
+          "id": "becdyidxc",
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 66,
+          "description": ""
+        }
+      ],
+      "vehicleKm": "107390",
+      "clientName": "MAYCON",
+      "vehicleId": "oc3pfy85q",
+      "clientId": "2pe8t4ead",
+      "vehicleModel": "SAVEIRO 1.6 16 V",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "status": "Finalizado",
+      "vehiclePlate": "FFW6E03",
+      "paymentStatus": "Pendente",
+      "createdAt": "2026-10-09T16:34:17.281Z"
+    },
+    {
+      "osNumber": "841548",
+      "clientPhone": "31999140384",
+      "discount": 0,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "items": [
+        {
+          "type": "SERVICE",
+          "id": "s5335qxob",
+          "description": "BICO INJETOR",
+          "unitPrice": 190,
+          "quantity": 1
+        },
+        {
+          "id": "u7zlr2wsz",
+          "unitPrice": 38,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "ÓLEO 15W40"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "description": "",
+          "id": "41ungpbue"
+        },
+        {
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "id": "gaoc1ihfc"
+        }
+      ],
+      "id": "76emiq1zb",
+      "paymentStatus": "Pendente",
+      "createdAt": "2026-10-09T22:04:38.371Z",
+      "vehicleModel": "corsao",
+      "clientName": "flavio",
+      "clientId": "2t9h0c10a",
+      "updatedAt": "2026-10-09T22:04:38.371Z",
+      "vehiclePlate": "DMW9B60",
+      "vehicleKm": "249.136",
+      "laborValue": 200,
+      "vehicleId": "glga6031p",
+      "totalValue": 428,
+      "status": "Finalizado"
+    },
+    {
+      "paymentStatus": "Pendente",
+      "totalValue": 9762,
+      "vehicleId": "ci2ztixuc",
+      "clientId": "pn4cvjyy4",
+      "id": "ab5p5shz4",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "clientPhone": "+55 13 99766-1849",
+      "vehicleKm": "217029",
+      "laborValue": 2500,
+      "updatedAt": "2026-10-12T21:16:31.981Z",
+      "clientName": "DOUTOR EDSON",
+      "osNumber": "885590",
+      "vehiclePlate": "DKW3899",
+      "createdAt": "2026-10-12T21:16:31.981Z",
+      "discount": 0,
+      "items": [
+        {
+          "description": "JOGOS DE JUNTA SUPERIOR ",
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "o6ni650zz",
+          "unitPrice": 690
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 670,
+          "type": "SERVICE",
+          "id": "8chc7b7fb",
+          "description": "KIT CORREIA DENTADA"
+        },
+        {
+          "description": "BOM DA ÁGUA ",
+          "unitPrice": 187,
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "5bkcspyvp"
+        },
+        {
+          "type": "SERVICE",
+          "description": "TUBO DISTRIBUIDOR DE AGUA ",
+          "id": "khju9ufg7",
+          "unitPrice": 160,
+          "quantity": 1
+        },
+        {
+          "id": "9jpc4i4md",
+          "type": "SERVICE",
+          "description": "VÁLVULA TERMOSTÁTICA COM  CARCAÇA ",
+          "quantity": 1,
+          "unitPrice": 182
+        },
+        {
+          "unitPrice": 490,
+          "id": "b3a4ql4jf",
+          "description": "JOGO DE ANEIS ",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "description": "JOGO DE BRUZINA DE BIELA",
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "et4byzjju",
+          "unitPrice": 256
+        },
+        {
+          "id": "0q8sl3mkf",
+          "description": "OLÉO 5W30",
+          "type": "SERVICE",
+          "quantity": 5,
+          "unitPrice": 48
+        },
+        {
+          "type": "SERVICE",
+          "id": "bns1krh6r",
+          "description": "FILTRO DE ÓLEO",
+          "unitPrice": 38,
+          "quantity": 1
+        },
+        {
+          "id": "61yj3rlj0",
+          "type": "SERVICE",
+          "quantity": 2,
+          "description": "ADITIVOS ",
+          "unitPrice": 40
+        },
+        {
+          "unitPrice": 145,
+          "quantity": 1,
+          "id": "pnqrktqfz",
+          "type": "SERVICE",
+          "description": "JOGO DE VELAS"
+        },
+        {
+          "id": "4o1e00ccv",
+          "quantity": 1,
+          "description": "TUBO DE VARETA DE OLEO ",
+          "unitPrice": 60,
+          "type": "SERVICE"
+        },
+        {
+          "id": "kl3swyse6",
+          "quantity": 1,
+          "unitPrice": 53,
+          "type": "SERVICE",
+          "description": "COLA VEDAÇÃO"
+        },
+        {
+          "unitPrice": 243,
+          "quantity": 1,
+          "description": "KIT DE FLANGE",
+          "id": "kbovr2jir",
+          "type": "SERVICE"
+        },
+        {
+          "id": "vuazh8jtp",
+          "quantity": 1,
+          "unitPrice": 220,
+          "description": "JOGO DE REDENTORES",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 42.15,
+          "id": "h2zp0szv2",
+          "type": "SERVICE",
+          "quantity": 20,
+          "description": "VÁLVULAS"
+        },
+        {
+          "id": "aa3ami3e3",
+          "type": "SERVICE",
+          "unitPrice": 60,
+          "quantity": 1,
+          "description": "FILTRO DE AR DO MOTOR"
+        },
+        {
+          "description": "ESTICADOR DA POLIA DA CORREIA DENTADA",
+          "id": "1c0prxdjz",
+          "unitPrice": 415,
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 290,
+          "quantity": 1,
+          "description": "HOMOCINÉTICA LADO DIREITO",
+          "type": "SERVICE",
+          "id": "6rv4o7p6d"
+        },
+        {
+          "type": "SERVICE",
+          "id": "k73z21idc",
+          "unitPrice": 120,
+          "quantity": 1,
+          "description": "COIFA LADO ESQUERDO"
+        },
+        {
+          "id": "yf7o19opl",
+          "quantity": 1,
+          "description": "GASOLINA AUDI",
+          "type": "SERVICE",
+          "unitPrice": 120
+        },
+        {
+          "unitPrice": 100,
+          "type": "SERVICE",
+          "description": "GASOLINA VIAGEM",
+          "quantity": 1,
+          "id": "910x1cfj3"
+        },
+        {
+          "unitPrice": 1600,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "RETIFICA CABEÇOTE",
+          "id": "k8pkey04v"
+        }
+      ],
+      "vehicleModel": "AUDI A3 2005",
+      "status": "Finalizado"
+    },
+    {
+      "vehicleId": "0ay56kqjj",
+      "clientPhone": "13997851480",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleKm": "66.768",
+      "updatedAt": "2026-10-14T00:42:25.894Z",
+      "clientId": "up4tstm0u",
+      "status": "Finalizado",
+      "vehiclePlate": "ETT1689",
+      "items": [
+        {
+          "quantity": 1,
+          "description": "CORREIA DE ACESSÓRIOS ",
+          "unitPrice": 115,
+          "type": "SERVICE",
+          "id": "un88iem92"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 85,
+          "description": "POLIA DO TENSOR DA CORREIA DE ACESSÓRIOS ",
+          "type": "SERVICE",
+          "id": "vwo3dtuhr"
+        },
+        {
+          "quantity": 1,
+          "description": "POLIA GUIA DA CORREIA DE ACESSÓRIOS ",
+          "type": "SERVICE",
+          "id": "d2gjnah8a",
+          "unitPrice": 75
+        },
+        {
+          "quantity": 1,
+          "id": "ryn5l6o8a",
+          "unitPrice": 320,
+          "description": "KIT DE JUNTA DA TAMPA DE VALVULÁS ",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 110,
+          "description": "TERMINAL DE DIREÇÃO LADO DIREITO ",
+          "id": "3m4lgtiqz",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 125,
+          "id": "k8hnmx1cn",
+          "description": "COIFA DO SEMI EIXO LADO DIREITO ",
+          "quantity": 1
+        },
+        {
+          "description": "ALINHAMENTO DE DIRECAO ",
+          "id": "b2nzt6p05",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 80
+        }
+      ],
+      "createdAt": "2026-10-14T00:42:25.894Z",
+      "totalValue": 1510,
+      "laborValue": 600,
+      "id": "f3lwmhvkh",
+      "osNumber": "720531",
+      "vehicleModel": "207",
+      "discount": 0,
+      "paymentStatus": "Pendente",
+      "clientName": "nei"
+    },
+    {
+      "osNumber": "850449",
+      "vehicleModel": "siena",
+      "discount": 0,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "createdAt": "2026-10-14T19:10:50.549Z",
+      "status": "Finalizado",
+      "vehiclePlate": "DXS9E23",
+      "items": [
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "ROLAMENTO DE RODA DIANTEIRO LADO DIREITO ",
+          "unitPrice": 130,
+          "id": "xpge4usra"
+        },
+        {
+          "type": "SERVICE",
+          "id": "5ps5tnelz",
+          "description": "CUBO DE RODA DIANTEIRO LADO DIREITO ",
+          "unitPrice": 115,
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "description": "BRAÇO AXIAL LADO DIREITO ",
+          "quantity": 1,
+          "unitPrice": 85,
+          "id": "a42dnlriq"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 80,
+          "id": "zpkxq2chi",
+          "type": "SERVICE",
+          "description": "ALINHAMENTO DE DIRECAO "
+        },
+        {
+          "id": "9df6ql6m3",
+          "quantity": 1,
+          "unitPrice": 0,
+          "description": "",
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "description": "",
+          "id": "yxzlt7qqf",
+          "quantity": 1,
+          "unitPrice": 0
+        }
+      ],
+      "id": "9hl3a5w42",
+      "clientId": "2tlrq98qx",
+      "vehicleKm": "246.26",
+      "clientName": "maurici",
+      "vehicleId": "uphyoa97x",
+      "totalValue": 610,
+      "clientPhone": "997967712",
+      "paymentStatus": "Pendente",
+      "updatedAt": "2026-10-14T19:10:50.549Z",
+      "laborValue": 200
+    },
+    {
+      "items": [
+        {
+          "description": "JOGO DE VELAS",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 130,
+          "id": "i3y93cnda"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "JOGO DE CABO DE VELAS",
+          "unitPrice": 0,
+          "id": "v6ru4c262"
+        },
+        {
+          "description": "",
+          "unitPrice": 135,
+          "id": "0fjljwpns",
+          "quantity": 1,
+          "type": "SERVICE"
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "updatedAt": "2026-10-14T20:02:09.996Z",
+      "osNumber": "534215",
+      "vehicleKm": "193.746",
+      "discount": 0,
+      "vehicleId": "mihz8f979",
+      "clientName": "Gilberto onix",
+      "vehicleModel": "onix",
+      "vehiclePlate": "FLJ2A30",
+      "id": "h4mfpwjxi",
+      "clientId": "ayc3ljurt",
+      "clientPhone": "13997928659",
+      "laborValue": 120,
+      "paymentStatus": "Pendente",
+      "totalValue": 385,
+      "createdAt": "2026-10-14T20:02:09.996Z",
+      "status": "Finalizado"
+    },
+    {
+      "paymentStatus": "Pendente",
+      "laborValue": 500,
+      "vehicleModel": "toro",
+      "totalValue": 1465,
+      "updatedAt": "2026-10-15T14:52:23.542Z",
+      "clientId": "qs3qvogns",
+      "vehiclePlate": "FYB3E48",
+      "status": "Finalizado",
+      "vehicleKm": "107.592",
+      "id": "ef7u4672y",
+      "clientName": "junior/caterine",
+      "clientPhone": "13998074416",
+      "items": [
+        {
+          "unitPrice": 860,
+          "id": "12qtar3b7",
+          "quantity": 1,
+          "description": "RADIADOR ",
+          "type": "SERVICE"
+        },
+        {
+          "id": "2l9ag6icf",
+          "quantity": 6,
+          "description": "ÁGUA DESMINERALIZADA ",
+          "type": "SERVICE",
+          "unitPrice": 8
+        },
+        {
+          "type": "SERVICE",
+          "id": "95j1mflpw",
+          "quantity": 1,
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "unitPrice": 45
+        },
+        {
+          "type": "SERVICE",
+          "id": "0kduode7w",
+          "quantity": 2,
+          "description": "ABRAÇADEIRA ",
+          "unitPrice": 6
+        },
+        {
+          "quantity": 1,
+          "description": "",
+          "id": "0xugdhfgn",
+          "type": "SERVICE",
+          "unitPrice": 0
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleId": "p1wm1mew5",
+      "discount": 0,
+      "osNumber": "677965",
+      "createdAt": "2026-10-15T14:52:23.542Z"
+    },
+    {
+      "status": "Finalizado",
+      "osNumber": "233618",
+      "clientPhone": "13997851480",
+      "createdAt": "2026-10-15T15:01:00.998Z",
+      "discount": 0,
+      "vehicleModel": "fit",
+      "updatedAt": "2026-10-15T15:01:00.998Z",
+      "clientName": "nei",
+      "id": "6bfoqp2n5",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "paymentStatus": "Pendente",
+      "vehicleKm": "160.044",
+      "clientId": "up4tstm0u",
+      "vehiclePlate": "FSC5557",
+      "totalValue": 462,
+      "items": [
+        {
+          "quantity": 4,
+          "description": "ÓLEO 5W30",
+          "type": "SERVICE",
+          "unitPrice": 48,
+          "id": "2c2szd3rz"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 30,
+          "type": "SERVICE",
+          "id": "3v2oz742z",
+          "description": "FILTRO DE OLEO"
+        },
+        {
+          "type": "SERVICE",
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "unitPrice": 25,
+          "quantity": 1,
+          "id": "ejlz8wse9"
+        },
+        {
+          "id": "z6odcigw2",
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "FILTRO DE AR DO MOTOR",
+          "unitPrice": 65
+        },
+        {
+          "quantity": 1,
+          "id": "ptvyikg41",
+          "type": "SERVICE",
+          "unitPrice": 30,
+          "description": "PRODUTO DE LIMPEZA DO AR CONDICIONADO "
+        },
+        {
+          "unitPrice": 40,
+          "id": "x9jsmaow5",
+          "description": "FILTRO DO AR CONDICIONADO ",
+          "quantity": 1,
+          "type": "SERVICE"
+        }
+      ],
+      "laborValue": 80,
+      "vehicleId": "8z0v74bpg"
+    },
+    {
+      "vehicleId": "7pwuvxvxo",
+      "osNumber": "496240",
+      "vehiclePlate": "BAQ0E16",
+      "discount": 0,
+      "vehicleKm": "225.929",
+      "id": "vpngsbdwh",
+      "items": [
+        {
+          "unitPrice": 48,
+          "quantity": 4,
+          "id": "5v2m6myo0",
+          "description": "ÓLEO 5W30",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 35,
+          "id": "fmyik5lwf",
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "FILTRO DE OLEO"
+        },
+        {
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "quantity": 1,
+          "id": "6o1lb8ryv"
+        },
+        {
+          "description": "FILTRO DE AR DO MOTOR ",
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "shhrj8k2l",
+          "unitPrice": 35
+        },
+        {
+          "id": "byownh4t4",
+          "description": "CILINDRO DE RODA TRASEIRO",
+          "unitPrice": 156,
+          "quantity": 2,
+          "type": "SERVICE"
+        },
+        {
+          "description": "FLUIDO DOT4 4",
+          "unitPrice": 35,
+          "type": "SERVICE",
+          "id": "qx38e6grh",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 5,
+          "type": "SERVICE",
+          "id": "wjidfe0f2",
+          "quantity": 1,
+          "description": "LÂMPADA DE LANTERNA LADO ESQUERDO "
+        }
+      ],
+      "updatedAt": "2026-10-15T19:33:54.366Z",
+      "vehicleModel": "etios",
+      "clientName": "patrik ",
+      "clientPhone": "13996112430",
+      "clientId": "2pblp7jbc",
+      "createdAt": "2026-10-15T19:33:54.366Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 300,
+      "status": "Finalizado",
+      "paymentStatus": "Pendente",
+      "totalValue": 939
+    },
+    {
+      "vehicleKm": "298.787",
+      "items": [
+        {
+          "unitPrice": 38,
+          "description": "ÓLEO 15W40",
+          "type": "SERVICE",
+          "quantity": 5,
+          "id": "u7106wex6"
+        },
+        {
+          "description": "FILTRO DE OLEO",
+          "type": "SERVICE",
+          "id": "rm43l8zz2",
+          "unitPrice": 30,
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "id": "6f83j9t4o",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "description": ""
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleId": "64mvbx2qp",
+      "id": "joph3icqg",
+      "clientId": "tiiqr5yhz",
+      "updatedAt": "2026-10-16T12:42:34.978Z",
+      "vehiclePlate": "DMD9H47",
+      "laborValue": 30,
+      "totalValue": 250,
+      "createdAt": "2026-10-16T12:42:34.977Z",
+      "clientPhone": "13996309545",
+      "vehicleModel": "zafira",
+      "osNumber": "662697",
+      "clientName": "Gerson vereador ",
+      "paymentStatus": "Pendente",
+      "discount": 0,
+      "status": "Finalizado"
+    },
+    {
+      "clientPhone": "13996601859",
+      "vehicleKm": "150",
+      "items": [
+        {
+          "unitPrice": 350,
+          "description": "SEMI EIXO",
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "avr2ouzr6"
+        },
+        {
+          "quantity": 1,
+          "id": "4o4yvsjue",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "description": ""
+        },
+        {
+          "id": "jsg52x38d",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "description": "",
+          "quantity": 1
+        },
+        {
+          "description": "",
+          "id": "yitbtrnwm",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 0
+        },
+        {
+          "id": "a7wwlbz9d",
+          "quantity": 1,
+          "unitPrice": 0,
+          "description": "",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "id": "z5jut5j0q",
+          "description": "",
+          "type": "SERVICE",
+          "unitPrice": 0
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": "",
+          "id": "qscigpuit"
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 0,
+          "id": "lq5b5zptl",
+          "description": ""
+        },
+        {
+          "type": "SERVICE",
+          "id": "h99yolk21",
+          "unitPrice": 0,
+          "description": "",
+          "quantity": 1
+        }
+      ],
+      "vehicleId": "h491k9bvc",
+      "id": "xb59y2tba",
+      "clientId": "u9uhgdf5d",
+      "status": "Finalizado",
+      "updatedAt": "2026-10-16T20:07:10.844Z",
+      "paymentStatus": "Pendente",
+      "clientName": "rodrigo",
+      "vehiclePlate": "MBP9008",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "createdAt": "2026-10-16T20:07:10.844Z",
+      "osNumber": "879493",
+      "laborValue": 200,
+      "discount": 0,
+      "totalValue": 550,
+      "vehicleModel": "corsa"
+    },
+    {
+      "createdAt": "2026-10-17T15:11:23.201Z",
+      "items": [
+        {
+          "quantity": 4,
+          "unitPrice": 52,
+          "id": "3b13i2784",
+          "type": "SERVICE",
+          "description": "ÓLEO 0W20"
+        },
+        {
+          "description": "FILTRO DE OLEO",
+          "type": "SERVICE",
+          "unitPrice": 30,
+          "id": "d5zh9sbvs",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "id": "3w069f2pr",
+          "unitPrice": 25
+        },
+        {
+          "id": "6nm8x1sx9",
+          "unitPrice": 70,
+          "quantity": 1,
+          "description": "FILTRO DE AR DO MOTOR",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 40,
+          "description": "FILTRO DE CABINE",
+          "id": "kf0vqbmnp"
+        }
+      ],
+      "id": "0zgjjwdwo",
+      "discount": 0,
+      "osNumber": "747832",
+      "vehicleModel": "hrv",
+      "clientPhone": "13997281425",
+      "vehicleId": "i0eeh2ro9",
+      "clientName": "Roberto professor tennis",
+      "clientId": "5z49k5pma",
+      "vehicleKm": "101.409",
+      "status": "Finalizado",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 80,
+      "updatedAt": "2026-10-17T15:11:23.201Z",
+      "vehiclePlate": "ORE8A83",
+      "paymentStatus": "Pendente",
+      "totalValue": 453
+    },
+    {
+      "clientId": "9es7n9zr2",
+      "status": "Finalizado",
+      "createdAt": "2026-10-17T21:27:51.055Z",
+      "totalValue": 644,
+      "id": "2n189anx3",
+      "osNumber": "976201",
+      "paymentStatus": "Pendente",
+      "clientPhone": "13997960975",
+      "discount": 0,
+      "updatedAt": "2026-10-17T21:27:51.055Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 0,
+      "vehiclePlate": "EEE7731",
+      "vehicleKm": "100",
+      "items": [
+        {
+          "type": "SERVICE",
+          "unitPrice": 90,
+          "quantity": 1,
+          "description": "JUNTA DE CABEÇOTE ",
+          "id": "3vsyy6f7q"
+        },
+        {
+          "unitPrice": 40,
+          "id": "2nrwaiv4x",
+          "description": "JUNTA DA TAMPA DE VALVULÁS ",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "id": "ei3su5uxx",
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "VALVULA TERMOSTATICA ",
+          "unitPrice": 85
+        },
+        {
+          "id": "t0h9zm666",
+          "type": "SERVICE",
+          "unitPrice": 100,
+          "quantity": 1,
+          "description": "CAVALETE DO SENSOR DE TEMPERATURA "
+        },
+        {
+          "quantity": 1,
+          "id": "thxh09ok5",
+          "description": "JOGO DE PARAFUSO ",
+          "unitPrice": 100,
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 110,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "JOGO DE VELAS ",
+          "id": "609gb5oqr"
+        },
+        {
+          "unitPrice": 20,
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "564nmbjtm",
+          "description": "FILTRO DE OLEO"
+        },
+        {
+          "description": "ÓLEO SEMI",
+          "quantity": 3,
+          "id": "ro2mibho0",
+          "unitPrice": 33,
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "id": "dnsuuge7y",
+          "quantity": 1,
+          "description": "",
+          "unitPrice": 0
+        }
+      ],
+      "clientName": "Felipe kaen",
+      "vehicleModel": "palio",
+      "vehicleId": "u5wfm6ht5"
+    },
+    {
+      "id": "0t64h6e4s",
+      "vehicleKm": "222.7",
+      "status": "Finalizado",
+      "osNumber": "438718",
+      "vehicleId": "lcavd5i5z",
+      "discount": 0,
+      "items": [
+        {
+          "description": "JUNTA DE CABEÇOTE  CHAPA ORIGINAL ",
+          "type": "SERVICE",
+          "unitPrice": 230,
+          "quantity": 1,
+          "id": "z8l1wusuf"
+        },
+        {
+          "description": "CORREIA DENTADA ",
+          "unitPrice": 80,
+          "id": "c36exszvr",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 100,
+          "description": "VÁLVULA TERMOSTATICA ",
+          "type": "SERVICE",
+          "id": "j9bw2nqxy"
+        },
+        {
+          "id": "37dz3lbnk",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 140,
+          "description": "BOMBA D'ÁGUA "
+        },
+        {
+          "type": "SERVICE",
+          "id": "8jyesg5fe",
+          "quantity": 1,
+          "description": " CAVALETE D ÁGUA ",
+          "unitPrice": 43
+        },
+        {
+          "id": "f1nmwakry",
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "JUNTA DA TAMPA DE VALVULÁS ",
+          "unitPrice": 40
+        },
+        {
+          "quantity": 1,
+          "id": "vrg0gvycv",
+          "description": "RETENTOR DO COMANDO DE VÁLVULAS ",
+          "type": "SERVICE",
+          "unitPrice": 49
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "stqadk4fh",
+          "description": "MANGUEIRA DO RESPIRO FORÇADO ",
+          "unitPrice": 25
+        },
+        {
+          "description": "JOGO DE VELAS ",
+          "unitPrice": 120,
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "3dlcow07o"
+        },
+        {
+          "unitPrice": 115,
+          "description": "JOGO DE CABO DE VELAS ",
+          "id": "t43bmeaw0",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "id": "kcg1lloaa",
+          "description": "COLA PARA VEDAÇÃO ",
+          "unitPrice": 52,
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "unitPrice": 9,
+          "type": "SERVICE",
+          "description": "SELOS DO BLOCO",
+          "id": "rlqqljs35",
+          "quantity": 7
+        },
+        {
+          "type": "SERVICE",
+          "id": "dw5frk2cz",
+          "description": "ANEL ORING DA BOBINA ",
+          "unitPrice": 10,
+          "quantity": 1
+        },
+        {
+          "id": "tia93bsu9",
+          "quantity": 4,
+          "description": "TUCHO HIDRÁULICO ",
+          "type": "SERVICE",
+          "unitPrice": 60
+        },
+        {
+          "quantity": 4,
+          "type": "SERVICE",
+          "unitPrice": 38,
+          "description": "ÓLEO SEMI SINTÉTICO ",
+          "id": "33ojak3re"
+        },
+        {
+          "unitPrice": 30,
+          "description": "FILTRO DE ÓLEO ",
+          "id": "u3ystrmum",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "description": "FILTRO DE AR DO MOTOR ",
+          "type": "SERVICE",
+          "id": "p3g92iqlx",
+          "quantity": 1,
+          "unitPrice": 25
+        },
+        {
+          "type": "SERVICE",
+          "description": "CAVALETE D E ÁGUA SUPERIOR ",
+          "id": "oaezicpc9",
+          "quantity": 1,
+          "unitPrice": 110
+        },
+        {
+          "unitPrice": 5,
+          "quantity": 6,
+          "description": "ABRAÇADEIRA ",
+          "id": "f14gsk34h",
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 120,
+          "id": "n1xlgj7y0",
+          "description": "ROLAMENTO DE RODA DIANTEIRO LADO ESQUERDO ",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "unitPrice": 680,
+          "quantity": 1,
+          "description": "RETIFICA DE CABEÇOTE ",
+          "id": "t0ix7cc61",
+          "type": "SERVICE"
+        }
+      ],
+      "updatedAt": "2026-10-17T22:02:06.954Z",
+      "clientId": "ckxl6zonr",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleModel": "prisma",
+      "clientName": "erik",
+      "paymentStatus": "Pendente",
+      "createdAt": "2026-10-17T22:02:06.954Z",
+      "totalValue": 3954,
+      "clientPhone": "13997191437",
+      "vehiclePlate": "AXK1H03",
+      "laborValue": 1500
+    },
+    {
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "createdAt": "2026-10-20T19:09:54.304Z",
+      "items": [
+        {
+          "id": "v1ucsvted",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 75,
+          "description": "INTERRUPTOR DA LUZ DE OLEO "
+        },
+        {
+          "description": "COMBUSTÍVEL ",
+          "quantity": 1,
+          "unitPrice": 25,
+          "id": "jp0y9p467",
+          "type": "SERVICE"
+        }
+      ],
+      "clientId": "yeu7znhvd",
+      "updatedAt": "2026-10-20T19:09:54.304Z",
+      "totalValue": 200,
+      "laborValue": 100,
+      "clientPhone": "4192370119",
+      "vehicleModel": "strada",
+      "paymentStatus": "Pendente",
+      "osNumber": "594778",
+      "vehicleId": "yiq8zeeup",
+      "status": "Finalizado",
+      "id": "q4xagen5i",
+      "vehicleKm": "485.31",
+      "discount": 0,
+      "clientName": "roberio",
+      "vehiclePlate": "FDJ7H21"
+    },
+    {
+      "vehicleModel": "fox",
+      "osNumber": "880754",
+      "discount": 0,
+      "vehiclePlate": "GCK7088",
+      "clientPhone": "13999999999",
+      "createdAt": "2026-10-22T19:52:25.605Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "clientId": "3rhdqkb6e",
+      "items": [
+        {
+          "unitPrice": 125,
+          "quantity": 2,
+          "id": "adj9ww2rd",
+          "type": "SERVICE",
+          "description": "PIVÔ DA SUSPENSÃO "
+        },
+        {
+          "quantity": 2,
+          "unitPrice": 65,
+          "description": "BIELETA",
+          "type": "SERVICE",
+          "id": "rzegkxv53"
+        },
+        {
+          "type": "SERVICE",
+          "id": "j3y5vr8bv",
+          "quantity": 2,
+          "description": "BUCHA DA BARRA ESTABILIZADORA ",
+          "unitPrice": 30
+        },
+        {
+          "description": "JOGO DE VELAS",
+          "id": "n9rirq743",
+          "quantity": 1,
+          "unitPrice": 130,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 170,
+          "description": "JOGO DE CABO DE VELAS",
+          "id": "fe9xgy6q2"
+        },
+        {
+          "unitPrice": 150,
+          "description": "LIMPEZA E REPARO DE VÁLVULAS INJETORAS",
+          "quantity": 1,
+          "id": "ykf7s0yjm",
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "id": "m1pbcl7ki",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "description": "",
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "id": "8e8aw2aj9"
+        }
+      ],
+      "laborValue": 450,
+      "paymentStatus": "Pendente",
+      "totalValue": 1365,
+      "updatedAt": "2026-10-22T19:52:25.605Z",
+      "status": "Finalizado",
+      "clientName": "Alana acupuntura",
+      "vehicleKm": "226.368",
+      "id": "ge8ytelsi",
+      "vehicleId": "ioqquezss"
+    },
+    {
+      "id": "fb408z9xm",
+      "items": [
+        {
+          "unitPrice": 90,
+          "description": "TERMINAL DE DIREÇÃO LADO DIREITO",
+          "id": "3m59vttx1",
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 4,
+          "unitPrice": 25,
+          "description": "BALANCEAMENTO DE EODA",
+          "type": "SERVICE",
+          "id": "q5kaykqr9"
+        },
+        {
+          "description": "",
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "updxb5bw6",
+          "unitPrice": 0
+        }
+      ],
+      "vehiclePlate": "DZZ6108",
+      "updatedAt": "2026-10-22T20:06:04.515Z",
+      "status": "Finalizado",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleKm": "276.695",
+      "vehicleId": "p4u1dcb4k",
+      "vehicleModel": "corsa",
+      "clientId": "w2hlubkbn",
+      "clientPhone": "13997263016",
+      "paymentStatus": "Pendente",
+      "clientName": "André ",
+      "totalValue": 340,
+      "discount": 0,
+      "laborValue": 150,
+      "createdAt": "2026-10-22T20:06:04.515Z",
+      "osNumber": "733777"
+    },
+    {
+      "createdAt": "2026-10-23T12:54:31.119Z",
+      "vehiclePlate": "ETT1265",
+      "clientId": "11kz64iu3",
+      "vehicleModel": "meriva",
+      "items": [
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 290,
+          "description": "SENSOR DE OXIGÊNIO PRÉ CATALISADOR ",
+          "id": "tb70bj8ws"
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 150,
+          "id": "2fuxgsm51",
+          "description": "LIMPEZA E REPARO DE BICOS"
+        },
+        {
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0,
+          "id": "d2l8w76oz"
+        },
+        {
+          "id": "xzs7pwtt7",
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "quantity": 1,
+          "description": "FILTRO DE COMBUSTÍVEL "
+        }
+      ],
+      "paymentStatus": "Pendente",
+      "clientPhone": "13997975429",
+      "clientName": "osiel",
+      "osNumber": "292598",
+      "vehicleId": "srdv1kuog",
+      "discount": 0,
+      "vehicleKm": "85",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "updatedAt": "2026-10-23T12:54:31.119Z",
+      "laborValue": 200,
+      "status": "Finalizado",
+      "totalValue": 665,
+      "id": "7lp9eld3d"
+    },
+    {
+      "createdAt": "2026-10-23T13:01:12.424Z",
+      "discount": 0,
+      "id": "wllzgrkun",
+      "vehicleModel": "duster",
+      "osNumber": "528594",
+      "status": "Finalizado",
+      "clientPhone": "13996176365",
+      "vehiclePlate": "GJX3G00",
+      "totalValue": 815,
+      "vehicleId": "kt7iuu009",
+      "laborValue": 250,
+      "vehicleKm": "134.121",
+      "clientId": "vubgm0ikc",
+      "updatedAt": "2026-10-23T13:01:12.424Z",
+      "items": [
+        {
+          "description": "JOGO DE VELAS",
+          "quantity": 1,
+          "unitPrice": 185,
+          "id": "h65drmst3",
+          "type": "SERVICE"
+        },
+        {
+          "description": "SENSOR DE TEMPERATURA DE ÁGUA ",
+          "unitPrice": 160,
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "tnrw33heh"
+        },
+        {
+          "id": "clvp15wwa",
+          "description": "LIMPEZA E REPARO DE VÁLVULAS INJETORAS ",
+          "unitPrice": 150,
+          "quantity": 1,
+          "type": "SERVICE"
+        },
+        {
+          "type": "SERVICE",
+          "id": "fqyg5q971",
+          "quantity": 1,
+          "unitPrice": 25,
+          "description": "FILTRO DE COMBUSTÍVEL "
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "id": "vwk0df8ha",
+          "unitPrice": 45
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "paymentStatus": "Pendente",
+      "clientName": "Marçal "
+    },
+    {
+      "clientId": "4h2sj7h4a",
+      "items": [
+        {
+          "id": "fcka2s6ps",
+          "unitPrice": 125,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "JOGO DE VELAS"
+        },
+        {
+          "id": "onulk6i3w",
+          "quantity": 1,
+          "unitPrice": 115,
+          "description": "JOGO DE CABO DE VELAS",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "id": "3hs12pju6",
+          "unitPrice": 30,
+          "type": "SERVICE",
+          "description": "COMBUSTÍVEL "
+        },
+        {
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0,
+          "id": "d97bs9t0v"
+        },
+        {
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0,
+          "id": "wef6qlxe8"
+        }
+      ],
+      "createdAt": "2026-10-23T14:12:23.954Z",
+      "paymentStatus": "Pendente",
+      "laborValue": 150,
+      "osNumber": "514234",
+      "updatedAt": "2026-10-23T14:12:23.954Z",
+      "vehiclePlate": "EDN2111",
+      "discount": 0,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "totalValue": 420,
+      "vehicleModel": "corsao",
+      "vehicleId": "rhgdokkhv",
+      "id": "i5mtaf72p",
+      "clientName": "vander lopes",
+      "status": "Finalizado",
+      "clientPhone": "13996883490",
+      "vehicleKm": "182.869"
+    },
+    {
+      "vehicleId": "0b1zsjv3f",
+      "vehiclePlate": "FFF2222",
+      "items": [
+        {
+          "type": "SERVICE",
+          "id": "v9dnwpuc3",
+          "unitPrice": 0,
+          "description": "FLUIDO DE TRANSMISSÃO AUTOMATICA",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "es67r8opf",
+          "description": ""
+        }
+      ],
+      "vehicleKm": "85",
+      "vehicleModel": "spin",
+      "updatedAt": "2026-10-23T17:59:01.527Z",
+      "clientId": "ehap9aeph",
+      "id": "fcineurfp",
+      "status": "Finalizado",
+      "paymentStatus": "Pendente",
+      "createdAt": "2026-10-23T17:59:01.527Z",
+      "totalValue": 500,
+      "laborValue": 500,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "osNumber": "249740",
+      "clientPhone": "13998078039",
+      "discount": 0,
+      "clientName": "sandro nihon"
+    },
+    {
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "clientPhone": "13997927566",
+      "id": "eq3ngz2db",
+      "vehiclePlate": "EXI5D66",
+      "clientId": "e7kj594fo",
+      "createdAt": "2026-10-24T10:43:58.115Z",
+      "paymentStatus": "Pendente",
+      "items": [
+        {
+          "description": "JUNTA DE CABEÇOTE ",
+          "id": "awa3hxaw4",
+          "quantity": 1,
+          "unitPrice": 110,
+          "type": "SERVICE"
+        },
+        {
+          "description": "CORREIA DENTADA ",
+          "quantity": 1,
+          "unitPrice": 85,
+          "id": "m3kb0clfw",
+          "type": "SERVICE"
+        },
+        {
+          "description": "JOGO DE VELAS ",
+          "id": "g16jqcpkh",
+          "type": "SERVICE",
+          "unitPrice": 130,
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 170,
+          "description": "JOGO DE CABO DE VELAS ",
+          "type": "SERVICE",
+          "id": "dv25muy5m"
+        },
+        {
+          "description": "BOMBA D'ÁGUA ",
+          "id": "oc1ribump",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 163
+        },
+        {
+          "description": "JOGO DE ANÉIS DE PISTÃO ",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 468,
+          "id": "1tvlu4qp7"
+        },
+        {
+          "id": "jinizpx6r",
+          "type": "SERVICE",
+          "description": "KIT DE CAVALETE DE ÁGUA ",
+          "unitPrice": 121,
+          "quantity": 1
+        },
+        {
+          "unitPrice": 108,
+          "description": "VÁLVULA TERMOSTATICA ",
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "ot1o96jsp"
+        },
+        {
+          "type": "SERVICE",
+          "id": "rai8jui7r",
+          "description": "COLA PARA VEDAÇÃO ",
+          "unitPrice": 53,
+          "quantity": 1
+        },
+        {
+          "unitPrice": 5,
+          "quantity": 6,
+          "id": "8lgdjwyy5",
+          "type": "SERVICE",
+          "description": "ABRAÇADEIRA "
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 59,
+          "id": "g441cmj2m",
+          "quantity": 1,
+          "description": "ANTI  CHAMA "
+        },
+        {
+          "type": "SERVICE",
+          "description": "ÓLEO 15W40 SEMI SINTÉTICO ",
+          "unitPrice": 39,
+          "quantity": 4,
+          "id": "a7iw90vz6"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 30,
+          "description": "FILTRO DE OLEO",
+          "id": "jdxoeqvph",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 35,
+          "description": "FILTRO DE AR DO MOTOR ",
+          "type": "SERVICE",
+          "id": "5mf9sp0ci"
+        },
+        {
+          "id": "puaymxb9h",
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "type": "SERVICE",
+          "quantity": 2,
+          "unitPrice": 90
+        },
+        {
+          "description": "RETIFICA DE CABEÇOTE ",
+          "type": "SERVICE",
+          "id": "0t3lt29zu",
+          "unitPrice": 840,
+          "quantity": 1
+        },
+        {
+          "id": "co1phpmkw",
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1
+        },
+        {
+          "description": "",
+          "id": "xe3otce2l",
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "quantity": 1
+        }
+      ],
+      "vehicleModel": "gol g4",
+      "laborValue": 1600,
+      "updatedAt": "2026-10-24T10:43:58.115Z",
+      "status": "Finalizado",
+      "totalValue": 4338,
+      "vehicleId": "t6s87xvup",
+      "clientName": "João /flavia",
+      "osNumber": "217737",
+      "vehicleKm": "193.004",
+      "discount": 0
+    },
+    {
+      "vehicleModel": "saveiro",
+      "vehicleId": "dqxk8d7g5",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "status": "Finalizado",
+      "clientName": "helio de jesus alves",
+      "vehicleKm": "135.947",
+      "vehiclePlate": "PZZ1C62",
+      "clientPhone": "13997083650",
+      "totalValue": 600,
+      "updatedAt": "2026-10-26T20:12:19.971Z",
+      "osNumber": "690301",
+      "laborValue": 250,
+      "id": "uir2bgp8h",
+      "discount": 0,
+      "createdAt": "2026-10-26T20:12:19.971Z",
+      "paymentStatus": "Pendente",
+      "clientId": "jsu2y1k0q",
+      "items": [
+        {
+          "id": "o6zdpgknu",
+          "type": "SERVICE",
+          "unitPrice": 130,
+          "description": "JOGO DE VELAS",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "j32jskew3",
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "unitPrice": 30
+        },
+        {
+          "unitPrice": 160,
+          "description": "LIMPEZA E REPARO DE BICOS",
+          "type": "SERVICE",
+          "id": "2i86irex3",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "zf5l9z1qd",
+          "description": "CARGA E TESTE DE BATERIA",
+          "unitPrice": 30
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "rpl5871h4",
+          "description": "",
+          "unitPrice": 0
+        }
+      ]
+    },
+    {
+      "clientId": "m8053qopf",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "paymentStatus": "Pendente",
+      "clientName": "sandro Nunes de Oliveira ",
+      "createdAt": "2026-10-26T20:50:33.359Z",
+      "items": [
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "2xwwg3epp",
+          "unitPrice": 340,
+          "description": "BOMBA DE COMBUSTÍVEL "
+        },
+        {
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "id": "ghskix8u0",
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "9wbt1f01g",
+          "description": "JUNTA HOMOCINÉTICA LADO DIREITO ",
+          "unitPrice": 190
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "jn4gg0qvc"
+        },
+        {
+          "quantity": 1,
+          "id": "bjmxttd3s",
+          "description": "",
+          "unitPrice": 0,
+          "type": "SERVICE"
+        }
+      ],
+      "laborValue": 0,
+      "totalValue": 555,
+      "vehicleId": "tmanwf5en",
+      "vehiclePlate": "DSD1308",
+      "osNumber": "222366",
+      "status": "Finalizado",
+      "id": "7krttpvea",
+      "vehicleKm": "258.446",
+      "discount": 0,
+      "vehicleModel": "celta",
+      "clientPhone": "13996558209",
+      "updatedAt": "2026-10-26T20:50:33.359Z"
+    },
+    {
+      "status": "Finalizado",
+      "clientPhone": "13996558209",
+      "clientId": "m8053qopf",
+      "paymentStatus": "Pendente",
+      "items": [
+        {
+          "unitPrice": 340,
+          "id": "jry87nm9n",
+          "quantity": 1,
+          "description": "BOMBA DE COMBUSTÍVEL ",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "id": "98zkwd7j5",
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "description": "FILTRO DE COMBUSTÍVEL "
+        },
+        {
+          "id": "4px1mq2sk",
+          "description": "JUNTA HOMOCINÉTICA LADO DIREITO ",
+          "type": "SERVICE",
+          "unitPrice": 190,
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "description": "",
+          "id": "odtfxg066",
+          "type": "SERVICE",
+          "unitPrice": 0
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 30,
+          "type": "SERVICE",
+          "description": "TAMPA DO RESERVATÓRIO DE ÁGUA ",
+          "id": "qqkz55bvd"
+        }
+      ],
+      "createdAt": "2026-10-26T20:52:23.246Z",
+      "vehicleModel": "celta",
+      "laborValue": 400,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "id": "1zz8wn3av",
+      "updatedAt": "2026-10-26T20:52:23.246Z",
+      "totalValue": 985,
+      "clientName": "sandro Nunes de Oliveira ",
+      "vehicleKm": "258.446",
+      "vehiclePlate": "DSD1308",
+      "osNumber": "266735",
+      "vehicleId": "tmanwf5en",
+      "discount": 0
+    },
+    {
+      "paymentStatus": "Pendente",
+      "osNumber": "547792",
+      "clientName": "Claudio Pernambuco ",
+      "discount": 0,
+      "id": "3lqedffuf",
+      "createdAt": "2026-10-27T20:19:50.185Z",
+      "totalValue": 1011,
+      "laborValue": 350,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "clientId": "n8p35dkne",
+      "vehicleModel": "c3",
+      "items": [
+        {
+          "description": "DISCO DE FREIO",
+          "type": "SERVICE",
+          "id": "iwhe2u88v",
+          "unitPrice": 193,
+          "quantity": 2
+        },
+        {
+          "id": "wvw72of88",
+          "description": "JOGO DE PASTILHA DE FREIO",
+          "unitPrice": 115,
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "id": "fdhnawtkg",
+          "quantity": 2,
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "unitPrice": 45
+        },
+        {
+          "quantity": 1,
+          "description": "PRODUTO DE LIMPEZA DE ARREFECIMENTO ",
+          "id": "sauuty9be",
+          "type": "SERVICE",
+          "unitPrice": 70
+        },
+        {
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": "",
+          "id": "hupbjqr6v",
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "2026-10-27T20:19:50.185Z",
+      "status": "Finalizado",
+      "clientPhone": "13996248062",
+      "vehicleId": "1jcp8v7de",
+      "vehiclePlate": "FTK3490",
+      "vehicleKm": "211.607"
+    },
+    {
+      "clientName": "reginaldo camara",
+      "status": "Finalizado",
+      "laborValue": 80,
+      "clientId": "8du8ioj2f",
+      "createdAt": "2026-10-28T13:10:49.152Z",
+      "paymentStatus": "Pendente",
+      "totalValue": 150,
+      "updatedAt": "2026-10-28T13:10:49.152Z",
+      "vehiclePlate": "FOS3D45",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "id": "f5cx3hqzz",
+      "vehicleId": "aolowjqnc",
+      "osNumber": "408541",
+      "vehicleModel": "onix",
+      "items": [
+        {
+          "description": "ÓLEO 0W20",
+          "quantity": 4,
+          "type": "SERVICE",
+          "id": "8l1jdmt1d",
+          "unitPrice": 0
+        },
+        {
+          "id": "c0zv4244n",
+          "type": "SERVICE",
+          "description": "FILTRO DE OLEO",
+          "quantity": 1,
+          "unitPrice": 0
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 25,
+          "id": "pqib9f996",
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 45,
+          "description": "FILTRO DE AR DO MOTOR",
+          "id": "bbhcggrkv"
+        }
+      ],
+      "discount": 0,
+      "vehicleKm": "11.578",
+      "clientPhone": "13997788433"
+    },
+    {
+      "clientId": "3rhdqkb6e",
+      "status": "Finalizado",
+      "vehiclePlate": "GCK7088",
+      "vehicleModel": "FOX ",
+      "createdAt": "2026-10-28T21:41:39.230Z",
+      "id": "0te7jwkte",
+      "clientPhone": "13999999999",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "updatedAt": "2026-10-28T21:41:39.230Z",
+      "osNumber": "407271",
+      "paymentStatus": "Pendente",
+      "clientName": "Alana acupuntura",
+      "discount": 0,
+      "items": [
+        {
+          "description": "CORREIA DENTADA ",
+          "quantity": 1,
+          "unitPrice": 85,
+          "id": "hk26l9o20",
+          "type": "SERVICE"
+        },
+        {
+          "description": "TENSOR DA CORREIA DENTADA ",
+          "quantity": 1,
+          "id": "6xyqsm3j8",
+          "type": "SERVICE",
+          "unitPrice": 145
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 4,
+          "description": "ÓLEO 5W40",
+          "unitPrice": 48,
+          "id": "dtr22qkrc"
+        },
+        {
+          "description": "FILTRO DE ÓLEO ",
+          "unitPrice": 30,
+          "id": "3v9zr7hs0",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 45,
+          "type": "SERVICE",
+          "id": "8c4xby0oh",
+          "description": "FILTRO DE AR DO MOTOR "
+        },
+        {
+          "description": "ANTI CHAMA ",
+          "quantity": 1,
+          "id": "9z8yk2kex",
+          "unitPrice": 53,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "id": "zj6v3c9mc",
+          "description": ""
+        },
+        {
+          "description": "",
+          "quantity": 1,
+          "id": "mthdfswvg",
+          "unitPrice": 0,
+          "type": "SERVICE"
+        }
+      ],
+      "vehicleId": "uipqvfqs9",
+      "totalValue": 900,
+      "vehicleKm": "226",
+      "laborValue": 350
+    },
+    {
+      "updatedAt": "2026-10-29T20:46:18.420Z",
+      "totalValue": 743,
+      "laborValue": 200,
+      "status": "Finalizado",
+      "id": "9n8y5y2fg",
+      "items": [
+        {
+          "unitPrice": 543,
+          "id": "qtwzquskp",
+          "description": "JOGODE VELAS",
+          "type": "SERVICE",
+          "quantity": 1
+        }
+      ],
+      "vehicleId": "tiepzkus6",
+      "discount": 0,
+      "osNumber": "812359",
+      "clientName": "vander lopes",
+      "vehicleKm": "161.595",
+      "clientPhone": "13996883490",
+      "vehicleModel": "virtus",
+      "paymentStatus": "Pendente",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "createdAt": "2026-10-29T20:46:18.420Z",
+      "clientId": "4h2sj7h4a",
+      "vehiclePlate": "GCR8G72"
+    },
+    {
+      "vehicleId": "mzzygd0zv",
+      "osNumber": "505978",
+      "vehicleKm": "352.645",
+      "status": "Finalizado",
+      "discount": 0,
+      "paymentStatus": "Pendente",
+      "updatedAt": "2026-10-29T21:17:03.263Z",
+      "id": "axcrza9om",
+      "totalValue": 725,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "createdAt": "2026-10-29T21:17:03.263Z",
+      "items": [
+        {
+          "type": "SERVICE",
+          "unitPrice": 295,
+          "description": "BOMBA DE OLEO",
+          "id": "ygx2t6gll",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "description": "FILTRO DE OLEO",
+          "quantity": 1,
+          "id": "f1ud18zz1",
+          "unitPrice": 35
+        },
+        {
+          "type": "SERVICE",
+          "id": "6nta7yinh",
+          "quantity": 1,
+          "description": "COLA PARA VEDAÇÃO ",
+          "unitPrice": 45
+        },
+        {
+          "id": "qlc19yyg7",
+          "type": "SERVICE",
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1
+        },
+        {
+          "id": "nh2uwefjm",
+          "type": "SERVICE",
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1
+        }
+      ],
+      "clientId": "75i8cz4jc",
+      "laborValue": 350,
+      "vehicleModel": "gol g2",
+      "vehiclePlate": "COI8327",
+      "clientName": "salatiao ",
+      "clientPhone": "13982297151"
+    },
+    {
+      "osNumber": "201085",
+      "items": [
+        {
+          "unitPrice": 630,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "BOMBA DE ÁGUA ",
+          "id": "84a034t9y"
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 8.5,
+          "id": "ap4bomodw",
+          "quantity": 2,
+          "description": "ÁGUA DESMINERALIZADA "
+        },
+        {
+          "type": "SERVICE",
+          "id": "f7ywvp2u1",
+          "description": "2",
+          "quantity": 1,
+          "unitPrice": 0
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 45,
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "id": "cku6do026",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "description": "",
+          "id": "a76j9tw4q",
+          "unitPrice": 0
+        },
+        {
+          "type": "SERVICE",
+          "id": "arz3swnr2",
+          "quantity": 1,
+          "description": "",
+          "unitPrice": 0
+        },
+        {
+          "description": "CORREIA DE ACESSÓRIOS ",
+          "quantity": 1,
+          "unitPrice": 53,
+          "id": "s71jyllxp",
+          "type": "SERVICE"
+        }
+      ],
+      "discount": 0,
+      "vehiclePlate": "GJL5F78",
+      "createdAt": "2026-10-30T16:56:13.873Z",
+      "vehicleModel": "Onix turbo",
+      "updatedAt": "2026-10-30T16:56:13.873Z",
+      "totalValue": 1145,
+      "clientId": "n2vd1vxu8",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "clientPhone": "13997236591",
+      "laborValue": 400,
+      "paymentStatus": "Pendente",
+      "vehicleId": "q68cbqk7y",
+      "id": "m1svtfx3c",
+      "clientName": "Bruno / bradesco",
+      "vehicleKm": "86.019",
+      "status": "Finalizado"
+    },
+    {
+      "clientId": "3k6h8pd07",
+      "createdAt": "2026-10-30T19:58:54.931Z",
+      "status": "Finalizado",
+      "laborValue": 50,
+      "clientPhone": "13981481809",
+      "totalValue": 378,
+      "paymentStatus": "Pendente",
+      "clientName": "Claudio de Sousa ramos",
+      "vehicleId": "8inqghz8s",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "osNumber": "687033",
+      "vehicleKm": "114.636",
+      "vehiclePlate": "BZK4B57",
+      "discount": 0,
+      "items": [
+        {
+          "type": "SERVICE",
+          "id": "ou7bh5t2t",
+          "description": " ÓLEO 5W40",
+          "quantity": 4,
+          "unitPrice": 52
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "mp5jxv6et",
+          "unitPrice": 30,
+          "description": "FILTRO DE OLEO"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "yllz5tv6x",
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "unitPrice": 25
+        },
+        {
+          "quantity": 1,
+          "description": "FILTRO DE AR DO MOTOR ",
+          "id": "0biwg0y9a",
+          "type": "SERVICE",
+          "unitPrice": 65
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "",
+          "id": "ygdb0qd3t",
+          "unitPrice": 0
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "yd7y28xdz"
+        }
+      ],
+      "updatedAt": "2026-10-30T19:58:54.931Z",
+      "id": "zep6ee6om",
+      "vehicleModel": "up tsi"
+    },
+    {
+      "vehicleKm": "157.268",
+      "clientPhone": "13996402987",
+      "status": "Finalizado",
+      "vehicleId": "h93dnz5cs",
+      "vehiclePlate": "FWG1A84",
+      "items": [
+        {
+          "description": "COIFA DE HOMOCINÉTICA LADO ESQUERDO ",
+          "unitPrice": 45,
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "npwt8wpky"
+        },
+        {
+          "id": "wp9tsodmk",
+          "unitPrice": 10,
+          "type": "SERVICE",
+          "description": "ABRAÇADEIRA DE COIFA ",
+          "quantity": 2
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 115,
+          "type": "SERVICE",
+          "description": "SENSOR DE ABS TRASEIRO DIREITO ",
+          "id": "tj4gspe0n"
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "id": "kjq88g5xg",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "id": "n9xknmqsd",
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1
+        },
+        {
+          "id": "u4ot3vtec",
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0
+        }
+      ],
+      "vehicleModel": "up",
+      "updatedAt": "2026-10-30T20:53:35.933Z",
+      "clientId": "hqckef8lm",
+      "paymentStatus": "Pendente",
+      "totalValue": 380,
+      "id": "6kwqem16c",
+      "createdAt": "2026-10-30T20:53:35.933Z",
+      "laborValue": 200,
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "discount": 0,
+      "clientName": "jesus  /marilza",
+      "osNumber": "421481"
+    },
+    {
+      "clientPhone": "13996883490",
+      "createdAt": "2026-10-31T18:25:33.515Z",
+      "items": [
+        {
+          "quantity": 7,
+          "id": "53a6mhu05",
+          "type": "SERVICE",
+          "description": "SELOS DO BLOCO DO MOTOR ",
+          "unitPrice": 10
+        },
+        {
+          "quantity": 1,
+          "description": "TUBO DISTRIBUIDOR DE ÁGUA ",
+          "type": "SERVICE",
+          "id": "eon1fqs74",
+          "unitPrice": 52
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "thvnco2ly",
+          "description": "CAVALETE DO COLETOR DE ADMISSÃO ",
+          "unitPrice": 43
+        },
+        {
+          "quantity": 5,
+          "unitPrice": 5,
+          "id": "y13h4ohof",
+          "type": "SERVICE",
+          "description": "ABRAÇADEIRA "
+        },
+        {
+          "quantity": 1,
+          "description": "MANGUEIRA DO AR QUENTE ",
+          "type": "SERVICE",
+          "id": "89fk0klht",
+          "unitPrice": 115
+        },
+        {
+          "id": "e5iwywe06",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 25,
+          "description": "TUBO DO BLOCO "
+        },
+        {
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "quantity": 2,
+          "unitPrice": 45,
+          "id": "f4m4686vp",
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 53,
+          "type": "SERVICE",
+          "id": "t9wx4nz9w",
+          "description": "JUNTA DA TAMPA DE VALVULAS "
+        },
+        {
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "id": "x22vtbrur",
+          "unitPrice": 0
+        },
+        {
+          "unitPrice": 0,
+          "id": "uk8hze6dr",
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": ""
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0,
+          "description": "",
+          "type": "SERVICE",
+          "id": "5wvwc62eg"
+        }
+      ],
+      "clientId": "4h2sj7h4a",
+      "id": "smth1495f",
+      "status": "Finalizado",
+      "discount": 0,
+      "totalValue": 1323,
+      "vehicleId": "rhgdokkhv",
+      "laborValue": 850,
+      "osNumber": "707725",
+      "vehicleKm": "182.869",
+      "vehiclePlate": "EDN2111",
+      "updatedAt": "2026-10-31T18:25:33.515Z",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "paymentStatus": "Pendente",
+      "clientName": "vander lopes",
+      "vehicleModel": "corsao"
+    },
+    {
+      "vehiclePlate": "DXW6G88",
+      "totalValue": 357,
+      "laborValue": 50,
+      "createdAt": "2026-11-04T12:45:57.397Z",
+      "osNumber": "699123",
+      "vehicleModel": "corolla",
+      "clientName": "Antônio Brás ",
+      "discount": 0,
+      "status": "Finalizado",
+      "vehicleKm": "247.834",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleId": "paj9hzep7",
+      "clientPhone": "13997919064",
+      "clientId": "a1qfa9tpr",
+      "paymentStatus": "Pendente",
+      "id": "1anbu6tt4",
+      "items": [
+        {
+          "type": "SERVICE",
+          "quantity": 4,
+          "id": "ajbm0tqiu",
+          "unitPrice": 48,
+          "description": "ÓLEO 5W30"
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 35,
+          "type": "SERVICE",
+          "description": "FILTRO DE ÓLEO ",
+          "id": "qz5u76yr9"
+        },
+        {
+          "quantity": 1,
+          "id": "dosz25j8p",
+          "unitPrice": 25,
+          "description": "FILTRO DE COMBUSTÍVEL ",
+          "type": "SERVICE"
+        },
+        {
+          "id": "r60tudck6",
+          "quantity": 1,
+          "description": "FILTRO DE AR DO MOTOR ",
+          "type": "SERVICE",
+          "unitPrice": 55
+        },
+        {
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "id": "tf0r52bc2"
+        }
+      ],
+      "updatedAt": "2026-11-04T12:45:57.397Z"
+    },
+    {
+      "osNumber": "494645",
+      "totalValue": 1833,
+      "createdAt": "2026-11-05T11:56:17.351Z",
+      "discount": 0,
+      "laborValue": 800,
+      "clientPhone": "13997577664",
+      "paymentStatus": "Pendente",
+      "clientName": "Reinaldo /strada",
+      "status": "Finalizado",
+      "items": [
+        {
+          "type": "SERVICE",
+          "id": "tdggrghor",
+          "quantity": 1,
+          "description": "CILINDRO DO PEDAL DE EMBREAGEM ",
+          "unitPrice": 320
+        },
+        {
+          "unitPrice": 480,
+          "description": "CILINDRO ESCRAVO",
+          "id": "uvrut41ut",
+          "type": "SERVICE",
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 145,
+          "id": "y6qv810kb",
+          "description": "JOGO DE PASTILHA DE FREIO "
+        },
+        {
+          "unitPrice": 38,
+          "type": "SERVICE",
+          "description": "FLUIDO DOR 4",
+          "id": "kxxy4e695",
+          "quantity": 1
+        },
+        {
+          "type": "SERVICE",
+          "description": "ÓLEO DE CÂMBIO ",
+          "id": "sfraj5vmj",
+          "unitPrice": 50,
+          "quantity": 1
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0,
+          "id": "9topvhvlo",
+          "type": "SERVICE",
+          "description": ""
+        }
+      ],
+      "clientId": "w5cmimtbn",
+      "vehicleId": "ejfqi1qmd",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "vehicleKm": "145.334",
+      "vehicleModel": "sttada",
+      "id": "e3gzdv1zp",
+      "updatedAt": "2026-11-05T11:56:17.351Z",
+      "vehiclePlate": "EZW7H26"
+    },
+    {
+      "vehicleKm": "231.17",
+      "id": "rlxpdfonj",
+      "vehicleModel": "up",
+      "discount": 0,
+      "clientName": "Gabriela /luiz",
+      "vehicleId": "3c4oq4khj",
+      "osNumber": "293020",
+      "paymentStatus": "Pendente",
+      "totalValue": 640,
+      "items": [
+        {
+          "id": "qd57aep8j",
+          "quantity": 1,
+          "type": "SERVICE",
+          "unitPrice": 290,
+          "description": "ANTI CHAMAS"
+        },
+        {
+          "id": "u81iofuia",
+          "type": "SERVICE",
+          "description": "",
+          "quantity": 1,
+          "unitPrice": 0
+        },
+        {
+          "unitPrice": 0,
+          "quantity": 1,
+          "description": "",
+          "type": "SERVICE",
+          "id": "mk6nfbrh4"
+        },
+        {
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "quantity": 1,
+          "description": "",
+          "id": "9360zliwj"
+        }
+      ],
+      "vehiclePlate": "FJB6E98",
+      "clientPhone": "13996088838",
+      "updatedAt": "2026-11-05T12:44:18.912Z",
+      "laborValue": 350,
+      "status": "Finalizado",
+      "createdAt": "2026-11-05T12:44:18.912Z",
+      "clientId": "do1pboohb",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN"
+    },
+    {
+      "vehicleModel": "jetta",
+      "items": [
+        {
+          "id": "0z4jbizr0",
+          "description": "ÓLEO DE TRANSMISSÃO AUTOMATICA ",
+          "type": "SERVICE",
+          "unitPrice": 95,
+          "quantity": 11
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 210,
+          "id": "i45254md1",
+          "description": "FILTRO DE TRANSMISSÃO ",
+          "quantity": 1
+        },
+        {
+          "id": "mitrafxu3",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": ""
+        },
+        {
+          "id": "f54zdj8t2",
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": ""
+        },
+        {
+          "unitPrice": 0,
+          "id": "e3stqtt9n",
+          "quantity": 1,
+          "description": "",
+          "type": "SERVICE"
+        }
+      ],
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "osNumber": "973843",
+      "vehiclePlate": "AUA4D12",
+      "discount": 0,
+      "status": "Finalizado",
+      "createdAt": "2026-11-05T21:46:43.104Z",
+      "laborValue": 600,
+      "paymentStatus": "Pendente",
+      "totalValue": 1855,
+      "updatedAt": "2026-11-05T21:46:43.104Z",
+      "clientName": "antony",
+      "vehicleKm": "172.325",
+      "clientId": "04fwhts0l",
+      "vehicleId": "4e480fu0g",
+      "id": "pznkqbfnn",
+      "clientPhone": "13981014839"
+    },
+    {
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "clientPhone": "11998979373",
+      "osNumber": "841279",
+      "items": [
+        {
+          "type": "SERVICE",
+          "description": "ÓLEO 5W30",
+          "id": "14gv3a3t8",
+          "quantity": 6,
+          "unitPrice": 48
+        },
+        {
+          "description": "FILTRO DE ÓLEO ",
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 85,
+          "id": "5fq1jin1b"
+        },
+        {
+          "type": "SERVICE",
+          "quantity": 1,
+          "id": "szi1jg77w",
+          "unitPrice": 86,
+          "description": "FILTRO DE AR DO MOTOR "
+        },
+        {
+          "type": "SERVICE",
+          "unitPrice": 0,
+          "description": "",
+          "quantity": 1,
+          "id": "wehjfihai"
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "7wkdx81nw",
+          "type": "SERVICE"
+        },
+        {
+          "description": "",
+          "unitPrice": 0,
+          "quantity": 1,
+          "id": "aaa2lbt4n",
+          "type": "SERVICE"
+        }
+      ],
+      "createdAt": "2026-11-06T17:23:49.767Z",
+      "paymentStatus": "Pendente",
+      "discount": 0,
+      "id": "mvix0e1rc",
+      "clientName": "Wellington/erica",
+      "status": "Finalizado",
+      "vehicleModel": "santa fé",
+      "updatedAt": "2026-11-06T17:23:49.767Z",
+      "vehicleKm": "159.644",
+      "laborValue": 50,
+      "clientId": "jy6t9s9h7",
+      "vehiclePlate": "FDS9J88",
+      "vehicleId": "nmqkpnrbm",
+      "totalValue": 509
+    },
+    {
+      "clientName": "Alana acupuntura",
+      "vehiclePlate": "GCK7088",
+      "clientId": "3rhdqkb6e",
+      "items": [
+        {
+          "unitPrice": 95,
+          "id": "2nel0zhqg",
+          "type": "SERVICE",
+          "description": "MANGUEIRA DE ARREFECIMENTO",
+          "quantity": 1
+        },
+        {
+          "quantity": 2,
+          "type": "SERVICE",
+          "unitPrice": 90,
+          "id": "y0wfic5at",
+          "description": "ADITIVO"
+        },
+        {
+          "id": "i1kzk6432",
+          "unitPrice": 0,
+          "description": "",
+          "type": "SERVICE",
+          "quantity": 1
+        }
+      ],
+      "createdAt": "2026-11-06T21:51:05.981Z",
+      "paymentStatus": "Pendente",
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "laborValue": 250,
+      "totalValue": 525,
+      "vehicleModel": "fox",
+      "discount": 0,
+      "vehicleKm": "226.368",
+      "clientPhone": "13999999999",
+      "status": "Finalizado",
+      "vehicleId": "ioqquezss",
+      "id": "rabluv6xc",
+      "osNumber": "538324",
+      "updatedAt": "2026-11-06T21:51:05.981Z"
+    },
+    {
+      "problem": "MANUTENÇÃO TÉCNICA KAEN",
+      "updatedAt": "2026-11-06T22:01:11.517Z",
+      "paymentStatus": "Pendente",
+      "clientId": "3rhdqkb6e",
+      "vehicleKm": "226.368",
+      "vehicleId": "ioqquezss",
+      "clientName": "Alana acupuntura",
+      "clientPhone": "13999999999",
+      "vehicleModel": "fox",
+      "id": "9lw2rlrk8",
+      "osNumber": "384068",
+      "laborValue": 250,
+      "status": "Finalizado",
+      "items": [
+        {
+          "id": "s7oikit6y",
+          "type": "SERVICE",
+          "quantity": 1,
+          "unitPrice": 95,
+          "description": "MANGUEIRA DE ARREFECIMENTO "
+        },
+        {
+          "description": "ADITIVO DE ARREFECIMENTO ",
+          "quantity": 2,
+          "id": "m0f9rqm93",
+          "unitPrice": 45,
+          "type": "SERVICE"
+        },
+        {
+          "quantity": 1,
+          "type": "SERVICE",
+          "id": "g0npm8vn7",
+          "description": "",
+          "unitPrice": 0
+        },
+        {
+          "quantity": 1,
+          "unitPrice": 0,
+          "type": "SERVICE",
+          "description": "",
+          "id": "4uzbw2g2r"
+        }
+      ],
+      "discount": 0,
+      "totalValue": 435,
+      "createdAt": "2026-11-06T22:01:11.517Z",
+      "vehiclePlate": "GCK7088"
+    }
+  ],
+  "kaenpro_rafael_parts": [],
+  "kaenpro_rafael_suppliers": [
+    {
+      "products": "Correias, Filtros Mann, Velas NGK, Óleo Motul",
+      "name": "Auto Peças Vale do Ribeira",
+      "createdAt": "2026-09-06T19:04:49.270Z",
+      "cnpj": "98.765.432/0001-11",
+      "phone": "13998765432",
+      "contactName": "Renato Silva",
+      "rating": 4,
+      "notes": "Bom estoque local para emergências na bancada.",
+      "id": "sup-2",
+      "email": "vendas@valeribeirapecas.com.br",
+      "category": "Motor e Filtros",
+      "paymentTerms": "À vista com 5% de desconto ou 30 dias"
+    }
+  ],
+  "kaenpro_rafael_employees": [
+    {
+      "id": "9icddppos",
+      "name": "Célio",
+      "role": "Mecânico",
+      "shift": "Diurno",
+      "services": 0,
+      "status": "Ativo",
+      "createdAt": "2026-09-05T19:47:20.314Z"
+    },
+    {
+      "id": "usr-1788716614780",
+      "name": "Pátio",
+      "role": "Mecânico",
+      "shift": "Diurno",
+      "services": 0,
+      "status": "Ativo",
+      "createdAt": "2026-09-06T17:43:34.782Z"
+    }
+  ]
+}

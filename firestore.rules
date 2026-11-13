@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global safety net: deny everything not explicitly permitted
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidWorkshopDoc(data) {
+      return data is map
+        && (!('lastUpdatedAt' in data) || (data.lastUpdatedAt is string && data.lastUpdatedAt.size() <= 64));
+    }
+
+    function isValidCollectionDoc(data) {
+      return data is map
+        && data.keys().hasAll(['data', 'key', 'updatedAt'])
+        && data.keys().hasOnly(['data', 'key', 'updatedAt'])
+        && data.key is string && data.key.size() > 0 && data.key.size() <= 128 && data.key.matches('^[a-zA-Z0-9_\\-]+$')
+        && data.updatedAt is string && data.updatedAt.size() <= 64;
+    }
+
+    // Shared workshop sync document used by workshop terminals and public booking
+    match /workshops/{workshopId} {
+      allow get: if isValidId(workshopId) && workshopId == 'kaen_shared_database';
+      allow create, update: if isValidId(workshopId)
+        && workshopId == 'kaen_shared_database'
+        && isValidWorkshopDoc(request.resource.data);
+    }
+
+    // Collection-level mirrors to avoid 1MB single-document limits
+    match /workshop_collections/{collectionId} {
+      allow get, list: if true;
+      allow create, update: if isValidId(collectionId)
+        && isValidCollectionDoc(request.resource.data);
+    }
+
+    // Startup connectivity check
+    match /test/{docId} {
+      allow get: if isValidId(docId);
+    }
+  }
+}
